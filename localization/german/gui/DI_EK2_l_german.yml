@@ -1,2 +1,12 @@
 ﻿l_german:
  culture_group_high_rock: "High Rock"
+ culture_group_hammerfell: "Hammerfell"
+ culture_group_cyrodiil: "Cyrodiil"
+ culture_group_skyrim: "Skyrim"
+ culture_group_yokuda: "Yokuda"
+ culture_group_summerset_isles: "Summerset Isles"
+ culture_group_valenwood: "Valenwood"
+ culture_group_elsweyr: "Elsweyr"
+ culture_group_morrowind: "Morrowind"
+ culture_group_black_marsh: "Black Marsh"
+ DI_special_innovations: "Special Innovations"

@@ -1,0 +1,1729 @@
+﻿template DI_AS_Cultural_Tab
+{
+	vbox = {
+		name = "cultural_tab"
+		visible = "[GetVariableSystem.HasValue( 'show_army_spawner', 'cultural' )]"
+		layoutpolicy_horizontal = expanding
+
+		margin = { 20 5 }
+
+		using = Animation_Tab_Switch
+
+		vbox = {	
+			scrollbox = {
+				layoutpolicy_horizontal = expanding
+				size = { 300 400 }
+
+				blockoverride "scrollbox_content" 
+				{
+					vbox = {
+						name = "cultural_list"
+						layoutpolicy_horizontal = expanding
+						spacing = 5
+
+						button_standard = {
+							name = army_spawner_horse_archers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_horse_archers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/horse_archers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = horse_archers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_akaviri_dragon_hunters_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_akaviri_dragon_hunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/akaviri_dragon_hunters.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = akaviri_dragon_hunters
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_summerset_justiciars_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_summerset_justiciars_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/summerset_justiciars.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = summerset_justiciars
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_direnni_sorcerers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_direnni_sorcerers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/mages.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = direnni_sorcerers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_welkynar_knights_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_welkynar_knights_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/welkynar_knights.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = welkynar_knights
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_saxhleel_reel_ka_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_saxhleel_reel_ka_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = saxhleel_reel_ka
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_winged_avengers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_winged_avengers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = winged_avengers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_shellback_phalanx_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_shellback_phalanx_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = shellback_phalanx
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_ayleid_sorcerers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_ayleid_sorcerers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/mages.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = ayleid_sorcerers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_bosmer_stalkers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_bosmer_stalkers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/bosmer.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = bosmer_stalkers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_breton_pikemen_companies_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_breton_pikemen_companies_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = breton_pikemen_companies
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_breton_hedge_knights_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_breton_hedge_knights_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = breton_hedge_knights
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_breton_highlanders_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_breton_highlanders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/heavy_infantry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = breton_highlanders
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_light_grazing_horde_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_light_grazing_horde_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/light_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = light_grazing_horde
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_armored_legionaires_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_armored_legionaires_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/armored_legionaires.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = armored_legionaires
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_equestrian_brigade_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_equestrian_brigade_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/heavy_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = equestrian_brigade
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_nibenese_battlemages_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_nibenese_battlemages_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/mages.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = nibenese_battlemages
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_ut_nibenu_bowmen_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_ut_nibenu_bowmen_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/ut_nibenu_bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = ut_nibenu_bowmen
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_dunmer_oathmen_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_dunmer_oathmen_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/dunmer_oathmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = dunmer_oathmen
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_ashlander_champions_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_ashlander_champions_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/ashlander_champions.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = ashlander_champions
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_kagouti_riders_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_kagouti_riders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/kagouti_riders.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = kagouti_riders
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_dwemer_arbalesters_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_dwemer_arbalesters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/crossbowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = dwemer_arbalesters
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_dwemer_centurion_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_dwemer_centurion_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/animunculi.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = dwemer_centurion
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_dwemer_sphere_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_dwemer_sphere_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/animunculi.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = dwemer_sphere
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_dwemer_ballistae_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_dwemer_ballistae_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/dwemer_ballistae.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = dwemer_ballistae
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_knight_paladins_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_knight_paladins_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = knight_paladins
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_nightprowlers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_nightprowlers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = nightprowlers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_chaurus_riders_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_chaurus_riders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/light_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = chaurus_riders
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_imga_scouts_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_imga_scouts_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = imga_scouts
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_imga_slingers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_imga_slingers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = imga_slingers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_imga_guards_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_imga_guards_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = imga_guards
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_imga_frenzied_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_imga_frenzied_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/heavy_infantry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = imga_frenzied
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_alfiq_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_alfiq_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/mages.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = alfiq
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_tojay_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_tojay_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = tojay
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_cathay_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_cathay_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = cathay
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_suthay_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_suthay_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = suthay
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_senche_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_senche_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/light_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = senche
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_ohmes_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_ohmes_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = ohmes
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_pahmar_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_pahmar_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/heavy_infantry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = pahmar
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_senche_raht_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_senche_raht_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/heavy_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = senche_raht
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_witch_knight_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_witch_knight_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/witch_knight.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = witch_knight
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_deathlands_slayers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_deathlands_slayers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = deathlands_slayers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_south_nedic_headhunters_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_south_nedic_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = south_nedic_headhunters
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_north_nedic_headhunters_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_north_nedic_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = north_nedic_headhunters
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_central_nedic_headhunters_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_central_nedic_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/spellswords.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = central_nedic_headhunters
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_jungle_peltasts_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_jungle_peltasts_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = jungle_peltasts
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_huscarl_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_huscarl_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/danish_huskarls.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = huscarl
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_skaal_hunter_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_skaal_hunter_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bondi.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = skaal_hunter
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_orc_marauders_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_orc_marauders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/orc_marauders.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = orc_marauders
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_bear_cavalry_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_bear_cavalry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/bear_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = bear_cavalry
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_yokudan_way_of_the_sword_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_yokudan_way_of_the_sword_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/swordmasters.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = yokudan_way_of_the_sword
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_redguard_way_of_the_sword_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_redguard_way_of_the_sword_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/swordmasters.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = redguard_way_of_the_sword
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_abecean_pirates_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_abecean_pirates_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/abecean_pirates.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = abecean_pirates
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_falmer_stalkers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_falmer_stalkers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = falmer_stalkers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_falmer_gloomlurkers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_falmer_gloomlurkers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = falmer_gloomlurkers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_falmer_battleragers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_falmer_battleragers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = falmer_battleragers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_riekling_butcher_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_riekling_butcher_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = riekling_butcher
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_riekling_harrier_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_riekling_harrier_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = riekling_harrier
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_bristleback_riders_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_bristleback_riders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/light_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = bristleback_riders
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_riekling_savage_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_riekling_savage_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = riekling_savage
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_ice_shamans_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_ice_shamans_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/mages.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = ice_shamans
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_riekr_wildlings_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_riekr_wildlings_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = riekr_wildlings
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_riekr_deadeyes_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_riekr_deadeyes_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/bowmen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = riekr_deadeyes
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_riekr_scrappers_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_riekr_scrappers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = riekr_scrappers
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_goblin_skirmisher_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_goblin_skirmisher_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/skirmishers.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = goblin_skirmisher
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_goblin_ranger_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_goblin_ranger_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/illustrations/men_at_arms_small/goblin_ranger.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = goblin_ranger
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_durzog_riders_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_durzog_riders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/light_cavalry.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = durzog_riders
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+
+						button_standard = {
+							name = army_spawner_goblin_ravager_button
+							layoutpolicy_horizontal = expanding
+							size = { 0 50 }
+							onclick = "[GetScriptedGui('DI_goblin_ravager_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+							hbox = {
+								margin = { 5 0 }
+								margin_right = 10
+								spacing = 10
+
+								icon = {
+									size = { 35 35 }
+									texture = "gfx/interface/icons/regimenttypes/pikemen.dds"
+								}
+
+								text_single = {
+									layoutpolicy_horizontal = expanding
+									text = goblin_ravager
+									default_format = "#clickable"
+								}
+								
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

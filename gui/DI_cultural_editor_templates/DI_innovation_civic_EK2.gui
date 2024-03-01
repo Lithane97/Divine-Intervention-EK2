@@ -1,4 +1,4 @@
-template DI_Civic_Group_EK2
+﻿template DI_Civic_Group_EK2
 {
 	text_label_left = {
 		visible = "[Not( GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity'))]"
