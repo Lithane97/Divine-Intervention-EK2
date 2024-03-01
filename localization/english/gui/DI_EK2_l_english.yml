@@ -1,4 +1,5 @@
 ﻿l_english:
+ # Innovations Labels
  culture_group_high_rock: "High Rock"
  culture_group_hammerfell: "Hammerfell"
  culture_group_cyrodiil: "Cyrodiil"
@@ -10,3 +11,6 @@
  culture_group_morrowind: "Morrowind"
  culture_group_black_marsh: "Black Marsh"
  DI_special_innovations: "Special Innovations"
+
+ # Perk Points
+ DI_perk_point_magic_tt: "#P Left-click:#! Add #P 1 #![magic|E] [perk|E] \n#N Right-click:#! Remove #N 1#! [magic|E] [perk|E]"
