@@ -1,0 +1,5562 @@
+﻿template DI_High_Rock
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_high_rock"
+	}
+}
+
+template DI_Hammerfell
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_hammerfell"
+	}
+}
+
+template DI_Cyrodiil
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_cyrodiil"
+	}
+}
+
+template DI_Skyrim
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_skyrim"
+	}
+}
+
+template DI_Yokuda
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_yokuda"
+	}
+}
+
+template DI_Summerset_Isles
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_summerset_isles"
+	}
+}
+
+template DI_Valenwood
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_valenwood"
+	}
+}
+
+template DI_Elsweyr
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_elsweyr"
+	}
+}
+
+template DI_Morrowind
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_morrowind"
+	}
+}
+
+template DI_Black_Marsh
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "culture_group_black_marsh"
+	}
+}
+
+template DI_Special_Innovations
+{
+	text_label_left = {
+		layoutpolicy_horizontal = expanding
+		align = left
+		margin = { 0 3 }
+		text = "DI_special_innovations"
+	}
+}
+
+template DI_Innovation_Nativity_EK2
+{
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_nomadic')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_nomadic').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_nomadic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_nomadic"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_nomadic').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_nomadic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_nomadic"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_High_Rock
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_glenumbra')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_glenumbra').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_glenumbra').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_glenumbra"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_glenumbra').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_glenumbra').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_glenumbra"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_rivenspire')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_rivenspire').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_rivenspire').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_rivenspire"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_rivenspire').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_rivenspire').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_rivenspire"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_stormhaven')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_stormhaven').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_stormhaven').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_stormhaven"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_stormhaven').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_stormhaven').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_stormhaven"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_greater_wrothgar')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_greater_wrothgar').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_greater_wrothgar').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_greater_wrothgar"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_greater_wrothgar').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_greater_wrothgar').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_greater_wrothgar"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_bangkorai')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_bangkorai').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_bangkorai').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_bangkorai"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_bangkorai').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_bangkorai').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_bangkorai"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Hammerfell
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_craglorn')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_craglorn').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_craglorn').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_craglorn"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_craglorn').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_craglorn').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_craglorn"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_alikr')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_alikr').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_alikr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_alikr"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_alikr').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_alikr').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_alikr"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_brena')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_brena').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_brena').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_brena"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_brena').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_brena').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_brena"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_sunforge')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_sunforge').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_sunforge').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_sunforge"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_sunforge').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_sunforge').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_sunforge"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_abecee')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_abecee').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_abecee').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_abecee"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_abecee').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_abecee').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_abecee"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Cyrodiil
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_heartlands')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_heartlands').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_heartlands').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_heartlands"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_heartlands').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_heartlands').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_heartlands"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_gold_coast')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_gold_coast').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_gold_coast').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_gold_coast"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_gold_coast').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_gold_coast').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_gold_coast"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_west_weald')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_west_weald').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_west_weald').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_west_weald"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_west_weald').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_west_weald').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_west_weald"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_colovian_highlands')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_colovian_highlands').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_colovian_highlands').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_colovian_highlands"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_colovian_highlands').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_colovian_highlands').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_colovian_highlands"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_jerall_mountains')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_jerall_mountains').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_jerall_mountains').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_jerall_mountains"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_jerall_mountains').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_jerall_mountains').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_jerall_mountains"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_nibenay_basin')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_nibenay_basin').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_nibenay_basin').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_nibenay_basin"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_nibenay_basin').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_nibenay_basin').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_nibenay_basin"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_nibenese_lowlands')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_nibenese_lowlands').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_nibenese_lowlands').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_nibenese_lowlands"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_nibenese_lowlands').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_nibenese_lowlands').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_nibenese_lowlands"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Skyrim
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_karth')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_karth').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_karth').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_karth"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_karth').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_karth').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_karth"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_white_river')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_white_river').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_white_river').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_white_river"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_white_river').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_white_river').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_white_river"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_west_ghost')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_west_ghost').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_west_ghost').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_west_ghost"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_west_ghost').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_west_ghost').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_west_ghost"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_east_ghost')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_east_ghost').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_east_ghost').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_east_ghost"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_east_ghost').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_east_ghost').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_east_ghost"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_dark_water')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_dark_water').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_dark_water').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_dark_water"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_dark_water').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_dark_water').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_dark_water"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_solstheim')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_solstheim').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_solstheim').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_solstheim"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_solstheim').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_solstheim').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_solstheim"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Yokuda
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_yokuda')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_yokuda').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_yokuda').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_yokuda"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_yokuda').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_yokuda').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_yokuda"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Summerset_Isles
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_auridon')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_auridon').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_auridon').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_auridon"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_auridon').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_auridon').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_auridon"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_summerset')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_summerset').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_summerset').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_summerset"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_summerset').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_summerset').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_summerset"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Valenwood
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_grahtwood')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_grahtwood').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_grahtwood').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_grahtwood"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_grahtwood').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_grahtwood').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_grahtwood"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_greenshade')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_greenshade').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_greenshade').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_greenshade"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_greenshade').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_greenshade').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_greenshade"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_malabal_tor')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_malabal_tor').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_malabal_tor').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_malabal_tor"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_malabal_tor').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_malabal_tor').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_malabal_tor"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_reaper_march')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_reaper_march').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_reaper_march').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_reaper_march"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_reaper_march').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_reaper_march').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_reaper_march"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Elsweyr
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_anequina')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_anequina').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_anequina').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_anequina"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_anequina').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_anequina').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_anequina"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_tenmar')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_tenmar').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_tenmar').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_tenmar"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_tenmar').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_tenmar').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_tenmar"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_pellitine')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_pellitine').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_pellitine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_pellitine"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_pellitine').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_pellitine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_pellitine"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Morrowind
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_vvardenfell')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_vvardenfell').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_vvardenfell').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_vvardenfell"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_vvardenfell').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_vvardenfell').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_vvardenfell"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_velothi_range')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_velothi_range').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_velothi_range').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_velothi_range"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_velothi_range').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_velothi_range').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_velothi_range"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_greater_deshaan')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_greater_deshaan').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_greater_deshaan').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_greater_deshaan"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_greater_deshaan').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_greater_deshaan').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_greater_deshaan"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_padomay_coast')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_padomay_coast').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_padomay_coast').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_padomay_coast"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_padomay_coast').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_padomay_coast').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_padomay_coast"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_southern_marshes')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_southern_marshes').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_southern_marshes').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_southern_marshes"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_southern_marshes').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_southern_marshes').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_southern_marshes"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Black_Marsh
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_middle_argonia')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_middle_argonia').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_middle_argonia').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_middle_argonia"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_middle_argonia').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_middle_argonia').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_middle_argonia"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_onkobra')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_onkobra').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_onkobra').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_onkobra"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_onkobra').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_onkobra').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_onkobra"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_black_bays')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_black_bays').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_black_bays').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_black_bays"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_black_bays').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_black_bays').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_black_bays"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_native_padomaic_marshes')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_native_padomaic_marshes').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_native_padomaic_marshes').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_padomaic_marshes"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_native_padomaic_marshes').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_native_padomaic_marshes').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_native_padomaic_marshes"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		layoutpolicy_horizontal = expanding
+		using = DI_Special_Innovations
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_dead_culture')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_dead_culture').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_dead_culture').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_dead_culture"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_dead_culture').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_dead_culture').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_dead_culture"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 45 0 }
+			}
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_daedric_race')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_daedric_race').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_daedric_race').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_daedric_race"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_daedric_race').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_daedric_race').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_daedric_race"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+		hbox = {
+		visible = "[GetVariableSystem.HasValue('DI_culture_era_tab', 'nativity')]"
+		flowcontainer = {
+			margin_top = 10
+			margin_right = 45
+
+			flowcontainer = {
+				datacontext = "[GetCultureInnovationType('innovation_extinct_race')]"
+				direction = horizontal
+
+				allow_outside = yes
+				using = tooltip_es
+				ignoreinvisible = yes
+
+				tooltipwidget = {
+					using = DI_culture_innovation_tooltip
+				}
+
+				button_standard_hover = {
+					visible = "[GetScriptedGui('DI_culture_has_innovation_extinct_race').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+					size = { 256 66 }
+					onrightclick = "[GetScriptedGui('DI_remove_innovation_extinct_race').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+					button_ignore = none
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+
+							vbox = {
+								position = {0 -1}
+
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_unlocked"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_extinct_race"
+									max_width = 150
+									align = nobaseline
+									margin = { 3 0 }
+									default_format = "#P"
+									alpha = 0.7
+								}
+
+							}
+						}
+					}
+				}
+
+				button_standard_hover = {
+					visible = "[Not(GetScriptedGui('DI_culture_has_innovation_extinct_race').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+					size = { 256 66 }
+					onclick = "[GetScriptedGui('DI_add_innovation_extinct_race').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+
+					hbox = {
+						margin = { 3 3 }
+						margin_right = 8
+						spacing = 5
+						allow_outside = yes
+						ignoreinvisible = yes
+
+						background = {
+							using = Background_Area
+						}
+
+						widget = {
+							size = { 90 60 }
+
+							DI_icon_innovation = {
+								parentanchor = center
+								blockoverride "icon_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+								blockoverride "icon_frame_highlight" {
+									tintcolor = { 1 1 1 0.5 }
+								}
+							}
+						}
+
+						widget = {
+							size = { 150 60 }
+							alwaystransparent = yes
+
+							vbox = {
+								ignoreinvisible = yes
+
+								text_multi = {
+									name = "name_clickable"
+									layoutpolicy_horizontal = expanding
+									text = "innovation_extinct_race"
+									align = left
+									margin = { 3 0 }
+									default_format = "#clickable"
+								}
+							}
+						}
+					}
+				}
+			}
+
+			spacer = {
+				size = { 300 0 }
+			}
+		}
+	}
+}
