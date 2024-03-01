@@ -14,3 +14,4 @@
 
  # Perk Points
  DI_perk_point_magic_tt: "#P Left-click:#! Add #P 1 #![magic|E] [perk|E] \n#N Right-click:#! Remove #N 1#! [magic|E] [perk|E]"
+ 
