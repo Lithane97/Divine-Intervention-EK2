@@ -243,12 +243,51 @@
 									text_single = {
 										layoutpolicy_horizontal = expanding
 										
-										text = magic
+										text = magic_lifestyle_name
 						
 										default_format = "#clickable"
 									}
 								}
 								tooltip = "DI_perk_point_magic_tt"
+							}
+							hbox = {
+								minimumsize = { 76 -1 }
+							}
+						}
+
+						# Dark Arts Perk
+						hbox = {
+							layoutpolicy_horizontal = expanding
+
+							button_standard = {
+								layoutpolicy_horizontal = expanding
+								size = { 0 50 }
+								button_ignore = none
+								
+								onclick = "[GetScriptedGui('DI_add_dark_arts_pp').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								onrightclick = "[GetScriptedGui('DI_remove_dark_arts_pp').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+								
+								hbox = {
+									margin = { 5 0 }
+									margin_right = 10
+									spacing = 10
+
+									icon = {
+										size = { 35 35 }
+										framesize = { 160 160 }
+										frame = "1"
+										texture = "gfx/interface/icons/lifestyles/dark_arts_lifestyle.dds"
+									}
+
+									text_single = {
+										layoutpolicy_horizontal = expanding
+										
+										text = dark_arts_lifestyle_name
+						
+										default_format = "#clickable"
+									}
+								}
+								tooltip = "DI_perk_point_dark_arts_tt"
 							}
 							hbox = {
 								minimumsize = { 76 -1 }

@@ -1,0 +1,9 @@
+﻿no_lifestyle_magic = {
+	icon = learning_positive
+	monthly_magic_lifestyle_xp_gain_mult = -10
+}
+
+no_lifestyle_dark_arts = {
+	icon = learning_positive
+	monthly_dark_arts_lifestyle_xp_gain_mult = -10
+}

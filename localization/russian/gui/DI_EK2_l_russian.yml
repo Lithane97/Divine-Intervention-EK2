@@ -12,4 +12,11 @@
  DI_special_innovations: "Special Innovations"
 
  # Perk Points
- DI_perk_point_magic_tt: "#P Left-click:#! Add #P 1 #![magic|E] [perk|E] \n#N Right-click:#! Remove #N 1#! [magic|E] [perk|E]"
+ DI_perk_point_magic_tt: "#P Left-click:#! Add #P 1 #![magic_lifestyle|E] [perk|E] \n#N Right-click:#! Remove #N 1#! [magic_lifestyle|E] [perk|E]"
+ DI_perk_point_dark_arts_tt: "#P Left-click:#! Add #P 1 #![dark_arts_lifestyle|E] [perk|E] \n#N Right-click:#! Remove #N 1#! [dark_arts_lifestyle|E] [perk|E]"
+
+ # Present Labels
+ DI_ce_magic_lifestyle_button: "All Magic Lifestyle Perks"
+ DI_ce_magic_lifestyle_button_tt: "#Bold Left-Click#! to finish the magic lifestyle tree.\n#Bold Right-Click#! to clear the magic lifestyle tree."
+ DI_ce_dark_arts_lifestyle_button: "All Dark Arts Lifestyle Perks"
+  DI_ce_dark_arts_lifestyle_button_tt: "#Bold Left-Click#! to finish the dark arts lifestyle tree.\n#Bold Right-Click#! to clear the dark arts lifestyle tree."

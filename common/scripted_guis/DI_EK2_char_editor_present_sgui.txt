@@ -1,0 +1,194 @@
+﻿### EK2 Present Scripts ###
+DI_EK_ce_add_all_lifestyle = {
+    scope = character
+
+    effect = {
+        random_owned_story = {
+            limit = {
+                story_type = DI_misc_variables_story
+            }
+            save_scope_as = DI_story
+        }
+
+        if = {
+            limit = {
+                scope:DI_story = { has_variable = DI_pinned_char_var }
+            }
+            every_living_character = {
+                limit = {
+                    has_character_flag = pinned_for_edit
+                }
+                lifestyle_martial_present_effect = yes
+                lifestyle_diplomacy_present_effect = yes
+                lifestyle_stewardship_present_effect = yes
+                lifestyle_intrigue_present_effect = yes
+                lifestyle_learning_present_effect = yes
+				lifestyle_magic_present_effect = yes
+				lifestyle_dark_arts_present_effect = yes
+            }
+        }
+        else = {
+            lifestyle_martial_present_effect = yes
+            lifestyle_diplomacy_present_effect = yes
+            lifestyle_stewardship_present_effect = yes
+            lifestyle_intrigue_present_effect = yes
+            lifestyle_learning_present_effect = yes
+			lifestyle_magic_present_effect = yes
+			lifestyle_dark_arts_present_effect = yes
+        }
+    }
+}
+
+DI_EK_ce_remove_all_lifestyle = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = {
+					has_character_flag = pinned_for_edit
+				}
+				lifestyle_martial_present_no_effect = yes
+				lifestyle_diplomacy_present_no_effect = yes
+				lifestyle_stewardship_present_no_effect = yes
+				lifestyle_intrigue_present_no_effect = yes
+				lifestyle_learning_present_no_effect = yes
+				lifestyle_magic_present_no_effect = yes
+				lifestyle_dark_arts_present_no_effect = yes
+			}
+		}
+		else = {
+			lifestyle_martial_present_no_effect = yes
+			lifestyle_diplomacy_present_no_effect = yes
+			lifestyle_stewardship_present_no_effect = yes
+			lifestyle_intrigue_present_no_effect = yes
+			lifestyle_learning_present_no_effect = yes
+			lifestyle_magic_present_no_effect = yes
+			lifestyle_dark_arts_present_no_effect = yes
+		}
+	}
+}
+
+# Magic
+DI_EK_ce_add_magic_lifestyle = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = {
+					has_character_flag = pinned_for_edit
+				}
+				lifestyle_magic_present_effect = yes
+			}
+		}
+		else = {
+			lifestyle_magic_present_effect = yes
+		}
+	}
+}
+
+DI_EK_ce_remove_magic_lifestyle = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = {
+					has_character_flag = pinned_for_edit
+				}
+				lifestyle_magic_present_no_effect = yes
+			}
+		}
+		else = {
+			lifestyle_magic_present_no_effect = yes
+		}
+	}
+}
+
+# Dark Arts
+DI_EK_ce_add_dark_arts_lifestyle = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = {
+					has_character_flag = pinned_for_edit
+				}
+				lifestyle_dark_arts_present_effect = yes
+			}
+		}
+		else = {
+			lifestyle_dark_arts_present_effect = yes
+		}
+	}
+}
+
+DI_EK_ce_remove_dark_arts_lifestyle = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = {
+					has_character_flag = pinned_for_edit
+				}
+				lifestyle_dark_arts_present_no_effect = yes
+			}
+		}
+		else = {
+			lifestyle_dark_arts_present_no_effect = yes
+		}
+	}
+}
