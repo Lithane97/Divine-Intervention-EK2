@@ -1,0 +1,425 @@
+﻿# === DI UPDATER TOOL: CULTURAL CUSTOMS (AUTO-GENERATED) ===
+# Source: CK3 common/culture/pillars/*.txt
+# Output: gui/DI_cultural_editor_templates/DI_heritage_template.gui
+
+template DI_heritage_template
+{
+    vbox = {
+        margin_top = 5
+        spacing = 15
+
+        ### HERITAGE START ###
+        ####################
+
+        # aldmeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_aldmeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_aldmeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # ayleid
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_ayleid')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_ayleid_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # bosmeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_bosmeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_bosmeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # chimeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_chimeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_chimeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # dunmeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_dunmeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_dunmeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # dwemeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_dwemeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_dwemeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # falmeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_falmeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_falmeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # maormeri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_maormeri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_maormeri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # atmoran_giant
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_atmoran_giant')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_atmoran_giant_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # atmoran
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_atmoran')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_atmoran_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # breton
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_breton')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_breton_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # cyrodiilic
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_cyrodiilic')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_cyrodiilic_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # cyrod
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_cyrod')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_cyrod_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # deathlander
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_deathlander')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_deathlander_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # kothri
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_kothri')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_kothri_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # tsaesci
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_tsaesci')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_tsaesci_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # yokudan
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_yokudan')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_yokudan_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # orcish
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_orcish')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_orcish_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # argonian
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_argonian')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_argonian_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # dremora
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_dremora')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_dremora_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # goblinken
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_goblinken')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_goblinken_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # imgan
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_imgan')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_imgan_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # khajiiti
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_khajiiti')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_khajiiti_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        # lilmothiit
+        DI_widget_martial_pillar_item = {
+            blockoverride "datacontext"
+            {
+                datacontext = "[GetCulturePillar('heritage_lilmothiit')]"
+                datacontext = "[GetPlayer.GetCulture]"
+            }
+
+            blockoverride "onclick"
+            {
+                onclick = "[GetScriptedGui('DI_heritage_lilmothiit_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+
+            blockoverride "highlight" {}
+            blockoverride "icon" {}
+        }
+
+        ### HERITAGE END ###
+        ##################
+    }
+}
