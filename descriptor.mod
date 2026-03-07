@@ -1,6 +1,6 @@
 version="1"
 tags={
-	"Utilities"
+"Utilities"
 }
 name="DICM - EK2 Comp Patch"
-supported_version="1.11.2"
+supported_version="1.18.3.1"
