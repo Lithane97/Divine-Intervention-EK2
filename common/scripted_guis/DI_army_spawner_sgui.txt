@@ -6605,8 +6605,8 @@ DI_deathlands_slayers_effect = {
 	}
 }
 
-### South Nedic Headhunters Spawner
-DI_south_nedic_headhunters_effect = {
+### Headhunters Spawner
+DI_headhunters_effect = {
 	scope = character
 
 	effect = {
@@ -6627,31 +6627,31 @@ DI_south_nedic_headhunters_effect = {
 
 				spawn_army = {
 					men_at_arms = {
-						type = south_nedic_headhunters
+						type = headhunters
 						men = scope:DI_story.var:DI_army_spawner_increment_value
 					}
 					location = scope:target.location
 					inheritable = no
-					name = south_nedic_headhunters
+					name = headhunters
 				}
 			}
 		}
 		else = {
 			spawn_army = {
 				men_at_arms = {
-					type = south_nedic_headhunters
+					type = headhunters
 					men = scope:DI_story.var:DI_army_spawner_increment_value
 				}
 				location = root.location
 				inheritable = no
-				name = south_nedic_headhunters
+				name = headhunters
 			}
 		}
 	}
 }
 
-### North Nedic Headhunters Spawner
-DI_north_nedic_headhunters_effect = {
+### Witchblades Spawner
+DI_witchblades_effect = {
 	scope = character
 
 	effect = {
@@ -6672,69 +6672,24 @@ DI_north_nedic_headhunters_effect = {
 
 				spawn_army = {
 					men_at_arms = {
-						type = north_nedic_headhunters
+						type = witchblades
 						men = scope:DI_story.var:DI_army_spawner_increment_value
 					}
 					location = scope:target.location
 					inheritable = no
-					name = north_nedic_headhunters
+					name = witchblades
 				}
 			}
 		}
 		else = {
 			spawn_army = {
 				men_at_arms = {
-					type = north_nedic_headhunters
+					type = witchblades
 					men = scope:DI_story.var:DI_army_spawner_increment_value
 				}
 				location = root.location
 				inheritable = no
-				name = north_nedic_headhunters
-			}
-		}
-	}
-}
-
-### Central Nedic Headhunters Spawner
-DI_central_nedic_headhunters_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = central_nedic_headhunters
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = central_nedic_headhunters
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = central_nedic_headhunters
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = central_nedic_headhunters
+				name = witchblades
 			}
 		}
 	}

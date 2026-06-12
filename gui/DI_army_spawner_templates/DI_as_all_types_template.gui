@@ -1229,10 +1229,10 @@ template DI_AS_All_Types
         }
 
         DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('south_nedic_headhunters')]"
+            datacontext = "[GetMenAtArmsType('headhunters')]"
 
             blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_south_nedic_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
 
             blockoverride "visible_when" {
@@ -1241,22 +1241,10 @@ template DI_AS_All_Types
         }
 
         DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('north_nedic_headhunters')]"
+            datacontext = "[GetMenAtArmsType('witchblades')]"
 
             blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_north_nedic_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('central_nedic_headhunters')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_central_nedic_headhunters_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_witchblades_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
 
             blockoverride "visible_when" {
