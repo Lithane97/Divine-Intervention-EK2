@@ -1,6 +1,7 @@
-version="1"
+version="0.2"
 tags={
-"Utilities"
+    "Utilities"
 }
 name="DICM - EK2 Comp Patch"
-supported_version="1.18.3.1"
+supported_version="1.19.0.6"
+remote_file_id="3106664868"

@@ -49,6 +49,12 @@ DI_court_position_available = {
             court_position_type:chronicler_court_position = {
                 has_dlc_feature = legends
             }
+            court_position_type:clan_mother_court_position = {
+                any_owned_story = {
+                    story_type = DI_misc_variables_story
+                    has_variable = DI_char_spawner_female
+                }
+            }
             court_position_type:court_artificer_court_position = {
                 has_dlc_feature = royal_court
             }
@@ -154,6 +160,10 @@ DI_court_position_available = {
             }
             court_position_type:wet_nurse_court_position = {
                 has_dlc_feature = wards_and_wardens
+                any_owned_story = {
+                    story_type = DI_misc_variables_story
+                    has_variable = DI_char_spawner_female
+                }
             }
             court_position_type:witness_camp_officer = {
                 has_dlc_feature = roads_to_power
