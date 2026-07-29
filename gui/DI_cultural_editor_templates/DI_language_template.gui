@@ -487,23 +487,6 @@ template DI_language_template
             blockoverride "icon" {}
         }
 
-        # rontha
-        DI_widget_martial_pillar_item = {
-            blockoverride "datacontext"
-            {
-                datacontext = "[GetCulturePillar('language_rontha')]"
-                datacontext = "[GetPlayer.GetCulture]"
-            }
-
-            blockoverride "onclick"
-            {
-                onclick = "[GetScriptedGui('DI_language_rontha_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "highlight" {}
-            blockoverride "icon" {}
-        }
-
         # riektongue
         DI_widget_martial_pillar_item = {
             blockoverride "datacontext"

@@ -297,6 +297,14 @@ template DI_AS_All_Types
         }
 
         DI_army_spawner_vbox = {
+            datacontext = "[GetMenAtArmsType('teulu')]"
+
+            blockoverride "on_add" {
+                onclick = "[GetScriptedGui('DI_teulu_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+        }
+
+        DI_army_spawner_vbox = {
             datacontext = "[GetMenAtArmsType('asawira')]"
 
             blockoverride "on_add" {
@@ -1001,6 +1009,14 @@ template DI_AS_All_Types
         }
 
         DI_army_spawner_vbox = {
+            datacontext = "[GetMenAtArmsType('saxhleel_reel_ka')]"
+
+            blockoverride "on_add" {
+                onclick = "[GetScriptedGui('DI_saxhleel_reel_ka_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+        }
+
+        DI_army_spawner_vbox = {
             datacontext = "[GetMenAtArmsType('ayleid_sorcerers')]"
 
             blockoverride "on_add" {
@@ -1361,6 +1377,22 @@ template DI_AS_All_Types
         }
 
         DI_army_spawner_vbox = {
+            datacontext = "[GetMenAtArmsType('bristleback_riders')]"
+
+            blockoverride "on_add" {
+                onclick = "[GetScriptedGui('DI_bristleback_riders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+        }
+
+        DI_army_spawner_vbox = {
+            datacontext = "[GetMenAtArmsType('durzog_riders')]"
+
+            blockoverride "on_add" {
+                onclick = "[GetScriptedGui('DI_durzog_riders_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            }
+        }
+
+        DI_army_spawner_vbox = {
             datacontext = "[GetMenAtArmsType('herd_mammoth')]"
 
             blockoverride "on_add" {
@@ -1481,14 +1513,6 @@ template DI_AS_All_Types
         }
 
         DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('hollows')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_hollows_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
             datacontext = "[GetMenAtArmsType('dreamer_prophets')]"
 
             blockoverride "on_add" {
@@ -1525,22 +1549,6 @@ template DI_AS_All_Types
 
             blockoverride "on_add" {
                 onclick = "[GetScriptedGui('DI_alkosh_pride_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('forest_spirits')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_forest_spirits_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('minotaurs')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_minotaurs_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
         }
 
@@ -1605,126 +1613,6 @@ template DI_AS_All_Types
 
             blockoverride "on_add" {
                 onclick = "[GetScriptedGui('DI_giant_shamans_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_war_mages')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_war_mages_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_spellblades')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_spellblades_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_skirmishers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_skirmishers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_spear_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_spear_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_archers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_archers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_light_cavalry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_light_cavalry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('argonian_heavy_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_argonian_heavy_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('imga_skirmishers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_imga_skirmishers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('imga_archers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_imga_archers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('imga_pike_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_imga_pike_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('imga_heavy_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_imga_heavy_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('imga_war_mages')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_imga_war_mages_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('imga_spellblades')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_imga_spellblades_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
 
             blockoverride "visible_when" {
@@ -1825,142 +1713,6 @@ template DI_AS_All_Types
 
             blockoverride "on_add" {
                 onclick = "[GetScriptedGui('DI_falmer_battleragers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekling_skirmishers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekling_skirmishers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekling_archers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekling_archers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekling_light_cavalry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekling_light_cavalry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekling_pike_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekling_pike_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekling_heavy_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekling_heavy_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekr_skirmishers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekr_skirmishers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekr_archers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekr_archers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekr_pike_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekr_pike_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('riekr_heavy_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_riekr_heavy_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_skirmisher')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_skirmisher_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_archers')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_archers_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_light_cavalry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_light_cavalry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_pike_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_pike_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_heavy_infantry')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_heavy_infantry_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_war_mages')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_war_mages_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
-            }
-        }
-
-        DI_army_spawner_vbox = {
-            datacontext = "[GetMenAtArmsType('goblin_spellblades')]"
-
-            blockoverride "on_add" {
-                onclick = "[GetScriptedGui('DI_goblin_spellblades_effect').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-            }
-
-            blockoverride "visible_when" {
-                visible = "[GetVariableSystem.HasValue('army_spawner_tab', 'other')]"
             }
         }
     }

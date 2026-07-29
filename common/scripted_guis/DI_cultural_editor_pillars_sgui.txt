@@ -818,19 +818,6 @@ DI_language_quey_sgui = {
     }
 }
 
-### rontha ###
-DI_language_rontha_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        save_scope_as = player_character
-
-        var:DI_innovation_selected_culture = {
-            set_culture_pillar = language_rontha
-        }
-    }
-}
-
 ### riektongue ###
 DI_language_riektongue_sgui = {
     scope = character # Player Character

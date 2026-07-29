@@ -651,48 +651,6 @@ template DI_innovation_all_vanilla
 
 
             DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_curse_forging')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_curse_forging').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_curse_forging').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_curse_forging').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_curse_forging').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_wamasu_tactics')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_wamasu_tactics').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_wamasu_tactics').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_wamasu_tactics').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_wamasu_tactics').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
                 datacontext = "[GetCultureInnovationType('innovation_lunar_mysteries')]"
 
                 blockoverride "has_visible" {
@@ -730,27 +688,6 @@ template DI_innovation_all_vanilla
 
                 blockoverride "on_add" {
                     onclick = "[GetScriptedGui('DI_add_innovation_senche_raht').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_warding_amulets')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_warding_amulets').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_warding_amulets').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_warding_amulets').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_warding_amulets').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 }
             }
 
@@ -987,27 +924,6 @@ template DI_innovation_all_vanilla
 
 
             DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_primal_tradition')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_primal_tradition').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_primal_tradition').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_primal_tradition').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_primal_tradition').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
                 datacontext = "[GetCultureInnovationType('innovation_durzog_breeding')]"
 
                 blockoverride "has_visible" {
@@ -1029,90 +945,6 @@ template DI_innovation_all_vanilla
 
 
             DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_refitted_armors')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_refitted_armors').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_refitted_armors').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_refitted_armors').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_refitted_armors').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_war_witchcraft')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_war_witchcraft').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_war_witchcraft').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_war_witchcraft').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_war_witchcraft').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_scavenging')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_scavenging').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_scavenging').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_scavenging').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_scavenging').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_berserker_training')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_berserker_training').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_berserker_training').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_berserker_training').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_berserker_training').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
                 datacontext = "[GetCultureInnovationType('innovation_bristleback_taming')]"
 
                 blockoverride "has_visible" {
@@ -1129,111 +961,6 @@ template DI_innovation_all_vanilla
 
                 blockoverride "on_add" {
                     onclick = "[GetScriptedGui('DI_add_innovation_bristleback_taming').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_power_symbols')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_power_symbols').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_power_symbols').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_power_symbols').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_power_symbols').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_scrapped_platings')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_scrapped_platings').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_scrapped_platings').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_scrapped_platings').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_scrapped_platings').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_ancient_roots')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_ancient_roots').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_ancient_roots').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_ancient_roots').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_ancient_roots').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_hist_mending')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_hist_mending').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_hist_mending').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_hist_mending').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_hist_mending').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_obsidian_shards')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_obsidian_shards').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_obsidian_shards').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_obsidian_shards').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_obsidian_shards').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 }
             }
 
@@ -1297,90 +1024,6 @@ template DI_innovation_all_vanilla
 
                 blockoverride "on_add" {
                     onclick = "[GetScriptedGui('DI_add_innovation_pahmar').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_canopy_tactics')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_canopy_tactics').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_canopy_tactics').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_canopy_tactics').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_canopy_tactics').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_heavy_clubs')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_heavy_clubs').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_heavy_clubs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_heavy_clubs').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_heavy_clubs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_tamed_magic')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_tamed_magic').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_tamed_magic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_tamed_magic').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_tamed_magic').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_disorganized_military')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_disorganized_military').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_disorganized_military').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_disorganized_military').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_disorganized_military').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 }
             }
 
@@ -2595,6 +2238,27 @@ template DI_innovation_all_vanilla
 
                 blockoverride "on_add" {
                     onclick = "[GetScriptedGui('DI_add_innovation_might_makes_right').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                }
+            }
+
+
+            DI_innovation_flowcontainer = {
+                datacontext = "[GetCultureInnovationType('innovation_sled_dogs')]"
+
+                blockoverride "has_visible" {
+                    visible = "[GetScriptedGui('DI_culture_has_innovation_sled_dogs').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+                }
+
+                blockoverride "on_remove" {
+                    onrightclick = "[GetScriptedGui('DI_remove_innovation_sled_dogs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                }
+
+                blockoverride "not_has_visible" {
+                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_sled_dogs').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+                }
+
+                blockoverride "on_add" {
+                    onclick = "[GetScriptedGui('DI_add_innovation_sled_dogs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 }
             }
 

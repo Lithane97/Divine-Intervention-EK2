@@ -29,7 +29,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "game_concept_castle_holding"
+                    text = "DI_holding_type_castle_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -70,7 +70,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "game_concept_castle_holding"
+                    text = "DI_holding_type_castle_holding"
                     default_format = "#low"
                     }
             }
@@ -196,7 +196,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "game_concept_city_holding"
+                    text = "DI_holding_type_city_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -237,7 +237,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "game_concept_city_holding"
+                    text = "DI_holding_type_city_holding"
                     default_format = "#low"
                     }
             }
@@ -303,7 +303,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "game_concept_temple_holding"
+                    text = "DI_holding_type_church_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -344,7 +344,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "game_concept_temple_holding"
+                    text = "DI_holding_type_church_holding"
                     default_format = "#low"
                     }
             }
@@ -370,7 +370,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "game_concept_tribe_holding"
+                    text = "DI_holding_type_tribal_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -411,7 +411,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "game_concept_tribe_holding"
+                    text = "DI_holding_type_tribal_holding"
                     default_format = "#low"
                     }
             }
@@ -617,7 +617,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "local_holding_type_capitalized_academy_holding"
+                    text = "DI_holding_type_academy_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -658,7 +658,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_academy_01"
+                    text = "DI_holding_type_academy_holding"
                     default_format = "#low"
                     }
             }
@@ -784,7 +784,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "local_holding_type_capitalized_herder_holding"
+                    text = "DI_holding_type_herder_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -825,7 +825,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_herder_camp_01"
+                    text = "DI_holding_type_herder_holding"
                     default_format = "#low"
                     }
             }
@@ -851,7 +851,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "local_holding_type_capitalized_hist_holding"
+                    text = "DI_holding_type_hist_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -892,7 +892,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_hist_01"
+                    text = "DI_holding_type_hist_holding"
                     default_format = "#low"
                     }
             }
@@ -998,7 +998,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "local_holding_type_capitalized_nomad_holding"
+                    text = "DI_holding_type_nomad_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -1039,7 +1039,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_nomadic_camp_01"
+                    text = "DI_holding_type_nomad_holding"
                     default_format = "#low"
                     }
             }
@@ -1065,7 +1065,7 @@ template DI_TM_Building_List_Template
                     layoutpolicy_horizontal = expanding
                     align = left
                     margin = { 0 7 }
-                    text = "local_holding_type_capitalized_temple_citadel_holding"
+                    text = "DI_holding_type_temple_citadel_holding"
                     default_format = "#bold"
                     fontsize_min = 14
                 }
@@ -1090,6 +1090,26 @@ template DI_TM_Building_List_Template
 
             layoutpolicy_horizontal = expanding
             spacing = 5
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_temple_citadel_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_temple_citadel_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_temple_citadel_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "DI_holding_type_temple_citadel_holding"
+                    default_format = "#low"
+                    }
+            }
 
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
@@ -1127,26 +1147,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_elephant_pens_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_temple_citadel_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_temple_citadel_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_temple_citadel_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_temple_citadel_01"
                     default_format = "#low"
                     }
             }
@@ -4493,26 +4493,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_bendu_olo_statue_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_bendu_olo_statue_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_bendu_olo_statue_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_bendu_olo_statue_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_amenos_station_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_amenos_station_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_amenos_station_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -4533,26 +4513,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_hira_free_port_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_hira_free_port_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_hira_free_port_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_hira_free_port_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_ansu_gurleht_temple_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_ansu_gurleht_temple_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_ansu_gurleht_temple_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -4566,6 +4526,46 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_ansu_gurleht_temple_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_noghalo_cowry_pools_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_noghalo_cowry_pools_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_noghalo_cowry_pools_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_noghalo_cowry_pools_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_conclave_zawru_hun_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_conclave_zawru_hun_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_conclave_zawru_hun_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_conclave_zawru_hun_01"
                     default_format = "#low"
                     }
             }
@@ -4633,46 +4633,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_grand_cathedral_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_grand_cathedral_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_grand_cathedral_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_grand_cathedral_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_daedric_shrine_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_daedric_shrine_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_daedric_shrine_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_daedric_shrine_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_great_wyrd_tree_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_great_wyrd_tree_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_great_wyrd_tree_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -4686,26 +4646,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_great_wyrd_tree_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_dragon_temple_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_dragon_temple_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_dragon_temple_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_dragon_temple_01"
                     default_format = "#low"
                     }
             }
@@ -4860,86 +4800,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_blackrose_prison_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_blackrose_prison_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_blackrose_prison_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_blackrose_prison_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_lily_path_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_lily_path_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_lily_path_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_lily_path_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_twyllbek_ruins_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_twyllbek_ruins_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_twyllbek_ruins_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_twyllbek_ruins_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_archon_harbor_district_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_archon_harbor_district_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_archon_harbor_district_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_archon_harbor_district_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_puzzle_city_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_puzzle_city_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_puzzle_city_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -4953,86 +4813,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_puzzle_city_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_kota_xul_xanmeer_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_kota_xul_xanmeer_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_kota_xul_xanmeer_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_kota_xul_xanmeer_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_krona_konu_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_krona_konu_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_krona_konu_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_krona_konu_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_xi_tsei_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_xi_tsei_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_xi_tsei_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_xi_tsei_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_sithis_teeth_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_sithis_teeth_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_sithis_teeth_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_sithis_teeth_01"
                     default_format = "#low"
                     }
             }
@@ -5080,9 +4860,9 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_beela_kars_laboratory_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_beela_kars_laboratory_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_beela_kars_laboratory_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                enabled = "[GetScriptedGui('DI_tm_building_rockgrove_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_rockgrove_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_rockgrove_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 button_ignore = none
                 tooltip = "DI_tm_building_button_tt"
                 using = tooltip_w
@@ -5092,7 +4872,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_beela_kars_laboratory_01"
+                    text = "building_type_rockgrove_01"
                     default_format = "#low"
                     }
             }
@@ -5100,9 +4880,9 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_stormhold_canals_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_stormhold_canals_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_stormhold_canals_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                enabled = "[GetScriptedGui('DI_tm_building_wailing_stones_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_wailing_stones_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_wailing_stones_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 button_ignore = none
                 tooltip = "DI_tm_building_button_tt"
                 using = tooltip_w
@@ -5112,7 +4892,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_stormhold_canals_01"
+                    text = "building_type_wailing_stones_01"
                     default_format = "#low"
                     }
             }
@@ -5220,66 +5000,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_imperial_city_arena_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_the_arboretum_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_the_arboretum_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_the_arboretum_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_the_arboretum_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_imperial_marketplace_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_imperial_marketplace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_imperial_marketplace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_imperial_marketplace_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_imperial_sewers_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_imperial_sewers_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_imperial_sewers_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_imperial_sewers_01"
                     default_format = "#low"
                     }
             }
@@ -5467,66 +5187,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_harcane_grove_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_harcane_grove_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_harcane_grove_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_harcane_grove_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_chapel_of_the_eight_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_chapel_of_the_eight_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_chapel_of_the_eight_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_chapel_of_the_eight_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_scrolls_vault_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_scrolls_vault_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_scrolls_vault_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_scrolls_vault_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_bridges_leyawiin_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_bridges_leyawiin_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_bridges_leyawiin_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -5540,26 +5200,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_bridges_leyawiin_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_anvil_harborside_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_anvil_harborside_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_anvil_harborside_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_anvil_harborside_01"
                     default_format = "#low"
                     }
             }
@@ -5640,46 +5280,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_great_chapel_akatosh_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_great_chapel_julianos_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_great_chapel_julianos_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_great_chapel_julianos_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_great_chapel_julianos_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_great_chapel_stendarr_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_great_chapel_stendarr_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_great_chapel_stendarr_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_great_chapel_stendarr_01"
                     default_format = "#low"
                     }
             }
@@ -5800,106 +5400,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_pantherfang_chapel_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_ontus_quarry_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_ontus_quarry_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_ontus_quarry_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_ontus_quarry_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_skingrad_vineyards_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_skingrad_vineyards_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_skingrad_vineyards_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_skingrad_vineyards_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_fort_redmane_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_fort_redmane_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_fort_redmane_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_fort_redmane_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_weatherleah_hunting_lodge_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_weatherleah_hunting_lodge_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_weatherleah_hunting_lodge_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_weatherleah_hunting_lodge_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_gottlesfont_priory_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_gottlesfont_priory_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_gottlesfont_priory_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_gottlesfont_priory_01"
                     default_format = "#low"
                     }
             }
@@ -6114,46 +5614,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_rimmen_necropolis_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_rimmen_necropolis_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_rimmen_necropolis_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_rimmen_necropolis_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_orcrest_bazaar_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_orcrest_bazaar_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_orcrest_bazaar_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_orcrest_bazaar_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_sunspire_temple_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_sunspire_temple_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_sunspire_temple_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -6227,26 +5687,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_pridehome_temple_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_moonmirth_plantations_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_moonmirth_plantations_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_moonmirth_plantations_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_moonmirth_plantations_01"
                     default_format = "#low"
                     }
             }
@@ -6387,26 +5827,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_alabaster_white_walls_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_kingdoms_song_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_kingdoms_song_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_kingdoms_song_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_kingdoms_song_01"
                     default_format = "#low"
                     }
             }
@@ -7008,46 +6428,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_castle_wayrest_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_castle_wayrest_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_castle_wayrest_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_castle_wayrest_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_beldama_wyrd_tree_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_beldama_wyrd_tree_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_beldama_wyrd_tree_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_beldama_wyrd_tree_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_northpoint_lighthouse_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_northpoint_lighthouse_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_northpoint_lighthouse_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -7101,26 +6481,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_bangkorai_garrison_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_burg_tusktrutz_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_burg_tusktrutz_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_burg_tusktrutz_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_burg_tusktrutz_01"
                     default_format = "#low"
                     }
             }
@@ -7295,26 +6655,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_vivecpalace_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_vivecpalace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_vivecpalace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_vivecpalace_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_parliament_of_bugs_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_parliament_of_bugs_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_parliament_of_bugs_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -7355,46 +6695,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_bal_tereg_stone_fortress_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_bal_tereg_stone_fortress_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_bal_tereg_stone_fortress_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_bal_tereg_stone_fortress_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_silgrad_tower_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_silgrad_tower_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_silgrad_tower_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_silgrad_tower_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_dust_adeptorium_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_dust_adeptorium_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_dust_adeptorium_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -7408,26 +6708,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_dust_adeptorium_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_ebonhall_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_ebonhall_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_ebonhall_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_ebonhall_01"
                     default_format = "#low"
                     }
             }
@@ -7655,26 +6935,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_hlalkeep_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_hlalkeep_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_hlalkeep_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_hlalkeep_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_rootspire_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_rootspire_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_rootspire_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -7828,6 +7088,46 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_subo_lathla_skyport_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_narsis_bazaar_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_narsis_bazaar_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_narsis_bazaar_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_narsis_bazaar_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_bthuand_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_bthuand_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_bthuand_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_bthuand_01"
                     default_format = "#low"
                     }
             }
@@ -8062,6 +7362,26 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_solitude_arch_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_solitude_arch_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_solitude_arch_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_solitude_arch_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_jorrvaskr_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_jorrvaskr_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_jorrvaskr_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -8222,26 +7542,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_heroes_graveyard_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_heroes_graveyard_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_heroes_graveyard_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_heroes_graveyard_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_snowprince_tomb_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_snowprince_tomb_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_snowprince_tomb_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -8262,9 +7562,9 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_solitude_holy_walls_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_solitude_holy_walls_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_solitude_holy_walls_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                enabled = "[GetScriptedGui('DI_tm_building_bthalft_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_bthalft_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_bthalft_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 button_ignore = none
                 tooltip = "DI_tm_building_button_tt"
                 using = tooltip_w
@@ -8274,7 +7574,67 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_solitude_holy_walls_01"
+                    text = "building_type_bthalft_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_arkngthamz_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_arkngthamz_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_arkngthamz_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_arkngthamz_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_hroldan_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_hroldan_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_hroldan_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_hroldan_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_geir_portage_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_geir_portage_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_geir_portage_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_geir_portage_01"
                     default_format = "#low"
                     }
             }
@@ -8369,26 +7729,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_alinor_royal_capital_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_alinor_royal_capital_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_alinor_royal_capital_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_alinor_royal_capital_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_alinor_city_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_alinor_city_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_alinor_city_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -8422,26 +7762,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_cloudrest_college_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_mathiisen_forge_district_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_mathiisen_forge_district_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_mathiisen_forge_district_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_mathiisen_forge_district_01"
                     default_format = "#low"
                     }
             }
@@ -8556,26 +7876,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_vinedusk_lookout_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_vinedusk_lookout_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_vinedusk_lookout_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_vinedusk_lookout_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_labyrinth_ruin_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_labyrinth_ruin_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_labyrinth_ruin_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -8596,66 +7896,6 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_eldenroot_palace_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_eldenroot_palace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_eldenroot_palace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_eldenroot_palace_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_silvenar_palace_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_silvenar_palace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_silvenar_palace_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_silvenar_palace_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_treehenge_resting_place_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_treehenge_resting_place_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_treehenge_resting_place_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_treehenge_resting_place_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
                 enabled = "[GetScriptedGui('DI_tm_building_haven_docks_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onclick = "[GetScriptedGui('DI_tm_building_haven_docks_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 onrightclick = "[GetScriptedGui('DI_tm_destroy_building_haven_docks_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
@@ -8669,46 +7909,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_haven_docks_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_heart_of_valenwood_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_heart_of_valenwood_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_heart_of_valenwood_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_heart_of_valenwood_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_wilderkings_throne_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_wilderkings_throne_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_wilderkings_throne_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_wilderkings_throne_01"
                     default_format = "#low"
                     }
             }
@@ -8796,9 +7996,9 @@ template DI_TM_Building_List_Template
             button_standard_clean = {
                 layoutpolicy_horizontal = expanding
                 size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_velyn_harbor_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_velyn_harbor_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_velyn_harbor_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                enabled = "[GetScriptedGui('DI_tm_building_stridmeet_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_stridmeet_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_stridmeet_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 button_ignore = none
                 tooltip = "DI_tm_building_button_tt"
                 using = tooltip_w
@@ -8808,47 +8008,7 @@ template DI_TM_Building_List_Template
                 text_single = {
                     parentanchor = left|vcenter
                     margin_left = 8
-                    text = "building_type_velyn_harbor_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_gil_var_delle_ruins_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_gil_var_delle_ruins_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_gil_var_delle_ruins_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_gil_var_delle_ruins_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_arenthia_citadel_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_arenthia_citadel_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_arenthia_citadel_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_arenthia_citadel_01"
+                    text = "building_type_stridmeet_01"
                     default_format = "#low"
                     }
             }
@@ -8889,26 +8049,6 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_rootwater_grove_01"
-                    default_format = "#low"
-                    }
-            }
-
-            button_standard_clean = {
-                layoutpolicy_horizontal = expanding
-                size = { 0 44 }
-                enabled = "[GetScriptedGui('DI_tm_building_woodheart_sewers_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onclick = "[GetScriptedGui('DI_tm_building_woodheart_sewers_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_woodheart_sewers_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                button_ignore = none
-                tooltip = "DI_tm_building_button_tt"
-                using = tooltip_w
-
-                background = { using = Background_Area_Dark }
-
-                text_single = {
-                    parentanchor = left|vcenter
-                    margin_left = 8
-                    text = "building_type_woodheart_sewers_01"
                     default_format = "#low"
                     }
             }
@@ -9316,6 +8456,26 @@ template DI_TM_Building_List_Template
                     parentanchor = left|vcenter
                     margin_left = 8
                     text = "building_type_mobar_obsidian_mines_01"
+                    default_format = "#low"
+                    }
+            }
+
+            button_standard_clean = {
+                layoutpolicy_horizontal = expanding
+                size = { 0 44 }
+                enabled = "[GetScriptedGui('DI_tm_building_karanesh_sulfur_mines_sgui').IsValid(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_tm_building_karanesh_sulfur_mines_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onrightclick = "[GetScriptedGui('DI_tm_destroy_building_karanesh_sulfur_mines_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                button_ignore = none
+                tooltip = "DI_tm_building_button_tt"
+                using = tooltip_w
+
+                background = { using = Background_Area_Dark }
+
+                text_single = {
+                    parentanchor = left|vcenter
+                    margin_left = 8
+                    text = "building_type_karanesh_sulfur_mines_01"
                     default_format = "#low"
                     }
             }

@@ -187,26 +187,6 @@ DI_apply_court_position_profile_effect = {
                 name = DI_cs_stewardship
                 value = 16
             }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_stewardship_1
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_stewardship_2
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_stewardship_3
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_stewardship_4
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_stewardship_5
-            }
         }
         court_position_type:boyan_court_position = {
             set_variable = {
@@ -360,26 +340,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:confucian_education
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_martial_1
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_martial_2
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_martial_3
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_martial_4
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:education_martial_5
             }
         }
         court_position_type:cherbi_court_position = {
@@ -2458,6 +2418,26 @@ DI_apply_court_position_validity_effect = {
                 }
             }
         }
+        court_position_type:chief_qadi_court_position = {
+            if = {
+                limit = {
+                    NOT = {
+                        OR = {
+                            faith = faith:aedric
+                            faith = faith:chantry_auriel
+                            faith = faith:mainland_auriel
+                            faith = faith:malada
+                        }
+                    }
+                }
+                random_list = {
+                    1 = { set_character_faith = faith:aedric }
+                    1 = { set_character_faith = faith:chantry_auriel }
+                    1 = { set_character_faith = faith:mainland_auriel }
+                    1 = { set_character_faith = faith:malada }
+                }
+            }
+        }
         court_position_type:clan_mother_court_position = {
             if = {
                 limit = {
@@ -2774,24 +2754,6 @@ DI_apply_court_position_validity_effect = {
 DI_apply_court_position_trait_xp_effect = {
     switch = {
         trigger = $COURT_POSITION$
-        court_position_type:bodyguard_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = 100
-            }
-        }
-        court_position_type:cave_hermit_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_mystic
-                value = 100
-            }
-        }
-        court_position_type:champion_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = 100
-            }
-        }
         court_position_type:cherbi_court_position = {
             add_trait_xp = {
                 trait = lifestyle_blademaster
@@ -2810,40 +2772,16 @@ DI_apply_court_position_trait_xp_effect = {
                 value = 100
             }
         }
-        court_position_type:court_scholar_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_physician
-                value = 100
-            }
-        }
-        court_position_type:garuda_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = 100
-            }
-        }
         court_position_type:head_groom_camp_officer = {
             add_trait_xp = {
                 trait = lifestyle_traveler
                 value = 75
             }
         }
-        court_position_type:master_assassin_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_blademaster
-                value = 100
-            }
-        }
         court_position_type:shadowscale_court_position = {
             add_trait_xp = {
                 trait = lifestyle_blademaster
                 value = 50
-            }
-        }
-        court_position_type:travel_leader_court_position = {
-            add_trait_xp = {
-                trait = lifestyle_traveler
-                value = 75
             }
         }
         fallback = { }

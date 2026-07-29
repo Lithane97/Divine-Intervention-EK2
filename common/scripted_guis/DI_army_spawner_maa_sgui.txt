@@ -1621,6 +1621,51 @@ DI_guanch_vaulter_effect = {
 	}
 }
 
+### Teulu Spawner
+DI_teulu_effect = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+		
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = { has_character_flag = pinned_for_edit }
+				save_scope_as = target
+
+				spawn_army = {
+					men_at_arms = {
+						type = teulu
+						men = scope:DI_story.var:DI_army_spawner_increment_value
+					}
+					location = scope:target.location
+					inheritable = no
+					name = teulu
+				}
+			}
+		}
+		else = {
+			spawn_army = {
+				men_at_arms = {
+					type = teulu
+					men = scope:DI_story.var:DI_army_spawner_increment_value
+				}
+				location = root.location
+				inheritable = no
+				name = teulu
+			}
+		}
+	}
+}
+
 ### Asawira Spawner
 DI_asawira_effect = {
 	scope = character
@@ -5266,6 +5311,51 @@ DI_shellback_phalanx_effect = {
 	}
 }
 
+### Saxhleel Reel Ka Spawner
+DI_saxhleel_reel_ka_effect = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+		
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = { has_character_flag = pinned_for_edit }
+				save_scope_as = target
+
+				spawn_army = {
+					men_at_arms = {
+						type = saxhleel_reel_ka
+						men = scope:DI_story.var:DI_army_spawner_increment_value
+					}
+					location = scope:target.location
+					inheritable = no
+					name = saxhleel_reel_ka
+				}
+			}
+		}
+		else = {
+			spawn_army = {
+				men_at_arms = {
+					type = saxhleel_reel_ka
+					men = scope:DI_story.var:DI_army_spawner_increment_value
+				}
+				location = root.location
+				inheritable = no
+				name = saxhleel_reel_ka
+			}
+		}
+	}
+}
+
 ### Ayleid Sorcerers Spawner
 DI_ayleid_sorcerers_effect = {
 	scope = character
@@ -7021,6 +7111,96 @@ DI_ice_shamans_effect = {
 	}
 }
 
+### Bristleback Riders Spawner
+DI_bristleback_riders_effect = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+		
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = { has_character_flag = pinned_for_edit }
+				save_scope_as = target
+
+				spawn_army = {
+					men_at_arms = {
+						type = bristleback_riders
+						men = scope:DI_story.var:DI_army_spawner_increment_value
+					}
+					location = scope:target.location
+					inheritable = no
+					name = bristleback_riders
+				}
+			}
+		}
+		else = {
+			spawn_army = {
+				men_at_arms = {
+					type = bristleback_riders
+					men = scope:DI_story.var:DI_army_spawner_increment_value
+				}
+				location = root.location
+				inheritable = no
+				name = bristleback_riders
+			}
+		}
+	}
+}
+
+### Durzog Riders Spawner
+DI_durzog_riders_effect = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+		
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = { has_character_flag = pinned_for_edit }
+				save_scope_as = target
+
+				spawn_army = {
+					men_at_arms = {
+						type = durzog_riders
+						men = scope:DI_story.var:DI_army_spawner_increment_value
+					}
+					location = scope:target.location
+					inheritable = no
+					name = durzog_riders
+				}
+			}
+		}
+		else = {
+			spawn_army = {
+				men_at_arms = {
+					type = durzog_riders
+					men = scope:DI_story.var:DI_army_spawner_increment_value
+				}
+				location = root.location
+				inheritable = no
+				name = durzog_riders
+			}
+		}
+	}
+}
+
 ### Herd Mammoth Spawner
 DI_herd_mammoth_effect = {
 	scope = character
@@ -7561,51 +7741,6 @@ DI_undead_earth_bone_effect = {
 	}
 }
 
-### Hollows Spawner
-DI_hollows_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = hollows
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = hollows
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = hollows
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = hollows
-			}
-		}
-	}
-}
-
 ### Dreamer Prophets Spawner
 DI_dreamer_prophets_effect = {
 	scope = character
@@ -7781,96 +7916,6 @@ DI_alkosh_pride_effect = {
 				location = root.location
 				inheritable = no
 				name = alkosh_pride
-			}
-		}
-	}
-}
-
-### Forest Spirits Spawner
-DI_forest_spirits_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = forest_spirits
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = forest_spirits
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = forest_spirits
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = forest_spirits
-			}
-		}
-	}
-}
-
-### Minotaurs Spawner
-DI_minotaurs_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = minotaurs
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = minotaurs
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = minotaurs
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = minotaurs
 			}
 		}
 	}
@@ -8186,591 +8231,6 @@ DI_giant_shamans_effect = {
 				location = root.location
 				inheritable = no
 				name = giant_shamans
-			}
-		}
-	}
-}
-
-### Argonian War Mages Spawner
-DI_argonian_war_mages_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_war_mages
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_war_mages
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_war_mages
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_war_mages
-			}
-		}
-	}
-}
-
-### Argonian Spellblades Spawner
-DI_argonian_spellblades_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_spellblades
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_spellblades
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_spellblades
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_spellblades
-			}
-		}
-	}
-}
-
-### Argonian Skirmishers Spawner
-DI_argonian_skirmishers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_skirmishers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_skirmishers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_skirmishers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_skirmishers
-			}
-		}
-	}
-}
-
-### Argonian Spear Infantry Spawner
-DI_argonian_spear_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_spear_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_spear_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_spear_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_spear_infantry
-			}
-		}
-	}
-}
-
-### Argonian Archers Spawner
-DI_argonian_archers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_archers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_archers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_archers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_archers
-			}
-		}
-	}
-}
-
-### Argonian Light Cavalry Spawner
-DI_argonian_light_cavalry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_light_cavalry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_light_cavalry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_light_cavalry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_light_cavalry
-			}
-		}
-	}
-}
-
-### Argonian Heavy Infantry Spawner
-DI_argonian_heavy_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = argonian_heavy_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = argonian_heavy_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = argonian_heavy_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = argonian_heavy_infantry
-			}
-		}
-	}
-}
-
-### Imga Skirmishers Spawner
-DI_imga_skirmishers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = imga_skirmishers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = imga_skirmishers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = imga_skirmishers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = imga_skirmishers
-			}
-		}
-	}
-}
-
-### Imga Archers Spawner
-DI_imga_archers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = imga_archers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = imga_archers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = imga_archers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = imga_archers
-			}
-		}
-	}
-}
-
-### Imga Pike Infantry Spawner
-DI_imga_pike_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = imga_pike_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = imga_pike_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = imga_pike_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = imga_pike_infantry
-			}
-		}
-	}
-}
-
-### Imga Heavy Infantry Spawner
-DI_imga_heavy_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = imga_heavy_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = imga_heavy_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = imga_heavy_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = imga_heavy_infantry
-			}
-		}
-	}
-}
-
-### Imga War Mages Spawner
-DI_imga_war_mages_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = imga_war_mages
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = imga_war_mages
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = imga_war_mages
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = imga_war_mages
-			}
-		}
-	}
-}
-
-### Imga Spellblades Spawner
-DI_imga_spellblades_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = imga_spellblades
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = imga_spellblades
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = imga_spellblades
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = imga_spellblades
 			}
 		}
 	}
@@ -9266,726 +8726,6 @@ DI_falmer_battleragers_effect = {
 				location = root.location
 				inheritable = no
 				name = falmer_battleragers
-			}
-		}
-	}
-}
-
-### Riekling Skirmishers Spawner
-DI_riekling_skirmishers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekling_skirmishers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekling_skirmishers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekling_skirmishers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekling_skirmishers
-			}
-		}
-	}
-}
-
-### Riekling Archers Spawner
-DI_riekling_archers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekling_archers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekling_archers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekling_archers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekling_archers
-			}
-		}
-	}
-}
-
-### Riekling Light Cavalry Spawner
-DI_riekling_light_cavalry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekling_light_cavalry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekling_light_cavalry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekling_light_cavalry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekling_light_cavalry
-			}
-		}
-	}
-}
-
-### Riekling Pike Infantry Spawner
-DI_riekling_pike_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekling_pike_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekling_pike_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekling_pike_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekling_pike_infantry
-			}
-		}
-	}
-}
-
-### Riekling Heavy Infantry Spawner
-DI_riekling_heavy_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekling_heavy_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekling_heavy_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekling_heavy_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekling_heavy_infantry
-			}
-		}
-	}
-}
-
-### Riekr Skirmishers Spawner
-DI_riekr_skirmishers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekr_skirmishers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekr_skirmishers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekr_skirmishers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekr_skirmishers
-			}
-		}
-	}
-}
-
-### Riekr Archers Spawner
-DI_riekr_archers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekr_archers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekr_archers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekr_archers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekr_archers
-			}
-		}
-	}
-}
-
-### Riekr Pike Infantry Spawner
-DI_riekr_pike_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekr_pike_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekr_pike_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekr_pike_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekr_pike_infantry
-			}
-		}
-	}
-}
-
-### Riekr Heavy Infantry Spawner
-DI_riekr_heavy_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = riekr_heavy_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = riekr_heavy_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = riekr_heavy_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = riekr_heavy_infantry
-			}
-		}
-	}
-}
-
-### Goblin Skirmisher Spawner
-DI_goblin_skirmisher_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_skirmisher
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_skirmisher
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_skirmisher
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_skirmisher
-			}
-		}
-	}
-}
-
-### Goblin Archers Spawner
-DI_goblin_archers_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_archers
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_archers
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_archers
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_archers
-			}
-		}
-	}
-}
-
-### Goblin Light Cavalry Spawner
-DI_goblin_light_cavalry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_light_cavalry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_light_cavalry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_light_cavalry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_light_cavalry
-			}
-		}
-	}
-}
-
-### Goblin Pike Infantry Spawner
-DI_goblin_pike_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_pike_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_pike_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_pike_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_pike_infantry
-			}
-		}
-	}
-}
-
-### Goblin Heavy Infantry Spawner
-DI_goblin_heavy_infantry_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_heavy_infantry
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_heavy_infantry
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_heavy_infantry
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_heavy_infantry
-			}
-		}
-	}
-}
-
-### Goblin War Mages Spawner
-DI_goblin_war_mages_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_war_mages
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_war_mages
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_war_mages
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_war_mages
-			}
-		}
-	}
-}
-
-### Goblin Spellblades Spawner
-DI_goblin_spellblades_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = goblin_spellblades
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = goblin_spellblades
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = goblin_spellblades
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = goblin_spellblades
 			}
 		}
 	}
