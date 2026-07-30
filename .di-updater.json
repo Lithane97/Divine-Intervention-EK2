@@ -12,7 +12,7 @@
   "managed_files": {
     "events/DI_error_suppression.txt": {
       "kind": "generated",
-      "last_written_hash": "7ca3280704d965b3ebac6dc4370d975027d76914b9f4369e6f78c96c716736ca"
+      "last_written_hash": "8d642e82abf8d5e277db0e4eddec8468c17ee1e2f62aeb8cbdf244291cb78abf"
     },
     "common/modifiers/DI_lifestyle_present_modifiers.txt": {
       "kind": "generated",
@@ -68,7 +68,7 @@
     },
     "common/scripted_guis/DI_title_manager_buildings_sgui.txt": {
       "kind": "generated",
-      "last_written_hash": "7a60433ed75d54a5b8f86302af3ed39eb02204e8564aa97ae6ffe74b842a77ae"
+      "last_written_hash": "960428c66d7fd8a7c5b4444af8bae61f9010489bfc7b3859c5f922e8c1a053cf"
     },
     "common/scripted_triggers/DI_court_position_spawner_overrides.txt": {
       "kind": "generated",
@@ -249,6 +249,10 @@
     "localization/spanish/gui/DI_holding_filters_l_spanish.yml": {
       "kind": "generated",
       "last_written_hash": "2f150bf6b103efbb1877dc645953fd84bba1a0361608e9b88a4c6cce721e5f6a"
+    },
+    "common/scripted_effects/DI_title_manager_buildings_effects.txt": {
+      "kind": "generated",
+      "last_written_hash": "b908fafb6af769904b81543b6f75b99c5f51aab32e3633eba01e8406e3802139"
     }
   }
 }
