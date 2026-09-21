@@ -55,6 +55,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = beta_giyorgis }
         DI_fix_variable_error = { X = blackpool_fort }
         DI_fix_variable_error = { X = blacksmiths }
+        DI_fix_variable_error = { X = bleak_mine }
         DI_fix_variable_error = { X = blue_palace }
         DI_fix_variable_error = { X = bone_orchard }
         DI_fix_variable_error = { X = boudhanath }
@@ -82,6 +83,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = city }
         DI_fix_variable_error = { X = city_of_orsinium }
         DI_fix_variable_error = { X = clockwork_lake }
+        DI_fix_variable_error = { X = cloudrest_aviary }
         DI_fix_variable_error = { X = cloudrest_college }
         DI_fix_variable_error = { X = cloudruler_temple }
         DI_fix_variable_error = { X = cluny_abbey }
@@ -90,14 +92,17 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = confucius_temple }
         DI_fix_variable_error = { X = corinthe_archive }
         DI_fix_variable_error = { X = crypt_of_hearts }
+        DI_fix_variable_error = { X = crystal_graves }
         DI_fix_variable_error = { X = crystal_tower }
         DI_fix_variable_error = { X = curtain_walls }
+        DI_fix_variable_error = { X = cygniel }
         DI_fix_variable_error = { X = dagoth_tomb }
         DI_fix_variable_error = { X = damascus_mosque }
         DI_fix_variable_error = { X = deep_graves }
         DI_fix_variable_error = { X = del_claim_lapis_lazuli_mines }
         DI_fix_variable_error = { X = dengfeng_observatory }
         DI_fix_variable_error = { X = development_committee }
+        DI_fix_variable_error = { X = direnni_fortress }
         DI_fix_variable_error = { X = doomcrag_tower }
         DI_fix_variable_error = { X = dragon_kiln }
         DI_fix_variable_error = { X = dragon_prison }
@@ -143,6 +148,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = great_wyrd_tree }
         DI_fix_variable_error = { X = guild_halls }
         DI_fix_variable_error = { X = gunung_api }
+        DI_fix_variable_error = { X = gwylim }
         DI_fix_variable_error = { X = ha_long_bay }
         DI_fix_variable_error = { X = hall_of_colossus }
         DI_fix_variable_error = { X = hall_of_heroes }
@@ -172,13 +178,14 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = idjang_forts }
         DI_fix_variable_error = { X = ilni_shrine }
         DI_fix_variable_error = { X = immaterial_institute }
-        DI_fix_variable_error = { X = imperial_city }
         DI_fix_variable_error = { X = imperial_city_arena }
         DI_fix_variable_error = { X = imperial_city_harbor }
+        DI_fix_variable_error = { X = imperial_palace }
         DI_fix_variable_error = { X = indoril_tomb }
         DI_fix_variable_error = { X = invocation_school }
         DI_fix_variable_error = { X = ire_sanctum }
         DI_fix_variable_error = { X = iron_lion_cangzhou }
+        DI_fix_variable_error = { X = ironwood_forest }
         DI_fix_variable_error = { X = izumo_taisha }
         DI_fix_variable_error = { X = jaisalmer_fort }
         DI_fix_variable_error = { X = jokhang }
@@ -240,6 +247,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = oath_poor_building }
         DI_fix_variable_error = { X = oath_warriors_building }
         DI_fix_variable_error = { X = odai_tradeport }
+        DI_fix_variable_error = { X = old_fort }
         DI_fix_variable_error = { X = oracle_shrine }
         DI_fix_variable_error = { X = orchards }
         DI_fix_variable_error = { X = orphanage }
@@ -282,6 +290,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = sanchi_stupa }
         DI_fix_variable_error = { X = sancre_tor }
         DI_fix_variable_error = { X = sapiarch_college }
+        DI_fix_variable_error = { X = sarchal_lodge }
         DI_fix_variable_error = { X = satakalaam_necropolis }
         DI_fix_variable_error = { X = scourg_barrow }
         DI_fix_variable_error = { X = scriptorium }
@@ -292,6 +301,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = skaven_firedancer_college }
         DI_fix_variable_error = { X = slave_markets }
         DI_fix_variable_error = { X = smiths }
+        DI_fix_variable_error = { X = snowhawk }
         DI_fix_variable_error = { X = snowprince_tomb }
         DI_fix_variable_error = { X = solitude_arch }
         DI_fix_variable_error = { X = somapura_university }
@@ -470,6 +480,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = blacksmiths_01 }
         DI_fix_variable_error = { X = blacksmiths_02 }
         DI_fix_variable_error = { X = blacksmiths_03 }
+        DI_fix_variable_error = { X = bleak_mine_01 }
         DI_fix_variable_error = { X = blue_palace_01 }
         DI_fix_variable_error = { X = bone_orchard_01 }
         DI_fix_variable_error = { X = bone_orchard_02 }
@@ -559,6 +570,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = city_of_orsinium_02 }
         DI_fix_variable_error = { X = city_of_orsinium_03 }
         DI_fix_variable_error = { X = clockwork_lake_01 }
+        DI_fix_variable_error = { X = cloudrest_aviary_01 }
         DI_fix_variable_error = { X = cloudrest_college_01 }
         DI_fix_variable_error = { X = cloudruler_temple_01 }
         DI_fix_variable_error = { X = cluny_abbey_01 }
@@ -575,6 +587,9 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = confucius_temple_01 }
         DI_fix_variable_error = { X = corinthe_archive_01 }
         DI_fix_variable_error = { X = crypt_of_hearts_01 }
+        DI_fix_variable_error = { X = crystal_graves_01 }
+        DI_fix_variable_error = { X = crystal_graves_02 }
+        DI_fix_variable_error = { X = crystal_graves_03 }
         DI_fix_variable_error = { X = crystal_tower_01 }
         DI_fix_variable_error = { X = curtain_walls_01 }
         DI_fix_variable_error = { X = curtain_walls_02 }
@@ -584,6 +599,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = curtain_walls_06 }
         DI_fix_variable_error = { X = curtain_walls_07 }
         DI_fix_variable_error = { X = curtain_walls_08 }
+        DI_fix_variable_error = { X = cygniel_01 }
         DI_fix_variable_error = { X = dagoth_tomb_01 }
         DI_fix_variable_error = { X = dagoth_tomb_02 }
         DI_fix_variable_error = { X = damascus_mosque_01 }
@@ -597,6 +613,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = development_committee_01 }
         DI_fix_variable_error = { X = development_committee_02 }
         DI_fix_variable_error = { X = development_committee_03 }
+        DI_fix_variable_error = { X = direnni_fortress_01 }
         DI_fix_variable_error = { X = doomcrag_tower_01 }
         DI_fix_variable_error = { X = doomcrag_tower_02 }
         DI_fix_variable_error = { X = dragon_kiln_01 }
@@ -709,6 +726,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = guild_halls_07 }
         DI_fix_variable_error = { X = guild_halls_08 }
         DI_fix_variable_error = { X = gunung_api_01 }
+        DI_fix_variable_error = { X = gwylim_01 }
         DI_fix_variable_error = { X = ha_long_bay_01 }
         DI_fix_variable_error = { X = hall_of_colossus_01 }
         DI_fix_variable_error = { X = hall_of_heroes_01 }
@@ -803,9 +821,11 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = ilni_shrine_01 }
         DI_fix_variable_error = { X = immaterial_institute_01 }
         DI_fix_variable_error = { X = immaterial_institute_02 }
-        DI_fix_variable_error = { X = imperial_city_01 }
         DI_fix_variable_error = { X = imperial_city_arena_01 }
         DI_fix_variable_error = { X = imperial_city_harbor_01 }
+        DI_fix_variable_error = { X = imperial_palace_01 }
+        DI_fix_variable_error = { X = imperial_palace_02 }
+        DI_fix_variable_error = { X = imperial_palace_03 }
         DI_fix_variable_error = { X = indoril_tomb_01 }
         DI_fix_variable_error = { X = invocation_school_01 }
         DI_fix_variable_error = { X = invocation_school_02 }
@@ -815,6 +835,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = ire_sanctum_01 }
         DI_fix_variable_error = { X = ire_sanctum_02 }
         DI_fix_variable_error = { X = iron_lion_cangzhou_01 }
+        DI_fix_variable_error = { X = ironwood_forest_01 }
         DI_fix_variable_error = { X = izumo_taisha_01 }
         DI_fix_variable_error = { X = jaisalmer_fort_01 }
         DI_fix_variable_error = { X = jokhang_01 }
@@ -978,6 +999,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = oath_warriors_building_03 }
         DI_fix_variable_error = { X = oath_warriors_building_04 }
         DI_fix_variable_error = { X = odai_tradeport_01 }
+        DI_fix_variable_error = { X = old_fort_01 }
         DI_fix_variable_error = { X = oracle_shrine_01 }
         DI_fix_variable_error = { X = orchards_01 }
         DI_fix_variable_error = { X = orchards_02 }
@@ -1133,6 +1155,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = sancre_tor_02 }
         DI_fix_variable_error = { X = sancre_tor_03 }
         DI_fix_variable_error = { X = sapiarch_college_01 }
+        DI_fix_variable_error = { X = sarchal_lodge_01 }
         DI_fix_variable_error = { X = satakalaam_necropolis_01 }
         DI_fix_variable_error = { X = scourg_barrow_01 }
         DI_fix_variable_error = { X = scriptorium_01 }
@@ -1165,6 +1188,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = smiths_06 }
         DI_fix_variable_error = { X = smiths_07 }
         DI_fix_variable_error = { X = smiths_08 }
+        DI_fix_variable_error = { X = snowhawk_01 }
         DI_fix_variable_error = { X = snowprince_tomb_01 }
         DI_fix_variable_error = { X = solitude_arch_01 }
         DI_fix_variable_error = { X = somapura_university_01 }

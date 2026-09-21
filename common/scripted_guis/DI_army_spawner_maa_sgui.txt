@@ -4996,51 +4996,6 @@ DI_accolade_maa_mages_effect = {
 	}
 }
 
-### Accolade Maa Spellswords Spawner
-DI_accolade_maa_spellswords_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = accolade_maa_spellswords
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = accolade_maa_spellswords
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = accolade_maa_spellswords
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = accolade_maa_spellswords
-			}
-		}
-	}
-}
-
 ### Akaviri Dragon Hunters Spawner
 DI_akaviri_dragon_hunters_effect = {
 	scope = character
@@ -5401,8 +5356,8 @@ DI_ayleid_sorcerers_effect = {
 	}
 }
 
-### Bosmer Stalkers Spawner
-DI_bosmer_stalkers_effect = {
+### Bosmer Archers Spawner
+DI_bosmer_archers_effect = {
 	scope = character
 
 	effect = {
@@ -5423,24 +5378,24 @@ DI_bosmer_stalkers_effect = {
 
 				spawn_army = {
 					men_at_arms = {
-						type = bosmer_stalkers
+						type = bosmer_archers
 						men = scope:DI_story.var:DI_army_spawner_increment_value
 					}
 					location = scope:target.location
 					inheritable = no
-					name = bosmer_stalkers
+					name = bosmer_archers
 				}
 			}
 		}
 		else = {
 			spawn_army = {
 				men_at_arms = {
-					type = bosmer_stalkers
+					type = bosmer_archers
 					men = scope:DI_story.var:DI_army_spawner_increment_value
 				}
 				location = root.location
 				inheritable = no
-				name = bosmer_stalkers
+				name = bosmer_archers
 			}
 		}
 	}
@@ -5981,6 +5936,51 @@ DI_kwoom_riders_effect = {
 				location = root.location
 				inheritable = no
 				name = kwoom_riders
+			}
+		}
+	}
+}
+
+### Dreamer Prophets Spawner
+DI_dreamer_prophets_effect = {
+	scope = character
+
+	effect = {
+		random_owned_story = {
+			limit = {
+				story_type = DI_misc_variables_story
+			}
+			save_scope_as = DI_story
+		}
+		
+		if = {
+			limit = {
+				scope:DI_story = { has_variable = DI_pinned_char_var }
+			}
+			every_living_character = {
+				limit = { has_character_flag = pinned_for_edit }
+				save_scope_as = target
+
+				spawn_army = {
+					men_at_arms = {
+						type = dreamer_prophets
+						men = scope:DI_story.var:DI_army_spawner_increment_value
+					}
+					location = scope:target.location
+					inheritable = no
+					name = dreamer_prophets
+				}
+			}
+		}
+		else = {
+			spawn_army = {
+				men_at_arms = {
+					type = dreamer_prophets
+					men = scope:DI_story.var:DI_army_spawner_increment_value
+				}
+				location = root.location
+				inheritable = no
+				name = dreamer_prophets
 			}
 		}
 	}
@@ -7291,51 +7291,6 @@ DI_war_mages_effect = {
 	}
 }
 
-### Spellswords Spawner
-DI_spellswords_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = spellswords
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = spellswords
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = spellswords
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = spellswords
-			}
-		}
-	}
-}
-
 ### Daedra Spawner
 DI_daedra_effect = {
 	scope = character
@@ -7736,51 +7691,6 @@ DI_undead_earth_bone_effect = {
 				location = root.location
 				inheritable = no
 				name = undead_earth_bone
-			}
-		}
-	}
-}
-
-### Dreamer Prophets Spawner
-DI_dreamer_prophets_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = dreamer_prophets
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = dreamer_prophets
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = dreamer_prophets
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = dreamer_prophets
 			}
 		}
 	}
@@ -8276,51 +8186,6 @@ DI_khajiit_war_mages_effect = {
 				location = root.location
 				inheritable = no
 				name = khajiit_war_mages
-			}
-		}
-	}
-}
-
-### Khajiit Spellblades Spawner
-DI_khajiit_spellblades_effect = {
-	scope = character
-
-	effect = {
-		random_owned_story = {
-			limit = {
-				story_type = DI_misc_variables_story
-			}
-			save_scope_as = DI_story
-		}
-		
-		if = {
-			limit = {
-				scope:DI_story = { has_variable = DI_pinned_char_var }
-			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
-				save_scope_as = target
-
-				spawn_army = {
-					men_at_arms = {
-						type = khajiit_spellblades
-						men = scope:DI_story.var:DI_army_spawner_increment_value
-					}
-					location = scope:target.location
-					inheritable = no
-					name = khajiit_spellblades
-				}
-			}
-		}
-		else = {
-			spawn_army = {
-				men_at_arms = {
-					type = khajiit_spellblades
-					men = scope:DI_story.var:DI_army_spawner_increment_value
-				}
-				location = root.location
-				inheritable = no
-				name = khajiit_spellblades
 			}
 		}
 	}

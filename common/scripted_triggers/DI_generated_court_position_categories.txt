@@ -22,7 +22,6 @@ DI_court_position_category_county = {
         scope:court_position_type = court_position_type:foreign_emissary_court_position
         scope:court_position_type = court_position_type:keeper_of_the_horses_court_position
         scope:court_position_type = court_position_type:khlon_glan_court_position
-        scope:court_position_type = court_position_type:loremaster_court_position
         scope:court_position_type = court_position_type:master_assassin_court_position
         scope:court_position_type = court_position_type:master_of_hunt_court_position
         scope:court_position_type = court_position_type:seneschal_court_position
@@ -36,15 +35,12 @@ DI_court_position_category_county = {
 DI_court_position_category_duchy = {
     OR = {
         scope:court_position_type = court_position_type:chief_eunuch_court_position
-        scope:court_position_type = court_position_type:clan_mother_court_position
         scope:court_position_type = court_position_type:court_brahmin_court_position
         scope:court_position_type = court_position_type:court_jester_court_position
         scope:court_position_type = court_position_type:court_musician_court_position
-        scope:court_position_type = court_position_type:enforcer_court_position
         scope:court_position_type = court_position_type:food_taster_court_position
         scope:court_position_type = court_position_type:lady_in_waiting_court_position
         scope:court_position_type = court_position_type:master_of_horse_court_position
-        scope:court_position_type = court_position_type:shadowscale_court_position
     }
 }
 
@@ -52,7 +48,6 @@ DI_court_position_category_kingdom = {
     OR = {
         scope:court_position_type = court_position_type:chief_qadi_court_position
         scope:court_position_type = court_position_type:court_artificer_court_position
-        scope:court_position_type = court_position_type:court_housecarl_court_position
         scope:court_position_type = court_position_type:court_scholar_court_position
         scope:court_position_type = court_position_type:cupbearer_court_position
         scope:court_position_type = court_position_type:executioner_court_position
@@ -76,7 +71,6 @@ DI_court_position_category_empire = {
 
 DI_court_position_category_landless_adventurer = {
     OR = {
-        scope:court_position_type = court_position_type:arcanist_captain_camp_officer
         scope:court_position_type = court_position_type:archer_captain_camp_officer
         scope:court_position_type = court_position_type:armorer_camp_officer
         scope:court_position_type = court_position_type:camelry_captain_camp_officer
@@ -102,7 +96,6 @@ DI_court_position_category_landless_adventurer = {
         scope:court_position_type = court_position_type:person_haggler_camp_officer
         scope:court_position_type = court_position_type:pike_captain_camp_officer
         scope:court_position_type = court_position_type:quartermaster_camp_officer
-        scope:court_position_type = court_position_type:retainer_camp_officer
         scope:court_position_type = court_position_type:second_camp_officer
         scope:court_position_type = court_position_type:stooge_camp_officer
         scope:court_position_type = court_position_type:witness_camp_officer
@@ -116,5 +109,46 @@ DI_court_position_category_other = {
         DI_court_position_category_kingdom = yes
         DI_court_position_category_empire = yes
         DI_court_position_category_landless_adventurer = yes
+        DI_court_position_category_target_county = yes
+        DI_court_position_category_target_duchy = yes
+        DI_court_position_category_target_kingdom = yes
+        DI_court_position_category_target_landless_adventurer = yes
+        DI_court_position_category_target_other = yes
+    }
+}
+
+DI_court_position_category_target_county = {
+    OR = {
+        scope:court_position_type = court_position_type:loremaster_court_position
+    }
+}
+
+DI_court_position_category_target_duchy = {
+    OR = {
+        scope:court_position_type = court_position_type:clan_mother_court_position
+        scope:court_position_type = court_position_type:enforcer_court_position
+        scope:court_position_type = court_position_type:shadowscale_court_position
+    }
+}
+
+DI_court_position_category_target_kingdom = {
+    OR = {
+        scope:court_position_type = court_position_type:court_housecarl_court_position
+    }
+}
+
+DI_court_position_category_target_landless_adventurer = {
+    OR = {
+        scope:court_position_type = court_position_type:arcanist_captain_camp_officer
+        scope:court_position_type = court_position_type:retainer_camp_officer
+    }
+}
+
+DI_court_position_category_target_other = {
+    OR = {
+        scope:court_position_type = court_position_type:court_mage_court_position
+        scope:court_position_type = court_position_type:forgewife_court_position
+        scope:court_position_type = court_position_type:hearthwife_court_position
+        scope:court_position_type = court_position_type:huntwife_court_position
     }
 }

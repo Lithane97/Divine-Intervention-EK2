@@ -41,12 +41,14 @@
     add_innovation = innovation_blood_price
     add_innovation = innovation_knightly_orders
     add_innovation = innovation_war_facepaints
-    add_innovation = innovation_sled_dogs
     add_innovation = innovation_moonstone_armor
     add_innovation = innovation_black_marsh_natives
     add_innovation = innovation_pariah_folk
     add_innovation = innovation_pariah_legacy
     add_innovation = innovation_redeemed_pariahs
+    add_innovation = innovation_sled_dogs
+    add_innovation = innovation_crossroads_magecrafting
+    add_innovation = innovation_high_rock_depredation_and_depopulation
     add_innovation = innovation_guar
     add_innovation = innovation_crag_warfare
     add_innovation = innovation_champa_rice
@@ -105,12 +107,14 @@ DI_remove_innovations_tribal_effect = {
     remove_innovation = innovation_blood_price
     remove_innovation = innovation_knightly_orders
     remove_innovation = innovation_war_facepaints
-    remove_innovation = innovation_sled_dogs
     remove_innovation = innovation_moonstone_armor
     remove_innovation = innovation_black_marsh_natives
     remove_innovation = innovation_pariah_folk
     remove_innovation = innovation_pariah_legacy
     remove_innovation = innovation_redeemed_pariahs
+    remove_innovation = innovation_sled_dogs
+    remove_innovation = innovation_crossroads_magecrafting
+    remove_innovation = innovation_high_rock_depredation_and_depopulation
     remove_innovation = innovation_guar
     remove_innovation = innovation_crag_warfare
     remove_innovation = innovation_champa_rice
@@ -250,7 +254,6 @@ DI_add_innovations_late_medieval_effect = {
     add_innovation = innovation_siege_magic
     add_innovation = innovation_census_and_excise
     add_innovation = innovation_integrated_guilds
-    add_innovation = innovation_eton_nir_gryphon_riders
     add_innovation = innovation_rocket_cart
 }
 
@@ -276,6 +279,5 @@ DI_remove_innovations_late_medieval_effect = {
     remove_innovation = innovation_siege_magic
     remove_innovation = innovation_census_and_excise
     remove_innovation = innovation_integrated_guilds
-    remove_innovation = innovation_eton_nir_gryphon_riders
     remove_innovation = innovation_rocket_cart
 }

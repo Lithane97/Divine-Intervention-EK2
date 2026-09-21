@@ -59,9 +59,11 @@ DI_court_position_available = {
                 has_dlc_feature = royal_court
             }
             court_position_type:court_brahmin_court_position = {
+                always = no
                 has_dlc_feature = all_under_heaven
             }
             court_position_type:court_guru_court_position = {
+                always = no
                 has_dlc_feature = all_under_heaven
             }
             court_position_type:court_poet_court_position = {
@@ -208,4 +210,34 @@ DI_court_position_category_other_sgui = {
     scope = character
     saved_scopes = { court_position_type }
     is_valid = { DI_court_position_category_other = yes }
+}
+
+DI_court_position_category_target_county_sgui = {
+    scope = character
+    saved_scopes = { court_position_type }
+    is_valid = { DI_court_position_category_target_county = yes }
+}
+
+DI_court_position_category_target_duchy_sgui = {
+    scope = character
+    saved_scopes = { court_position_type }
+    is_valid = { DI_court_position_category_target_duchy = yes }
+}
+
+DI_court_position_category_target_kingdom_sgui = {
+    scope = character
+    saved_scopes = { court_position_type }
+    is_valid = { DI_court_position_category_target_kingdom = yes }
+}
+
+DI_court_position_category_target_landless_adventurer_sgui = {
+    scope = character
+    saved_scopes = { court_position_type }
+    is_valid = { DI_court_position_category_target_landless_adventurer = yes }
+}
+
+DI_court_position_category_target_other_sgui = {
+    scope = character
+    saved_scopes = { court_position_type }
+    is_valid = { DI_court_position_category_target_other = yes }
 }

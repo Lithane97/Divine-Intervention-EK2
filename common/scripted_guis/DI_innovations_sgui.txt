@@ -2653,32 +2653,6 @@ DI_culture_has_innovation_war_facepaints = {
 	}
 }
 
-# innovation_sled_dogs
-DI_remove_innovation_sled_dogs = {
-	scope = character
-	effect = {
-		var:DI_innovation_selected_culture = {
-			remove_innovation = innovation_sled_dogs
-		}
-	}
-}
-
-DI_add_innovation_sled_dogs = {
-	scope = character
-	effect = {
-		var:DI_innovation_selected_culture = {
-			add_innovation = innovation_sled_dogs
-		}
-	}
-}
-
-DI_culture_has_innovation_sled_dogs = {
-	scope = culture
-	is_valid = {
-		has_innovation = innovation_sled_dogs
-	}
-}
-
 # innovation_moonstone_armor
 DI_remove_innovation_moonstone_armor = {
 	scope = character
@@ -2809,29 +2783,81 @@ DI_culture_has_innovation_redeemed_pariahs = {
 	}
 }
 
-# innovation_eton_nir_gryphon_riders
-DI_remove_innovation_eton_nir_gryphon_riders = {
+# innovation_sled_dogs
+DI_remove_innovation_sled_dogs = {
 	scope = character
 	effect = {
 		var:DI_innovation_selected_culture = {
-			remove_innovation = innovation_eton_nir_gryphon_riders
+			remove_innovation = innovation_sled_dogs
 		}
 	}
 }
 
-DI_add_innovation_eton_nir_gryphon_riders = {
+DI_add_innovation_sled_dogs = {
 	scope = character
 	effect = {
 		var:DI_innovation_selected_culture = {
-			add_innovation = innovation_eton_nir_gryphon_riders
+			add_innovation = innovation_sled_dogs
 		}
 	}
 }
 
-DI_culture_has_innovation_eton_nir_gryphon_riders = {
+DI_culture_has_innovation_sled_dogs = {
 	scope = culture
 	is_valid = {
-		has_innovation = innovation_eton_nir_gryphon_riders
+		has_innovation = innovation_sled_dogs
+	}
+}
+
+# innovation_crossroads_magecrafting
+DI_remove_innovation_crossroads_magecrafting = {
+	scope = character
+	effect = {
+		var:DI_innovation_selected_culture = {
+			remove_innovation = innovation_crossroads_magecrafting
+		}
+	}
+}
+
+DI_add_innovation_crossroads_magecrafting = {
+	scope = character
+	effect = {
+		var:DI_innovation_selected_culture = {
+			add_innovation = innovation_crossroads_magecrafting
+		}
+	}
+}
+
+DI_culture_has_innovation_crossroads_magecrafting = {
+	scope = culture
+	is_valid = {
+		has_innovation = innovation_crossroads_magecrafting
+	}
+}
+
+# innovation_high_rock_depredation_and_depopulation
+DI_remove_innovation_high_rock_depredation_and_depopulation = {
+	scope = character
+	effect = {
+		var:DI_innovation_selected_culture = {
+			remove_innovation = innovation_high_rock_depredation_and_depopulation
+		}
+	}
+}
+
+DI_add_innovation_high_rock_depredation_and_depopulation = {
+	scope = character
+	effect = {
+		var:DI_innovation_selected_culture = {
+			add_innovation = innovation_high_rock_depredation_and_depopulation
+		}
+	}
+}
+
+DI_culture_has_innovation_high_rock_depredation_and_depopulation = {
+	scope = culture
+	is_valid = {
+		has_innovation = innovation_high_rock_depredation_and_depopulation
 	}
 }
 

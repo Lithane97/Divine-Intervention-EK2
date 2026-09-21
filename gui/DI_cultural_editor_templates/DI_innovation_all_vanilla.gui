@@ -1029,27 +1029,6 @@ template DI_innovation_all_vanilla
 
 
             DI_innovation_flowcontainer = {
-                datacontext = "[GetCultureInnovationType('innovation_eton_nir_gryphon_riders')]"
-
-                blockoverride "has_visible" {
-                    visible = "[GetScriptedGui('DI_culture_has_innovation_eton_nir_gryphon_riders').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
-                }
-
-                blockoverride "on_remove" {
-                    onrightclick = "[GetScriptedGui('DI_remove_innovation_eton_nir_gryphon_riders').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-
-                blockoverride "not_has_visible" {
-                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_eton_nir_gryphon_riders').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
-                }
-
-                blockoverride "on_add" {
-                    onclick = "[GetScriptedGui('DI_add_innovation_eton_nir_gryphon_riders').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
-                }
-            }
-
-
-            DI_innovation_flowcontainer = {
                 datacontext = "[GetCultureInnovationType('innovation_black_marsh_materials')]"
 
                 blockoverride "has_visible" {
@@ -2759,6 +2738,48 @@ template DI_innovation_all_vanilla
 
                 blockoverride "on_add" {
                     onclick = "[GetScriptedGui('DI_add_innovation_redeemed_pariahs').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                }
+            }
+
+
+            DI_innovation_flowcontainer = {
+                datacontext = "[GetCultureInnovationType('innovation_crossroads_magecrafting')]"
+
+                blockoverride "has_visible" {
+                    visible = "[GetScriptedGui('DI_culture_has_innovation_crossroads_magecrafting').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+                }
+
+                blockoverride "on_remove" {
+                    onrightclick = "[GetScriptedGui('DI_remove_innovation_crossroads_magecrafting').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                }
+
+                blockoverride "not_has_visible" {
+                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_crossroads_magecrafting').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+                }
+
+                blockoverride "on_add" {
+                    onclick = "[GetScriptedGui('DI_add_innovation_crossroads_magecrafting').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                }
+            }
+
+
+            DI_innovation_flowcontainer = {
+                datacontext = "[GetCultureInnovationType('innovation_high_rock_depredation_and_depopulation')]"
+
+                blockoverride "has_visible" {
+                    visible = "[GetScriptedGui('DI_culture_has_innovation_high_rock_depredation_and_depopulation').IsValid(GuiScope.SetRoot(Culture.MakeScope).End)]"
+                }
+
+                blockoverride "on_remove" {
+                    onrightclick = "[GetScriptedGui('DI_remove_innovation_high_rock_depredation_and_depopulation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                }
+
+                blockoverride "not_has_visible" {
+                    visible = "[Not(GetScriptedGui('DI_culture_has_innovation_high_rock_depredation_and_depopulation').IsValid(GuiScope.SetRoot(Culture.MakeScope).End))]"
+                }
+
+                blockoverride "on_add" {
+                    onclick = "[GetScriptedGui('DI_add_innovation_high_rock_depredation_and_depopulation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
                 }
             }
         }

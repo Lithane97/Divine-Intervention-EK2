@@ -1481,6 +1481,10 @@ DI_apply_court_position_profile_effect = {
                 name = DI_cs_martial
                 value = 16
             }
+            set_variable = {
+                name = DI_cs_prowess
+                value = 12
+            }
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:administrator
@@ -2788,6 +2792,477 @@ DI_apply_court_position_trait_xp_effect = {
     }
 }
 
+DI_apply_court_position_extended_validity_effect = {
+    switch = {
+        trigger = $COURT_POSITION$
+        court_position_type:cave_hermit_court_position = {
+            if = {
+                limit = { NOT = { has_trait_xp = { trait = lifestyle_mystic value >= 50 } } }
+                add_trait = lifestyle_mystic
+                add_trait_xp = { trait = lifestyle_mystic value = 50 }
+            }
+        }
+        court_position_type:chief_qadi_court_position = {
+            if = {
+                limit = {
+                    AND = {
+                        scope:target.faith = {
+                            has_doctrine = doctrine_gender_male_dominated
+                        }
+                    }
+                }
+            }
+            if = {
+                limit = {
+                    AND = {
+                        scope:target.faith = {
+                            has_doctrine = doctrine_gender_female_dominated
+                        }
+                    }
+                }
+            }
+            else = {
+            }
+        }
+        court_position_type:court_artificer_court_position = {
+            if = {
+                limit = { NOT = { exists = inspiration } }
+                create_inspiration = { type = weapon_inspiration gold = 0 }
+            }
+        }
+        court_position_type:food_taster_court_position = {
+            if = {
+                limit = {
+                    AND = {
+                        scope:target.faith = {
+                            NOT = {
+                                has_doctrine = doctrine_clerical_function_recruitment
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        court_position_type:foreign_emissary_court_position = {
+            if = {
+                limit = { culture = scope:target.culture }
+                random_list = {
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:abecean } } }
+                        set_culture = culture:abecean
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:agaceph } } }
+                        set_culture = culture:agaceph
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:alikr } } }
+                        set_culture = culture:alikr
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:alinor } } }
+                        set_culture = culture:alinor
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:altmeribosmer } } }
+                        set_culture = culture:altmeribosmer
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:amz_kagren } } }
+                        set_culture = culture:amz_kagren
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:amz_vtharden } } }
+                        set_culture = culture:amz_vtharden
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:amz_vtholften } } }
+                        set_culture = culture:amz_vtholften
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:anequinan } } }
+                        set_culture = culture:anequinan
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:arenthi } } }
+                        set_culture = culture:arenthi
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:armun_an } } }
+                        set_culture = culture:armun_an
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:ashlander } } }
+                        set_culture = culture:ashlander
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:atmoran } } }
+                        set_culture = culture:atmoran
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:auridon } } }
+                        set_culture = culture:auridon
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:ayleid } } }
+                        set_culture = culture:ayleid
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:baandari } } }
+                        set_culture = culture:baandari
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:balfiera } } }
+                        set_culture = culture:balfiera
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:barsaebic } } }
+                        set_culture = culture:barsaebic
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:beyonder } } }
+                        set_culture = culture:beyonder
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:bjoule } } }
+                        set_culture = culture:bjoule
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:cantemiric } } }
+                        set_culture = culture:cantemiric
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:chi_addun } } }
+                        set_culture = culture:chi_addun
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:chimer } } }
+                        set_culture = culture:chimer
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:chimeriquey } } }
+                        set_culture = culture:chimeriquey
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:chuzei } } }
+                        set_culture = culture:chuzei
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:colovian } } }
+                        set_culture = culture:colovian
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:corelanya } } }
+                        set_culture = culture:corelanya
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:crown_culture } } }
+                        set_culture = culture:crown_culture
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:cyro_nord } } }
+                        set_culture = culture:cyro_nord
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:cyrobosmer } } }
+                        set_culture = culture:cyrobosmer
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:dremora } } }
+                        set_culture = culture:dremora
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:duadri } } }
+                        set_culture = culture:duadri
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:dune_orc } } }
+                        set_culture = culture:dune_orc
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:duraki } } }
+                        set_culture = culture:duraki
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:dynari } } }
+                        set_culture = culture:dynari
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:eastmarcher } } }
+                        set_culture = culture:eastmarcher
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:etarani } } }
+                        set_culture = culture:etarani
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:falmer } } }
+                        set_culture = culture:falmer
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:falmer_betrayed } } }
+                        set_culture = culture:falmer_betrayed
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:forebear } } }
+                        set_culture = culture:forebear
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:gah_julan } } }
+                        set_culture = culture:gah_julan
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:galen } } }
+                        set_culture = culture:galen
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:gemha } } }
+                        set_culture = culture:gemha
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:glenumbran } } }
+                        set_culture = culture:glenumbran
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:goblin } } }
+                        set_culture = culture:goblin
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:hapsleet } } }
+                        set_culture = culture:hapsleet
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:hared } } }
+                        set_culture = culture:hared
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:hleel } } }
+                        set_culture = culture:hleel
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:horsefolk } } }
+                        set_culture = culture:horsefolk
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:horwalli } } }
+                        set_culture = culture:horwalli
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:hrothgar } } }
+                        set_culture = culture:hrothgar
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:iliac } } }
+                        set_culture = culture:iliac
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:ilniviri } } }
+                        set_culture = culture:ilniviri
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:imga } } }
+                        set_culture = culture:imga
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:iron_orc } } }
+                        set_culture = culture:iron_orc
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:keptu } } }
+                        set_culture = culture:keptu
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:keptu_cyrod } } }
+                        set_culture = culture:keptu_cyrod
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:ket } } }
+                        set_culture = culture:ket
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:kogo_isra } } }
+                        set_culture = culture:kogo_isra
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:kothringi } } }
+                        set_culture = culture:kothringi
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:kreath } } }
+                        set_culture = culture:kreath
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:lilmothiit } } }
+                        set_culture = culture:lilmothiit
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:malahk_orc } } }
+                        set_culture = culture:malahk_orc
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:malapiit } } }
+                        set_culture = culture:malapiit
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:maormer } } }
+                        set_culture = culture:maormer
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:marduhn_oad } } }
+                        set_culture = culture:marduhn_oad
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:mathmeldi } } }
+                        set_culture = culture:mathmeldi
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:men_of_ge } } }
+                        set_culture = culture:men_of_ge
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:morathi } } }
+                        set_culture = culture:morathi
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:mountain_orc } } }
+                        set_culture = culture:mountain_orc
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:naga } } }
+                        set_culture = culture:naga
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:nede } } }
+                        set_culture = culture:nede
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:nibenese } } }
+                        set_culture = culture:nibenese
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:nibenu } } }
+                        set_culture = culture:nibenu
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:northmen } } }
+                        set_culture = culture:northmen
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:ojel } } }
+                        set_culture = culture:ojel
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:orma } } }
+                        set_culture = culture:orma
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:paatru } } }
+                        set_culture = culture:paatru
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:pellitinian } } }
+                        set_culture = culture:pellitinian
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:perena } } }
+                        set_culture = culture:perena
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:raga } } }
+                        set_culture = culture:raga
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:reachfolk } } }
+                        set_culture = culture:reachfolk
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:riekling } } }
+                        set_culture = culture:riekling
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:riekr } } }
+                        set_culture = culture:riekr
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:rimmen } } }
+                        set_culture = culture:rimmen
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:rimmenese } } }
+                        set_culture = culture:rimmenese
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:sarpa } } }
+                        set_culture = culture:sarpa
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:sedor } } }
+                        set_culture = culture:sedor
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:shinathi } } }
+                        set_culture = culture:shinathi
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:silvenari } } }
+                        set_culture = culture:silvenari
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:skaal } } }
+                        set_culture = culture:skaal
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:strident } } }
+                        set_culture = culture:strident
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:torell } } }
+                        set_culture = culture:torell
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:tsaesci } } }
+                        set_culture = culture:tsaesci
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:tundrastrider } } }
+                        set_culture = culture:tundrastrider
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:westmarcher } } }
+                        set_culture = culture:westmarcher
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:witchman } } }
+                        set_culture = culture:witchman
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:wood_orc } } }
+                        set_culture = culture:wood_orc
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:wrothgarian } } }
+                        set_culture = culture:wrothgarian
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:yespest } } }
+                        set_culture = culture:yespest
+                    }
+                }
+            }
+        }
+        court_position_type:travel_leader_court_position = {
+            if = {
+                limit = {
+                    AND = {
+                        bannable_serving_diarch_trigger = yes
+                    }
+                }
+            }
+        }
+        fallback = { }
+    }
+}
+
 DI_select_ordered_court_position_holder_effect = {
     switch = {
         trigger = scope:court_position_type
@@ -2863,11 +3338,14 @@ DI_revoke_selected_court_position_holder_effect = {
 }
 
 DI_spawn_selected_court_position_effect = {
+    scope:target = { save_scope_as = liege }
     DI_spawn_low_court_character_effect = yes
     scope:new_courtier = {
+        save_scope_as = employee
         DI_apply_court_position_validity_effect = { COURT_POSITION = scope:court_position_type }
         DI_apply_court_position_trait_xp_effect = { COURT_POSITION = scope:court_position_type }
         DI_court_position_post_spawn_effect = { COURT_POSITION = scope:court_position_type }
+        DI_apply_court_position_extended_validity_effect = { COURT_POSITION = scope:court_position_type }
     }
     if = {
         limit = { NOT = { DI_can_employ_selected_court_position = yes } }

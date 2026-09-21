@@ -145,6 +145,9 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = immaterial_institute_01 } remove_building = immaterial_institute_01 }
     if = { limit = { has_building = immaterial_institute_02 } remove_building = immaterial_institute_02 }
     if = { limit = { has_building = xaria_tears_01 } remove_building = xaria_tears_01 }
+    if = { limit = { has_building = sarchal_lodge_01 } remove_building = sarchal_lodge_01 }
+    if = { limit = { has_building = gwylim_01 } remove_building = gwylim_01 }
+    if = { limit = { has_building = bleak_mine_01 } remove_building = bleak_mine_01 }
     if = { limit = { has_building = mane_palace_01 } remove_building = mane_palace_01 }
     if = { limit = { has_building = dragonguard_sanctum_01 } remove_building = dragonguard_sanctum_01 }
     if = { limit = { has_building = dragonguard_sanctum_02 } remove_building = dragonguard_sanctum_02 }
@@ -207,6 +210,8 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = ilni_shrine_01 } remove_building = ilni_shrine_01 }
     if = { limit = { has_building = doomcrag_tower_01 } remove_building = doomcrag_tower_01 }
     if = { limit = { has_building = doomcrag_tower_02 } remove_building = doomcrag_tower_02 }
+    if = { limit = { has_building = cygniel_01 } remove_building = cygniel_01 }
+    if = { limit = { has_building = direnni_fortress_01 } remove_building = direnni_fortress_01 }
     if = { limit = { has_building = temple_quill_gavel_01 } remove_building = temple_quill_gavel_01 }
     if = { limit = { has_building = mala_tor_01 } remove_building = mala_tor_01 }
     if = { limit = { has_building = under_skar_01 } remove_building = under_skar_01 }
@@ -260,6 +265,9 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = arkngthamz_01 } remove_building = arkngthamz_01 }
     if = { limit = { has_building = hroldan_01 } remove_building = hroldan_01 }
     if = { limit = { has_building = geir_portage_01 } remove_building = geir_portage_01 }
+    if = { limit = { has_building = old_fort_01 } remove_building = old_fort_01 }
+    if = { limit = { has_building = snowhawk_01 } remove_building = snowhawk_01 }
+    if = { limit = { has_building = ironwood_forest_01 } remove_building = ironwood_forest_01 }
     if = { limit = { has_building = alinor_harbor_01 } remove_building = alinor_harbor_01 }
     if = { limit = { has_building = alinor_city_01 } remove_building = alinor_city_01 }
     if = { limit = { has_building = cloudrest_college_01 } remove_building = cloudrest_college_01 }
