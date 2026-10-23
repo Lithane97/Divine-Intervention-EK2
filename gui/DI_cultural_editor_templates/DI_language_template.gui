@@ -249,17 +249,17 @@ template DI_language_template
             blockoverride "icon" {}
         }
 
-        # iron_orcish
+        # ornim_orcish
         DI_widget_martial_pillar_item = {
             blockoverride "datacontext"
             {
-                datacontext = "[GetCulturePillar('language_iron_orcish')]"
+                datacontext = "[GetCulturePillar('language_ornim_orcish')]"
                 datacontext = "[GetPlayer.GetCulture]"
             }
 
             blockoverride "onclick"
             {
-                onclick = "[GetScriptedGui('DI_language_iron_orcish_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_language_ornim_orcish_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
 
             blockoverride "highlight" {}
@@ -368,17 +368,17 @@ template DI_language_template
             blockoverride "icon" {}
         }
 
-        # nedic_west
+        # duraki
         DI_widget_martial_pillar_item = {
             blockoverride "datacontext"
             {
-                datacontext = "[GetCulturePillar('language_nedic_west')]"
+                datacontext = "[GetCulturePillar('language_duraki')]"
                 datacontext = "[GetPlayer.GetCulture]"
             }
 
             blockoverride "onclick"
             {
-                onclick = "[GetScriptedGui('DI_language_nedic_west_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_language_duraki_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
 
             blockoverride "highlight" {}

@@ -232,17 +232,17 @@ template DI_heritage_template
             blockoverride "icon" {}
         }
 
-        # deathlander
+        # keptu
         DI_widget_martial_pillar_item = {
             blockoverride "datacontext"
             {
-                datacontext = "[GetCulturePillar('heritage_deathlander')]"
+                datacontext = "[GetCulturePillar('heritage_keptu')]"
                 datacontext = "[GetPlayer.GetCulture]"
             }
 
             blockoverride "onclick"
             {
-                onclick = "[GetScriptedGui('DI_heritage_deathlander_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetScriptedGui('DI_heritage_keptu_sgui').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
 
             blockoverride "highlight" {}

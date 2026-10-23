@@ -30,7 +30,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = academyscho }
         DI_fix_variable_error = { X = academywar }
         DI_fix_variable_error = { X = adamantine_tower }
-        DI_fix_variable_error = { X = adamantium_mine }
         DI_fix_variable_error = { X = al_qarawiyyin_university }
         DI_fix_variable_error = { X = alabaster_white_walls }
         DI_fix_variable_error = { X = ald_mirathi }
@@ -124,12 +123,10 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = garlas_agea }
         DI_fix_variable_error = { X = geir_portage }
         DI_fix_variable_error = { X = generic_copper_mines }
-        DI_fix_variable_error = { X = generic_diamond_mines }
         DI_fix_variable_error = { X = generic_ebony_mines }
         DI_fix_variable_error = { X = generic_glass_mines }
         DI_fix_variable_error = { X = generic_gold_mines }
         DI_fix_variable_error = { X = generic_holy_site }
-        DI_fix_variable_error = { X = generic_orichalc_mines }
         DI_fix_variable_error = { X = generic_silver_mines }
         DI_fix_variable_error = { X = generic_sulfur_mines }
         DI_fix_variable_error = { X = generic_university }
@@ -145,6 +142,8 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = great_chapel_kynareth }
         DI_fix_variable_error = { X = great_chapel_zenithar }
         DI_fix_variable_error = { X = great_megalith }
+        DI_fix_variable_error = { X = great_project_cathedral }
+        DI_fix_variable_error = { X = great_project_cathedral_under_construction }
         DI_fix_variable_error = { X = great_wyrd_tree }
         DI_fix_variable_error = { X = guild_halls }
         DI_fix_variable_error = { X = gunung_api }
@@ -194,6 +193,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = kairouan_basins }
         DI_fix_variable_error = { X = kano_walls }
         DI_fix_variable_error = { X = karanesh_sulfur_mines }
+        DI_fix_variable_error = { X = karfan_orichalc_mines_01 }
         DI_fix_variable_error = { X = kemel_ze }
         DI_fix_variable_error = { X = kogoruhn_citadel }
         DI_fix_variable_error = { X = konark_temple }
@@ -257,6 +257,10 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = paddy_fields }
         DI_fix_variable_error = { X = palace_of_kings }
         DI_fix_variable_error = { X = palisades }
+        DI_fix_variable_error = { X = pam_abbey_of_st_gall }
+        DI_fix_variable_error = { X = pam_lateran_basilica }
+        DI_fix_variable_error = { X = pam_palais_de_papes }
+        DI_fix_variable_error = { X = pam_reims_cathedral }
         DI_fix_variable_error = { X = pantherfang_chapel }
         DI_fix_variable_error = { X = parliament_of_bugs }
         DI_fix_variable_error = { X = pastures }
@@ -430,10 +434,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = academywar_07 }
         DI_fix_variable_error = { X = academywar_08 }
         DI_fix_variable_error = { X = adamantine_tower_01 }
-        DI_fix_variable_error = { X = adamantium_mine_01 }
-        DI_fix_variable_error = { X = adamantium_mine_02 }
-        DI_fix_variable_error = { X = adamantium_mine_03 }
-        DI_fix_variable_error = { X = adamantium_mine_04 }
         DI_fix_variable_error = { X = al_qarawiyyin_university_01 }
         DI_fix_variable_error = { X = alabaster_white_walls_01 }
         DI_fix_variable_error = { X = ald_mirathi_01 }
@@ -665,10 +665,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = generic_copper_mines_02 }
         DI_fix_variable_error = { X = generic_copper_mines_03 }
         DI_fix_variable_error = { X = generic_copper_mines_04 }
-        DI_fix_variable_error = { X = generic_diamond_mines_01 }
-        DI_fix_variable_error = { X = generic_diamond_mines_02 }
-        DI_fix_variable_error = { X = generic_diamond_mines_03 }
-        DI_fix_variable_error = { X = generic_diamond_mines_04 }
         DI_fix_variable_error = { X = generic_ebony_mines_01 }
         DI_fix_variable_error = { X = generic_ebony_mines_02 }
         DI_fix_variable_error = { X = generic_ebony_mines_03 }
@@ -682,10 +678,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = generic_gold_mines_03 }
         DI_fix_variable_error = { X = generic_gold_mines_04 }
         DI_fix_variable_error = { X = generic_holy_site_01 }
-        DI_fix_variable_error = { X = generic_orichalc_mines_01 }
-        DI_fix_variable_error = { X = generic_orichalc_mines_02 }
-        DI_fix_variable_error = { X = generic_orichalc_mines_03 }
-        DI_fix_variable_error = { X = generic_orichalc_mines_04 }
         DI_fix_variable_error = { X = generic_silver_mines_01 }
         DI_fix_variable_error = { X = generic_silver_mines_02 }
         DI_fix_variable_error = { X = generic_silver_mines_03 }
@@ -716,6 +708,10 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = great_chapel_zenithar_01 }
         DI_fix_variable_error = { X = great_chapel_zenithar_02 }
         DI_fix_variable_error = { X = great_megalith_01 }
+        DI_fix_variable_error = { X = great_project_cathedral_01 }
+        DI_fix_variable_error = { X = great_project_cathedral_02 }
+        DI_fix_variable_error = { X = great_project_cathedral_03 }
+        DI_fix_variable_error = { X = great_project_cathedral_under_construction }
         DI_fix_variable_error = { X = great_wyrd_tree_01 }
         DI_fix_variable_error = { X = guild_halls_01 }
         DI_fix_variable_error = { X = guild_halls_02 }
@@ -849,6 +845,10 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = karanesh_sulfur_mines_02 }
         DI_fix_variable_error = { X = karanesh_sulfur_mines_03 }
         DI_fix_variable_error = { X = karanesh_sulfur_mines_04 }
+        DI_fix_variable_error = { X = karfan_orichalc_mines_01_01 }
+        DI_fix_variable_error = { X = karfan_orichalc_mines_01_02 }
+        DI_fix_variable_error = { X = karfan_orichalc_mines_01_03 }
+        DI_fix_variable_error = { X = karfan_orichalc_mines_01_04 }
         DI_fix_variable_error = { X = kemel_ze_01 }
         DI_fix_variable_error = { X = kogoruhn_citadel_01 }
         DI_fix_variable_error = { X = kogoruhn_citadel_02 }
@@ -1045,6 +1045,10 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = palace_of_kings_01 }
         DI_fix_variable_error = { X = palisades_01 }
         DI_fix_variable_error = { X = palisades_02 }
+        DI_fix_variable_error = { X = pam_abbey_of_st_gall_01 }
+        DI_fix_variable_error = { X = pam_lateran_basilica_01 }
+        DI_fix_variable_error = { X = pam_palais_de_papes_01 }
+        DI_fix_variable_error = { X = pam_reims_cathedral_01 }
         DI_fix_variable_error = { X = pantherfang_chapel_01 }
         DI_fix_variable_error = { X = parliament_of_bugs_01 }
         DI_fix_variable_error = { X = pastures_01 }

@@ -291,10 +291,6 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = generic_sulfur_mines_02 } remove_building = generic_sulfur_mines_02 }
     if = { limit = { has_building = generic_sulfur_mines_03 } remove_building = generic_sulfur_mines_03 }
     if = { limit = { has_building = generic_sulfur_mines_04 } remove_building = generic_sulfur_mines_04 }
-    if = { limit = { has_building = generic_diamond_mines_01 } remove_building = generic_diamond_mines_01 }
-    if = { limit = { has_building = generic_diamond_mines_02 } remove_building = generic_diamond_mines_02 }
-    if = { limit = { has_building = generic_diamond_mines_03 } remove_building = generic_diamond_mines_03 }
-    if = { limit = { has_building = generic_diamond_mines_04 } remove_building = generic_diamond_mines_04 }
     if = { limit = { has_building = generic_ebony_mines_01 } remove_building = generic_ebony_mines_01 }
     if = { limit = { has_building = generic_ebony_mines_02 } remove_building = generic_ebony_mines_02 }
     if = { limit = { has_building = generic_ebony_mines_03 } remove_building = generic_ebony_mines_03 }
@@ -303,14 +299,10 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = generic_glass_mines_02 } remove_building = generic_glass_mines_02 }
     if = { limit = { has_building = generic_glass_mines_03 } remove_building = generic_glass_mines_03 }
     if = { limit = { has_building = generic_glass_mines_04 } remove_building = generic_glass_mines_04 }
-    if = { limit = { has_building = generic_orichalc_mines_01 } remove_building = generic_orichalc_mines_01 }
-    if = { limit = { has_building = generic_orichalc_mines_02 } remove_building = generic_orichalc_mines_02 }
-    if = { limit = { has_building = generic_orichalc_mines_03 } remove_building = generic_orichalc_mines_03 }
-    if = { limit = { has_building = generic_orichalc_mines_04 } remove_building = generic_orichalc_mines_04 }
-    if = { limit = { has_building = adamantium_mine_01 } remove_building = adamantium_mine_01 }
-    if = { limit = { has_building = adamantium_mine_02 } remove_building = adamantium_mine_02 }
-    if = { limit = { has_building = adamantium_mine_03 } remove_building = adamantium_mine_03 }
-    if = { limit = { has_building = adamantium_mine_04 } remove_building = adamantium_mine_04 }
+    if = { limit = { has_building = karfan_orichalc_mines_01_01 } remove_building = karfan_orichalc_mines_01_01 }
+    if = { limit = { has_building = karfan_orichalc_mines_01_02 } remove_building = karfan_orichalc_mines_01_02 }
+    if = { limit = { has_building = karfan_orichalc_mines_01_03 } remove_building = karfan_orichalc_mines_01_03 }
+    if = { limit = { has_building = karfan_orichalc_mines_01_04 } remove_building = karfan_orichalc_mines_01_04 }
     if = { limit = { has_building = kulati_amethyst_mines_01 } remove_building = kulati_amethyst_mines_01 }
     if = { limit = { has_building = kulati_amethyst_mines_02 } remove_building = kulati_amethyst_mines_02 }
     if = { limit = { has_building = kulati_amethyst_mines_03 } remove_building = kulati_amethyst_mines_03 }
@@ -359,4 +351,8 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = karanesh_sulfur_mines_02 } remove_building = karanesh_sulfur_mines_02 }
     if = { limit = { has_building = karanesh_sulfur_mines_03 } remove_building = karanesh_sulfur_mines_03 }
     if = { limit = { has_building = karanesh_sulfur_mines_04 } remove_building = karanesh_sulfur_mines_04 }
+    if = { limit = { has_building = pam_abbey_of_st_gall_01 } remove_building = pam_abbey_of_st_gall_01 }
+    if = { limit = { has_building = pam_palais_de_papes_01 } remove_building = pam_palais_de_papes_01 }
+    if = { limit = { has_building = pam_lateran_basilica_01 } remove_building = pam_lateran_basilica_01 }
+    if = { limit = { has_building = pam_reims_cathedral_01 } remove_building = pam_reims_cathedral_01 }
 }

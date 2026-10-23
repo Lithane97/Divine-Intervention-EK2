@@ -21950,101 +21950,6 @@ DI_tm_destroy_building_generic_sulfur_mines_sgui = {
     }
 }
 
-DI_tm_building_generic_diamond_mines_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = generic_diamond_mines_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_diamond_mines_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_diamond_mines_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = generic_diamond_mines_02 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_diamond_mines_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_diamond_mines_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = generic_diamond_mines_03 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_diamond_mines_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_diamond_mines_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = generic_diamond_mines_04 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_diamond_mines_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_diamond_mines_04
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_generic_diamond_mines_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = generic_diamond_mines_04 } remove_building = generic_diamond_mines_04 }
-                else_if = { limit = { has_building = generic_diamond_mines_03 } remove_building = generic_diamond_mines_03 }
-                else_if = { limit = { has_building = generic_diamond_mines_02 } remove_building = generic_diamond_mines_02 }
-                else_if = { limit = { has_building = generic_diamond_mines_01 } remove_building = generic_diamond_mines_01 }
-            }
-        }
-    }
-}
-
 DI_tm_building_generic_ebony_mines_sgui = {
     scope = character # Player Character
 
@@ -22235,7 +22140,7 @@ DI_tm_destroy_building_generic_glass_mines_sgui = {
     }
 }
 
-DI_tm_building_generic_orichalc_mines_sgui = {
+DI_tm_building_karfan_orichalc_mines_01_sgui = {
     scope = character # Player Character
 
     is_valid = {
@@ -22262,57 +22167,57 @@ DI_tm_building_generic_orichalc_mines_sgui = {
                             NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
                             scope:player = { var:DI_title_manager_building_level = 1 }
                         }
-                        NOT = { has_building = generic_orichalc_mines_01 }
+                        NOT = { has_building = karfan_orichalc_mines_01_01 }
                     }
                     if = {
                         limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_orichalc_mines_01
+                        add_special_building_slot = karfan_orichalc_mines_01_01
                     }
                     DI_clear_special_building_effect = yes
-                    add_special_building = generic_orichalc_mines_01
+                    add_special_building = karfan_orichalc_mines_01_01
                 }
                 else_if = {
                     limit = {
                         scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = generic_orichalc_mines_02 }
+                        NOT = { has_building = karfan_orichalc_mines_01_02 }
                     }
                     if = {
                         limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_orichalc_mines_01
+                        add_special_building_slot = karfan_orichalc_mines_01_01
                     }
                     DI_clear_special_building_effect = yes
-                    add_special_building = generic_orichalc_mines_02
+                    add_special_building = karfan_orichalc_mines_01_02
                 }
                 else_if = {
                     limit = {
                         scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = generic_orichalc_mines_03 }
+                        NOT = { has_building = karfan_orichalc_mines_01_03 }
                     }
                     if = {
                         limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_orichalc_mines_01
+                        add_special_building_slot = karfan_orichalc_mines_01_01
                     }
                     DI_clear_special_building_effect = yes
-                    add_special_building = generic_orichalc_mines_03
+                    add_special_building = karfan_orichalc_mines_01_03
                 }
                 else_if = {
                     limit = {
                         scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = generic_orichalc_mines_04 }
+                        NOT = { has_building = karfan_orichalc_mines_01_04 }
                     }
                     if = {
                         limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_orichalc_mines_01
+                        add_special_building_slot = karfan_orichalc_mines_01_01
                     }
                     DI_clear_special_building_effect = yes
-                    add_special_building = generic_orichalc_mines_04
+                    add_special_building = karfan_orichalc_mines_01_04
                 }
             }
         }
     }
 }
 
-DI_tm_destroy_building_generic_orichalc_mines_sgui = {
+DI_tm_destroy_building_karfan_orichalc_mines_01_sgui = {
     scope = character # Player Character
 
     effect = {
@@ -22321,105 +22226,10 @@ DI_tm_destroy_building_generic_orichalc_mines_sgui = {
             save_scope_as = province
 
             scope:province = {
-                if = { limit = { has_building = generic_orichalc_mines_04 } remove_building = generic_orichalc_mines_04 }
-                else_if = { limit = { has_building = generic_orichalc_mines_03 } remove_building = generic_orichalc_mines_03 }
-                else_if = { limit = { has_building = generic_orichalc_mines_02 } remove_building = generic_orichalc_mines_02 }
-                else_if = { limit = { has_building = generic_orichalc_mines_01 } remove_building = generic_orichalc_mines_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_adamantium_mine_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = adamantium_mine_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = adamantium_mine_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = adamantium_mine_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = adamantium_mine_02 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = adamantium_mine_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = adamantium_mine_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = adamantium_mine_03 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = adamantium_mine_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = adamantium_mine_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = adamantium_mine_04 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = adamantium_mine_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = adamantium_mine_04
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_adamantium_mine_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = adamantium_mine_04 } remove_building = adamantium_mine_04 }
-                else_if = { limit = { has_building = adamantium_mine_03 } remove_building = adamantium_mine_03 }
-                else_if = { limit = { has_building = adamantium_mine_02 } remove_building = adamantium_mine_02 }
-                else_if = { limit = { has_building = adamantium_mine_01 } remove_building = adamantium_mine_01 }
+                if = { limit = { has_building = karfan_orichalc_mines_01_04 } remove_building = karfan_orichalc_mines_01_04 }
+                else_if = { limit = { has_building = karfan_orichalc_mines_01_03 } remove_building = karfan_orichalc_mines_01_03 }
+                else_if = { limit = { has_building = karfan_orichalc_mines_01_02 } remove_building = karfan_orichalc_mines_01_02 }
+                else_if = { limit = { has_building = karfan_orichalc_mines_01_01 } remove_building = karfan_orichalc_mines_01_01 }
             }
         }
     }
@@ -23565,6 +23375,332 @@ DI_tm_destroy_building_karanesh_sulfur_mines_sgui = {
     }
 }
 
+DI_tm_building_great_project_cathedral_under_construction_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = great_project_cathedral_under_construction }
+                    }
+                    add_building = great_project_cathedral_under_construction
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_great_project_cathedral_under_construction_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = great_project_cathedral_under_construction } remove_building = great_project_cathedral_under_construction }
+            }
+        }
+    }
+}
+
+DI_tm_building_great_project_cathedral_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+            var:DI_title_manager_building_level = 2
+            var:DI_title_manager_building_level = 3
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = great_project_cathedral_01 }
+                    }
+                    add_building = great_project_cathedral_01
+                }
+                else_if = {
+                    limit = {
+                        scope:player = { var:DI_title_manager_building_level = 2 }
+                        NOT = { has_building = great_project_cathedral_02 }
+                    }
+                    add_building = great_project_cathedral_02
+                }
+                else_if = {
+                    limit = {
+                        scope:player = { var:DI_title_manager_building_level = 3 }
+                        NOT = { has_building = great_project_cathedral_03 }
+                    }
+                    add_building = great_project_cathedral_03
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_great_project_cathedral_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = great_project_cathedral_03 } remove_building = great_project_cathedral_03 }
+                else_if = { limit = { has_building = great_project_cathedral_02 } remove_building = great_project_cathedral_02 }
+                else_if = { limit = { has_building = great_project_cathedral_01 } remove_building = great_project_cathedral_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_pam_abbey_of_st_gall_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = pam_abbey_of_st_gall_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_abbey_of_st_gall_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_abbey_of_st_gall_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_pam_abbey_of_st_gall_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = pam_abbey_of_st_gall_01 } remove_building = pam_abbey_of_st_gall_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_pam_palais_de_papes_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = pam_palais_de_papes_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_palais_de_papes_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_palais_de_papes_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_pam_palais_de_papes_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = pam_palais_de_papes_01 } remove_building = pam_palais_de_papes_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_pam_lateran_basilica_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = pam_lateran_basilica_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_lateran_basilica_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_lateran_basilica_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_pam_lateran_basilica_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = pam_lateran_basilica_01 } remove_building = pam_lateran_basilica_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_pam_reims_cathedral_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = pam_reims_cathedral_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_reims_cathedral_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_reims_cathedral_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_pam_reims_cathedral_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = pam_reims_cathedral_01 } remove_building = pam_reims_cathedral_01 }
+            }
+        }
+    }
+}
+
 DI_tm_building_walls_01_city_sgui = {
     scope = character # Player Character
 
@@ -24628,10 +24764,6 @@ DI_remove_buildings_sgui = {
                 DI_remove_building_type_effect = { BUILDING = academyscho }
                 DI_remove_building_type_effect = { BUILDING = academywar }
                 if = { limit = { has_building = adamantine_tower_01 } remove_building = adamantine_tower_01 }
-                if = { limit = { has_building = adamantium_mine_04 } remove_building = adamantium_mine_04 }
-                else_if = { limit = { has_building = adamantium_mine_03 } remove_building = adamantium_mine_03 }
-                else_if = { limit = { has_building = adamantium_mine_02 } remove_building = adamantium_mine_02 }
-                else_if = { limit = { has_building = adamantium_mine_01 } remove_building = adamantium_mine_01 }
                 if = { limit = { has_building = al_qarawiyyin_university_01 } remove_building = al_qarawiyyin_university_01 }
                 if = { limit = { has_building = alabaster_white_walls_01 } remove_building = alabaster_white_walls_01 }
                 if = { limit = { has_building = ald_mirathi_01 } remove_building = ald_mirathi_01 }
@@ -24770,10 +24902,6 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = generic_copper_mines_03 } remove_building = generic_copper_mines_03 }
                 else_if = { limit = { has_building = generic_copper_mines_02 } remove_building = generic_copper_mines_02 }
                 else_if = { limit = { has_building = generic_copper_mines_01 } remove_building = generic_copper_mines_01 }
-                if = { limit = { has_building = generic_diamond_mines_04 } remove_building = generic_diamond_mines_04 }
-                else_if = { limit = { has_building = generic_diamond_mines_03 } remove_building = generic_diamond_mines_03 }
-                else_if = { limit = { has_building = generic_diamond_mines_02 } remove_building = generic_diamond_mines_02 }
-                else_if = { limit = { has_building = generic_diamond_mines_01 } remove_building = generic_diamond_mines_01 }
                 if = { limit = { has_building = generic_ebony_mines_04 } remove_building = generic_ebony_mines_04 }
                 else_if = { limit = { has_building = generic_ebony_mines_03 } remove_building = generic_ebony_mines_03 }
                 else_if = { limit = { has_building = generic_ebony_mines_02 } remove_building = generic_ebony_mines_02 }
@@ -24787,10 +24915,6 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = generic_gold_mines_02 } remove_building = generic_gold_mines_02 }
                 else_if = { limit = { has_building = generic_gold_mines_01 } remove_building = generic_gold_mines_01 }
                 if = { limit = { has_building = generic_holy_site_01 } remove_building = generic_holy_site_01 }
-                if = { limit = { has_building = generic_orichalc_mines_04 } remove_building = generic_orichalc_mines_04 }
-                else_if = { limit = { has_building = generic_orichalc_mines_03 } remove_building = generic_orichalc_mines_03 }
-                else_if = { limit = { has_building = generic_orichalc_mines_02 } remove_building = generic_orichalc_mines_02 }
-                else_if = { limit = { has_building = generic_orichalc_mines_01 } remove_building = generic_orichalc_mines_01 }
                 if = { limit = { has_building = generic_silver_mines_04 } remove_building = generic_silver_mines_04 }
                 else_if = { limit = { has_building = generic_silver_mines_03 } remove_building = generic_silver_mines_03 }
                 else_if = { limit = { has_building = generic_silver_mines_02 } remove_building = generic_silver_mines_02 }
@@ -24814,6 +24938,10 @@ DI_remove_buildings_sgui = {
                 if = { limit = { has_building = great_chapel_zenithar_02 } remove_building = great_chapel_zenithar_02 }
                 else_if = { limit = { has_building = great_chapel_zenithar_01 } remove_building = great_chapel_zenithar_01 }
                 if = { limit = { has_building = great_megalith_01 } remove_building = great_megalith_01 }
+                if = { limit = { has_building = great_project_cathedral_03 } remove_building = great_project_cathedral_03 }
+                else_if = { limit = { has_building = great_project_cathedral_02 } remove_building = great_project_cathedral_02 }
+                else_if = { limit = { has_building = great_project_cathedral_01 } remove_building = great_project_cathedral_01 }
+                if = { limit = { has_building = great_project_cathedral_under_construction } remove_building = great_project_cathedral_under_construction }
                 if = { limit = { has_building = great_wyrd_tree_01 } remove_building = great_wyrd_tree_01 }
                 DI_remove_building_type_effect = { BUILDING = guild_halls }
                 if = { limit = { has_building = gunung_api_01 } remove_building = gunung_api_01 }
@@ -24892,6 +25020,10 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = karanesh_sulfur_mines_03 } remove_building = karanesh_sulfur_mines_03 }
                 else_if = { limit = { has_building = karanesh_sulfur_mines_02 } remove_building = karanesh_sulfur_mines_02 }
                 else_if = { limit = { has_building = karanesh_sulfur_mines_01 } remove_building = karanesh_sulfur_mines_01 }
+                if = { limit = { has_building = karfan_orichalc_mines_01_04 } remove_building = karfan_orichalc_mines_01_04 }
+                else_if = { limit = { has_building = karfan_orichalc_mines_01_03 } remove_building = karfan_orichalc_mines_01_03 }
+                else_if = { limit = { has_building = karfan_orichalc_mines_01_02 } remove_building = karfan_orichalc_mines_01_02 }
+                else_if = { limit = { has_building = karfan_orichalc_mines_01_01 } remove_building = karfan_orichalc_mines_01_01 }
                 if = { limit = { has_building = kemel_ze_01 } remove_building = kemel_ze_01 }
                 if = { limit = { has_building = kogoruhn_citadel_02 } remove_building = kogoruhn_citadel_02 }
                 else_if = { limit = { has_building = kogoruhn_citadel_01 } remove_building = kogoruhn_citadel_01 }
@@ -25010,6 +25142,10 @@ DI_remove_buildings_sgui = {
                 if = { limit = { has_building = palace_of_kings_01 } remove_building = palace_of_kings_01 }
                 if = { limit = { has_building = palisades_02 } remove_building = palisades_02 }
                 else_if = { limit = { has_building = palisades_01 } remove_building = palisades_01 }
+                if = { limit = { has_building = pam_abbey_of_st_gall_01 } remove_building = pam_abbey_of_st_gall_01 }
+                if = { limit = { has_building = pam_lateran_basilica_01 } remove_building = pam_lateran_basilica_01 }
+                if = { limit = { has_building = pam_palais_de_papes_01 } remove_building = pam_palais_de_papes_01 }
+                if = { limit = { has_building = pam_reims_cathedral_01 } remove_building = pam_reims_cathedral_01 }
                 if = { limit = { has_building = pantherfang_chapel_01 } remove_building = pantherfang_chapel_01 }
                 if = { limit = { has_building = parliament_of_bugs_01 } remove_building = parliament_of_bugs_01 }
                 DI_remove_building_type_effect = { BUILDING = pastures }
@@ -25279,18 +25415,6 @@ DI_max_building_upgrades_sgui = {
                     }
                     DI_clear_special_building_effect = yes
                     add_special_building = adamantine_tower_01
-                }
-                if = {
-                    limit = {
-                        has_building_or_higher = adamantium_mine_01
-                        NOT = { has_building = adamantium_mine_04 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = adamantium_mine_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = adamantium_mine_04
                 }
                 if = {
                     limit = {
@@ -26285,18 +26409,6 @@ DI_max_building_upgrades_sgui = {
                 }
                 if = {
                     limit = {
-                        has_building_or_higher = generic_diamond_mines_01
-                        NOT = { has_building = generic_diamond_mines_04 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_diamond_mines_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_diamond_mines_04
-                }
-                if = {
-                    limit = {
                         has_building_or_higher = generic_ebony_mines_01
                         NOT = { has_building = generic_ebony_mines_04 }
                     }
@@ -26342,18 +26454,6 @@ DI_max_building_upgrades_sgui = {
                     }
                     DI_clear_special_building_effect = yes
                     add_special_building = generic_holy_site_01
-                }
-                if = {
-                    limit = {
-                        has_building_or_higher = generic_orichalc_mines_01
-                        NOT = { has_building = generic_orichalc_mines_04 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_orichalc_mines_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_orichalc_mines_04
                 }
                 if = {
                     limit = {
@@ -26524,6 +26624,20 @@ DI_max_building_upgrades_sgui = {
                         NOT = { has_building = great_megalith_01 }
                     }
                     add_building = great_megalith_01
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = great_project_cathedral_01
+                        NOT = { has_building = great_project_cathedral_03 }
+                    }
+                    add_building = great_project_cathedral_03
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = great_project_cathedral_under_construction
+                        NOT = { has_building = great_project_cathedral_under_construction }
+                    }
+                    add_building = great_project_cathedral_under_construction
                 }
                 if = {
                     limit = {
@@ -27042,6 +27156,18 @@ DI_max_building_upgrades_sgui = {
                     }
                     DI_clear_special_building_effect = yes
                     add_special_building = karanesh_sulfur_mines_04
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = karfan_orichalc_mines_01_01
+                        NOT = { has_building = karfan_orichalc_mines_01_04 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = karfan_orichalc_mines_01_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = karfan_orichalc_mines_01_04
                 }
                 if = {
                     limit = {
@@ -27668,6 +27794,54 @@ DI_max_building_upgrades_sgui = {
                         NOT = { has_building = palisades_02 }
                     }
                     add_building = palisades_02
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = pam_abbey_of_st_gall_01
+                        NOT = { has_building = pam_abbey_of_st_gall_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_abbey_of_st_gall_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_abbey_of_st_gall_01
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = pam_lateran_basilica_01
+                        NOT = { has_building = pam_lateran_basilica_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_lateran_basilica_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_lateran_basilica_01
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = pam_palais_de_papes_01
+                        NOT = { has_building = pam_palais_de_papes_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_palais_de_papes_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_palais_de_papes_01
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = pam_reims_cathedral_01
+                        NOT = { has_building = pam_reims_cathedral_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = pam_reims_cathedral_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = pam_reims_cathedral_01
                 }
                 if = {
                     limit = {

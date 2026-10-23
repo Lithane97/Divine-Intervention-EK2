@@ -269,11 +269,11 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
-                target = trait:lifestyle_mystic
+                target = trait:erudite
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
-                target = trait:scholar
+                target = trait:lifestyle_mystic
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -433,15 +433,15 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:generous
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:just
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -629,6 +629,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:intellect_good_1
             }
             add_to_variable_list = {
@@ -646,10 +650,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -799,6 +799,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:intellect_good_1
             }
             add_to_variable_list = {
@@ -812,10 +816,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:lifestyle_physician
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -837,6 +837,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:intellect_good_1
             }
             add_to_variable_list = {
@@ -850,10 +854,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -955,6 +955,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:governor
             }
             add_to_variable_list = {
@@ -968,10 +972,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:schemer
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -1037,11 +1037,11 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
-                target = trait:patient
+                target = trait:erudite
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
-                target = trait:scholar
+                target = trait:patient
             }
         }
         court_position_type:food_taster_court_position = {
@@ -1155,6 +1155,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:intellect_good_1
             }
             add_to_variable_list = {
@@ -1168,10 +1172,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -1197,6 +1197,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:intellect_good_1
             }
             add_to_variable_list = {
@@ -1210,10 +1214,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -1239,6 +1239,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:intellect_good_1
             }
             add_to_variable_list = {
@@ -1252,10 +1256,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -1829,6 +1829,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:just
             }
             add_to_variable_list = {
@@ -1838,10 +1842,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -2083,15 +2083,15 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:military_engineer
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:patient
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
         }
         court_position_type:stooge_camp_officer = {
@@ -2131,6 +2131,10 @@ DI_apply_court_position_profile_effect = {
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
+                target = trait:erudite
+            }
+            add_to_variable_list = {
+                name = DI_cs_trait_list
                 target = trait:flexible_leader
             }
             add_to_variable_list = {
@@ -2164,10 +2168,6 @@ DI_apply_court_position_profile_effect = {
             add_to_variable_list = {
                 name = DI_cs_trait_list
                 target = trait:rough_terrain_expert
-            }
-            add_to_variable_list = {
-                name = DI_cs_trait_list
-                target = trait:scholar
             }
             add_to_variable_list = {
                 name = DI_cs_trait_list
@@ -2351,6 +2351,10 @@ DI_apply_court_position_validity_effect = {
                 }
             }
             set_character_faith = scope:target.faith
+            if = {
+                limit = { exists = scope:target.rite }
+                set_character_rite = scope:target.rite
+            }
         }
         court_position_type:champion_court_position = {
             remove_trait = blind
@@ -2415,7 +2419,7 @@ DI_apply_court_position_validity_effect = {
                     add_trait = lifestyle_physician
                 }
                 1 = {
-                    add_trait = scholar
+                    add_trait = erudite
                 }
                 1 = {
                     add_trait = witch
@@ -2427,18 +2431,20 @@ DI_apply_court_position_validity_effect = {
                 limit = {
                     NOT = {
                         OR = {
+                            faith = faith:adamantia
                             faith = faith:aedric
                             faith = faith:chantry_auriel
-                            faith = faith:mainland_auriel
                             faith = faith:malada
+                            faith = faith:trinimac_cult
                         }
                     }
                 }
                 random_list = {
+                    1 = { set_character_faith = faith:adamantia }
                     1 = { set_character_faith = faith:aedric }
                     1 = { set_character_faith = faith:chantry_auriel }
-                    1 = { set_character_faith = faith:mainland_auriel }
                     1 = { set_character_faith = faith:malada }
+                    1 = { set_character_faith = faith:trinimac_cult }
                 }
             }
         }
@@ -2802,28 +2808,6 @@ DI_apply_court_position_extended_validity_effect = {
                 add_trait_xp = { trait = lifestyle_mystic value = 50 }
             }
         }
-        court_position_type:chief_qadi_court_position = {
-            if = {
-                limit = {
-                    AND = {
-                        scope:target.faith = {
-                            has_doctrine = doctrine_gender_male_dominated
-                        }
-                    }
-                }
-            }
-            if = {
-                limit = {
-                    AND = {
-                        scope:target.faith = {
-                            has_doctrine = doctrine_gender_female_dominated
-                        }
-                    }
-                }
-            }
-            else = {
-            }
-        }
         court_position_type:court_artificer_court_position = {
             if = {
                 limit = { NOT = { exists = inspiration } }
@@ -2834,9 +2818,9 @@ DI_apply_court_position_extended_validity_effect = {
             if = {
                 limit = {
                     AND = {
-                        scope:target.faith = {
+                        scope:target.rite = {
                             NOT = {
-                                has_doctrine = doctrine_clerical_function_recruitment
+                                rite_has_doctrine = doctrine_clerical_function_recruitment
                             }
                         }
                     }
@@ -2854,6 +2838,10 @@ DI_apply_court_position_extended_validity_effect = {
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:agaceph } } }
                         set_culture = culture:agaceph
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:akari } } }
+                        set_culture = culture:akari
                     }
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:alikr } } }
@@ -2988,10 +2976,6 @@ DI_apply_court_position_extended_validity_effect = {
                         set_culture = culture:dynari
                     }
                     1 = {
-                        trigger = { scope:target = { NOT = { culture = culture:eastmarcher } } }
-                        set_culture = culture:eastmarcher
-                    }
-                    1 = {
                         trigger = { scope:target = { NOT = { culture = culture:etarani } } }
                         set_culture = culture:etarani
                     }
@@ -3028,6 +3012,10 @@ DI_apply_court_position_extended_validity_effect = {
                         set_culture = culture:goblin
                     }
                     1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:haafingar } } }
+                        set_culture = culture:haafingar
+                    }
+                    1 = {
                         trigger = { scope:target = { NOT = { culture = culture:hapsleet } } }
                         set_culture = culture:hapsleet
                     }
@@ -3038,10 +3026,6 @@ DI_apply_court_position_extended_validity_effect = {
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:hleel } } }
                         set_culture = culture:hleel
-                    }
-                    1 = {
-                        trigger = { scope:target = { NOT = { culture = culture:horsefolk } } }
-                        set_culture = culture:horsefolk
                     }
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:horwalli } } }
@@ -3062,10 +3046,6 @@ DI_apply_court_position_extended_validity_effect = {
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:imga } } }
                         set_culture = culture:imga
-                    }
-                    1 = {
-                        trigger = { scope:target = { NOT = { culture = culture:iron_orc } } }
-                        set_culture = culture:iron_orc
                     }
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:keptu } } }
@@ -3096,6 +3076,10 @@ DI_apply_court_position_extended_validity_effect = {
                         set_culture = culture:lilmothiit
                     }
                     1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:main_orc } } }
+                        set_culture = culture:main_orc
+                    }
+                    1 = {
                         trigger = { scope:target = { NOT = { culture = culture:malahk_orc } } }
                         set_culture = culture:malahk_orc
                     }
@@ -3124,10 +3108,6 @@ DI_apply_court_position_extended_validity_effect = {
                         set_culture = culture:morathi
                     }
                     1 = {
-                        trigger = { scope:target = { NOT = { culture = culture:mountain_orc } } }
-                        set_culture = culture:mountain_orc
-                    }
-                    1 = {
                         trigger = { scope:target = { NOT = { culture = culture:naga } } }
                         set_culture = culture:naga
                     }
@@ -3152,8 +3132,16 @@ DI_apply_court_position_extended_validity_effect = {
                         set_culture = culture:ojel
                     }
                     1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:oldholder } } }
+                        set_culture = culture:oldholder
+                    }
+                    1 = {
                         trigger = { scope:target = { NOT = { culture = culture:orma } } }
                         set_culture = culture:orma
+                    }
+                    1 = {
+                        trigger = { scope:target = { NOT = { culture = culture:ornim_orc } } }
+                        set_culture = culture:ornim_orc
                     }
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:paatru } } }
@@ -3172,8 +3160,8 @@ DI_apply_court_position_extended_validity_effect = {
                         set_culture = culture:raga
                     }
                     1 = {
-                        trigger = { scope:target = { NOT = { culture = culture:reachfolk } } }
-                        set_culture = culture:reachfolk
+                        trigger = { scope:target = { NOT = { culture = culture:reachman } } }
+                        set_culture = culture:reachman
                     }
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:riekling } } }
@@ -3226,10 +3214,6 @@ DI_apply_court_position_extended_validity_effect = {
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:tundrastrider } } }
                         set_culture = culture:tundrastrider
-                    }
-                    1 = {
-                        trigger = { scope:target = { NOT = { culture = culture:westmarcher } } }
-                        set_culture = culture:westmarcher
                     }
                     1 = {
                         trigger = { scope:target = { NOT = { culture = culture:witchman } } }

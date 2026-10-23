@@ -308,15 +308,15 @@ DI_heritage_cyrod_sgui = {
     }
 }
 
-### deathlander ###
-DI_heritage_deathlander_sgui = {
+### keptu ###
+DI_heritage_keptu_sgui = {
     scope = character # Player Character
 
     effect = {
         save_scope_as = player_character
 
         var:DI_innovation_selected_culture = {
-            set_culture_pillar = heritage_deathlander
+            set_culture_pillar = heritage_keptu
         }
     }
 }
@@ -636,15 +636,15 @@ DI_language_imga_sgui = {
     }
 }
 
-### iron_orcish ###
-DI_language_iron_orcish_sgui = {
+### ornim_orcish ###
+DI_language_ornim_orcish_sgui = {
     scope = character # Player Character
 
     effect = {
         save_scope_as = player_character
 
         var:DI_innovation_selected_culture = {
-            set_culture_pillar = language_iron_orcish
+            set_culture_pillar = language_ornim_orcish
         }
     }
 }
@@ -727,15 +727,15 @@ DI_language_kothri_sgui = {
     }
 }
 
-### nedic_west ###
-DI_language_nedic_west_sgui = {
+### duraki ###
+DI_language_duraki_sgui = {
     scope = character # Player Character
 
     effect = {
         save_scope_as = player_character
 
         var:DI_innovation_selected_culture = {
-            set_culture_pillar = language_nedic_west
+            set_culture_pillar = language_duraki
         }
     }
 }
@@ -906,5 +906,85 @@ DI_language_tamrielic_yoku_sgui = {
         var:DI_innovation_selected_culture = {
             set_culture_pillar = language_tamrielic_yoku
         }
+    }
+}
+
+
+DI_cd_pillar_catalogue_init_sgui = {
+    scope = character
+    effect = {
+        if = { limit = { has_global_variable_list = DI_cd_pillars_martial_custom } clear_global_variable_list = DI_cd_pillars_martial_custom }
+        add_to_global_variable_list = { name = DI_cd_pillars_martial_custom target = culture_pillar:martial_custom_male_only }
+        add_to_global_variable_list = { name = DI_cd_pillars_martial_custom target = culture_pillar:martial_custom_equal }
+        add_to_global_variable_list = { name = DI_cd_pillars_martial_custom target = culture_pillar:martial_custom_female_only }
+        if = { limit = { has_global_variable_list = DI_cd_pillars_ethos } clear_global_variable_list = DI_cd_pillars_ethos }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_bellicose }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_stoic }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_bureaucratic }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_spiritual }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_courtly }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_egalitarian }
+        add_to_global_variable_list = { name = DI_cd_pillars_ethos target = culture_pillar:ethos_communal }
+        if = { limit = { has_global_variable_list = DI_cd_pillars_heritage } clear_global_variable_list = DI_cd_pillars_heritage }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_aldmeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_ayleid }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_bosmeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_chimeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_dunmeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_dwemeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_falmeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_maormeri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_atmoran_giant }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_atmoran }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_breton }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_cyrodiilic }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_cyrod }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_keptu }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_kothri }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_tsaesci }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_yokudan }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_orcish }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_argonian }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_dremora }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_goblinken }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_imgan }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_khajiiti }
+        add_to_global_variable_list = { name = DI_cd_pillars_heritage target = culture_pillar:heritage_lilmothiit }
+        if = { limit = { has_global_variable_list = DI_cd_pillars_language } clear_global_variable_list = DI_cd_pillars_language }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_altmeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_atmoran }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_ayleidoon }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_bosmeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_bretic }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_chimeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_cyrodiilic }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_daedric }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_dovahzul }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_dunmeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_dwemeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_old_falmeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_goblin }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_imga }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_ornim_orcish }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_jaegi }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_jel }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_falmeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_lilmothiit }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_maormeris }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_kothri }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_duraki }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_nordic }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_old_bretic }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_old_cyrod }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_orma }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_orcish }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_quey }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_riektongue }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_skaal }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_taagra }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_tsaesci }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_velothis }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_yoku }
+        add_to_global_variable_list = { name = DI_cd_pillars_language target = culture_pillar:language_tamrielic_yoku }
     }
 }

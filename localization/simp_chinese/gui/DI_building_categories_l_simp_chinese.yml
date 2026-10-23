@@ -17,9 +17,10 @@
  DI_ccp3_special_buildings: "Ccp3 Special Buildings"
  DI_cp6_special_buildings: "Cp6 Special Buildings"
  DI_cp8_special_buildings: "Cp8 Special Buildings"
+ DI_pam_buildings: "Pam建筑"
  DI_tgp_great_project_buildings: "Tgp Great Project Buildings"
 
- # AUTO-GENERATED compatch building category labels
+# --- Extra keys not present in English (review/remove if obsolete) ---
  DI_ek_duchy_buildings: "Ek Duchy Buildings"
  DI_ek_green_pact_buildings: "Ek Green Pact Buildings"
  DI_ek_regular_buildings: "Ek Regular Buildings"
