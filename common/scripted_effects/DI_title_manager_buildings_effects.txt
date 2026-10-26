@@ -90,14 +90,10 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = temples_angkor_01 } remove_building = temples_angkor_01 }
     if = { limit = { has_building = temples_angkor_02 } remove_building = temples_angkor_02 }
     if = { limit = { has_building = amenos_station_01 } remove_building = amenos_station_01 }
-    if = { limit = { has_building = ansu_gurleht_temple_01 } remove_building = ansu_gurleht_temple_01 }
-    if = { limit = { has_building = noghalo_cowry_pools_01 } remove_building = noghalo_cowry_pools_01 }
-    if = { limit = { has_building = conclave_zawru_hun_01 } remove_building = conclave_zawru_hun_01 }
     if = { limit = { has_building = white_gold_tower_01 } remove_building = white_gold_tower_01 }
     if = { limit = { has_building = adamantine_tower_01 } remove_building = adamantine_tower_01 }
     if = { limit = { has_building = crystal_tower_01 } remove_building = crystal_tower_01 }
     if = { limit = { has_building = great_wyrd_tree_01 } remove_building = great_wyrd_tree_01 }
-    if = { limit = { has_building = generic_holy_site_01 } remove_building = generic_holy_site_01 }
     if = { limit = { has_building = development_committee_01 } remove_building = development_committee_01 }
     if = { limit = { has_building = development_committee_02 } remove_building = development_committee_02 }
     if = { limit = { has_building = development_committee_03 } remove_building = development_committee_03 }
@@ -287,6 +283,10 @@ DI_clear_special_building_effect = {
     if = { limit = { has_building = rootwater_grove_01 } remove_building = rootwater_grove_01 }
     if = { limit = { has_building = fort_of_reman_bluff_01 } remove_building = fort_of_reman_bluff_01 }
     if = { limit = { has_building = fort_of_reman_bluff_02 } remove_building = fort_of_reman_bluff_02 }
+    if = { limit = { has_building = port_arch_01 } remove_building = port_arch_01 }
+    if = { limit = { has_building = ansu_gurleht_temple_01 } remove_building = ansu_gurleht_temple_01 }
+    if = { limit = { has_building = noghalo_cowry_pools_01 } remove_building = noghalo_cowry_pools_01 }
+    if = { limit = { has_building = conclave_zawru_hun_01 } remove_building = conclave_zawru_hun_01 }
     if = { limit = { has_building = generic_sulfur_mines_01 } remove_building = generic_sulfur_mines_01 }
     if = { limit = { has_building = generic_sulfur_mines_02 } remove_building = generic_sulfur_mines_02 }
     if = { limit = { has_building = generic_sulfur_mines_03 } remove_building = generic_sulfur_mines_03 }

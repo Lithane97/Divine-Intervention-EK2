@@ -12533,165 +12533,6 @@ DI_tm_destroy_building_amenos_station_sgui = {
     }
 }
 
-DI_tm_building_ansu_gurleht_temple_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = ansu_gurleht_temple_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = ansu_gurleht_temple_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = ansu_gurleht_temple_01
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_ansu_gurleht_temple_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = ansu_gurleht_temple_01 } remove_building = ansu_gurleht_temple_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_noghalo_cowry_pools_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = noghalo_cowry_pools_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = noghalo_cowry_pools_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = noghalo_cowry_pools_01
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_noghalo_cowry_pools_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = noghalo_cowry_pools_01 } remove_building = noghalo_cowry_pools_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_conclave_zawru_hun_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = conclave_zawru_hun_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = conclave_zawru_hun_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = conclave_zawru_hun_01
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_conclave_zawru_hun_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = conclave_zawru_hun_01 } remove_building = conclave_zawru_hun_01 }
-            }
-        }
-    }
-}
-
 DI_tm_building_white_gold_tower_sgui = {
     scope = character # Player Character
 
@@ -12899,59 +12740,6 @@ DI_tm_destroy_building_great_wyrd_tree_sgui = {
 
             scope:province = {
                 if = { limit = { has_building = great_wyrd_tree_01 } remove_building = great_wyrd_tree_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_generic_holy_site_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = generic_holy_site_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_holy_site_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_holy_site_01
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_generic_holy_site_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = generic_holy_site_01 } remove_building = generic_holy_site_01 }
             }
         }
     }
@@ -21855,6 +21643,218 @@ DI_tm_destroy_building_fort_of_reman_bluff_sgui = {
     }
 }
 
+DI_tm_building_port_arch_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = port_arch_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = port_arch_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = port_arch_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_port_arch_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = port_arch_01 } remove_building = port_arch_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_ansu_gurleht_temple_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = ansu_gurleht_temple_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = ansu_gurleht_temple_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = ansu_gurleht_temple_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_ansu_gurleht_temple_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = ansu_gurleht_temple_01 } remove_building = ansu_gurleht_temple_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_noghalo_cowry_pools_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = noghalo_cowry_pools_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = noghalo_cowry_pools_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = noghalo_cowry_pools_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_noghalo_cowry_pools_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = noghalo_cowry_pools_01 } remove_building = noghalo_cowry_pools_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_conclave_zawru_hun_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = conclave_zawru_hun_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = conclave_zawru_hun_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = conclave_zawru_hun_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_conclave_zawru_hun_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = conclave_zawru_hun_01 } remove_building = conclave_zawru_hun_01 }
+            }
+        }
+    }
+}
+
 DI_tm_building_generic_sulfur_mines_sgui = {
     scope = character # Player Character
 
@@ -24914,7 +24914,6 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = generic_gold_mines_03 } remove_building = generic_gold_mines_03 }
                 else_if = { limit = { has_building = generic_gold_mines_02 } remove_building = generic_gold_mines_02 }
                 else_if = { limit = { has_building = generic_gold_mines_01 } remove_building = generic_gold_mines_01 }
-                if = { limit = { has_building = generic_holy_site_01 } remove_building = generic_holy_site_01 }
                 if = { limit = { has_building = generic_silver_mines_04 } remove_building = generic_silver_mines_04 }
                 else_if = { limit = { has_building = generic_silver_mines_03 } remove_building = generic_silver_mines_03 }
                 else_if = { limit = { has_building = generic_silver_mines_02 } remove_building = generic_silver_mines_02 }
@@ -25153,6 +25152,7 @@ DI_remove_buildings_sgui = {
                 DI_remove_building_type_effect = { BUILDING = plantations }
                 if = { limit = { has_building = plaza_brindisi_dorom_01 } remove_building = plaza_brindisi_dorom_01 }
                 if = { limit = { has_building = pleasure_dome } remove_building = pleasure_dome }
+                if = { limit = { has_building = port_arch_01 } remove_building = port_arch_01 }
                 if = { limit = { has_building = port_hestra_01 } remove_building = port_hestra_01 }
                 if = { limit = { has_building = potentate_retreat_01 } remove_building = potentate_retreat_01 }
                 DI_remove_building_type_effect = { BUILDING = powder_magazine }
@@ -26442,18 +26442,6 @@ DI_max_building_upgrades_sgui = {
                     }
                     DI_clear_special_building_effect = yes
                     add_special_building = generic_gold_mines_04
-                }
-                if = {
-                    limit = {
-                        has_building_or_higher = generic_holy_site_01
-                        NOT = { has_building = generic_holy_site_01 }
-                    }
-                    if = {
-                        limit = { has_special_building_slot = no }
-                        add_special_building_slot = generic_holy_site_01
-                    }
-                    DI_clear_special_building_effect = yes
-                    add_special_building = generic_holy_site_01
                 }
                 if = {
                     limit = {
@@ -27911,6 +27899,18 @@ DI_max_building_upgrades_sgui = {
                     }
                     DI_clear_special_building_effect = yes
                     add_special_building = pleasure_dome
+                }
+                if = {
+                    limit = {
+                        has_building_or_higher = port_arch_01
+                        NOT = { has_building = port_arch_01 }
+                    }
+                    if = {
+                        limit = { has_special_building_slot = no }
+                        add_special_building_slot = port_arch_01
+                    }
+                    DI_clear_special_building_effect = yes
+                    add_special_building = port_arch_01
                 }
                 if = {
                     limit = {

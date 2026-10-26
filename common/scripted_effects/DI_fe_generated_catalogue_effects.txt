@@ -4297,6 +4297,7 @@ DI_fe_rebuild_catalogue_effect = {
             exists = doctrine:doctrine_pantheon_elemental
             exists = doctrine:doctrine_pantheon_riddlethar
             exists = doctrine:doctrine_pantheon_khajiiti
+            exists = doctrine:doctrine_pantheon_malapiit
             exists = doctrine:doctrine_pantheon_forgotten_gods
             exists = doctrine:doctrine_pantheon_breton_aedra
             exists = doctrine:doctrine_pantheon_magna_ge
@@ -4454,6 +4455,10 @@ DI_fe_rebuild_catalogue_effect = {
         else_if = {
             limit = { exists = doctrine:doctrine_pantheon_khajiiti }
             doctrine:doctrine_pantheon_khajiiti = { save_scope_as = DI_fe_group_anchor }
+        }
+        else_if = {
+            limit = { exists = doctrine:doctrine_pantheon_malapiit }
+            doctrine:doctrine_pantheon_malapiit = { save_scope_as = DI_fe_group_anchor }
         }
         else_if = {
             limit = { exists = doctrine:doctrine_pantheon_forgotten_gods }
@@ -4940,6 +4945,17 @@ DI_fe_rebuild_catalogue_effect = {
         if = {
             limit = { exists = doctrine:doctrine_pantheon_khajiiti }
             doctrine:doctrine_pantheon_khajiiti = {
+                if = {
+                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
+                    save_scope_as = DI_fe_matched_doctrine
+                    add_to_global_variable_list = { name = DI_fe_group_doctrine_main_pantheon_doctrines target = scope:DI_fe_matched_doctrine }
+                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
+                }
+            }
+        }
+        if = {
+            limit = { exists = doctrine:doctrine_pantheon_malapiit }
+            doctrine:doctrine_pantheon_malapiit = {
                 if = {
                     limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
                     save_scope_as = DI_fe_matched_doctrine
@@ -6629,7 +6645,7 @@ DI_fe_rebuild_catalogue_effect = {
             add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
         }
     }
-    set_global_variable = { name = DI_fe_catalogue_version value = flag:DI_fe_catalogue_v2_2ff204e121552925 }
+    set_global_variable = { name = DI_fe_catalogue_version value = flag:DI_fe_catalogue_v2_6bb310c9f013281e }
 }
 
 DI_fe_ensure_catalogue_effect = {
@@ -6637,7 +6653,7 @@ DI_fe_ensure_catalogue_effect = {
         limit = {
             OR = {
                 NOT = { has_global_variable = DI_fe_catalogue_version }
-                NOT = { global_var:DI_fe_catalogue_version = flag:DI_fe_catalogue_v2_2ff204e121552925 }
+                NOT = { global_var:DI_fe_catalogue_version = flag:DI_fe_catalogue_v2_6bb310c9f013281e }
             }
         }
         DI_fe_rebuild_catalogue_effect = yes
