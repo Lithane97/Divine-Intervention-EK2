@@ -3,6 +3,6 @@ tags={
 	"Utilities"
 	"1.20 'Crozier'"
 }
-name="DICM - EK2 Comp Patch"
+name="DICM - EK2 Compatch"
 supported_version="1.20.1.2"
 remote_file_id="3106664868"
