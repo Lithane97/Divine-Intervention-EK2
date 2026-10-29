@@ -1,6 +1,7 @@
 version="0.2"
 tags={
 	"Utilities"
+	"1.20 'Crozier'"
 }
 name="DICM - EK2 Comp Patch"
 supported_version="1.20.1.2"
