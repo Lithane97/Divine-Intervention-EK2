@@ -64,29 +64,44 @@ interaction_category_vassal = {
 	icon = "grant_titles_interaction"
 }
 
-interaction_category_succession = {
+interaction_category_magic = {
 	index = 8
+	desc =  "MAGIC_ACTIONS"
+	color = { 1 107 199 222 }
+	icon = "icon_bg"
+}
+
+interaction_category_succession = {
+
+    index = 9
+	index = 8 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "SUCCESSION_ACTIONS"
 	color = { 0.6 0.4 0.7 1 } # from colors.gui
 	icon = "heir"
 }
 
 interaction_category_diarch = {
-	index = 9
+
+    index = 10
+	index = 9 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "DIARCH_ACTIONS"
 	color = { 0.8 0.5 0.3 1 } # from colors.gui (note shares color with diarch since mutually exclusive)
 	icon = "icon_dismiss_entrenched_regency"
 }
 
 interaction_category_prison = {
-	index = 10
+
+    index = 11
+	index = 10 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "IMPRISOMENT_ACTIONS"
 	color = { 0 0 0 0.8 } #black
 	icon = "prison"
 }
 
 interaction_category_uncategorized = {
-	index = 11
+
+    index = 12
+	index = 11 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "UNCATEGORIZED_ACTIONS"
 	color = { 1 0 1 1 }
 	icon = "_missing_interaction"
@@ -96,43 +111,46 @@ interaction_category_uncategorized = {
 }
 
 interaction_debug_main = {
-	index = 12
+
+    index = 13
+	index = 12 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc =  "DEBUG_MAIN"
 	color = { 1 0 1 1 }
 	icon = "icon_bg"
 }
 
 interaction_debug_admin = {
-	index = 13
+
+    index = 14
+	index = 13 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "interaction_debug_admin"
 	color = { 1 0 1 1 }
 	icon = "icon_bg"
 }
 
 interaction_debug_mpo = {
-	index = 14
+
+    index = 15
+	index = 14 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "interaction_debug_mpo"
 	color = { 1 0 1 1 }
 	icon = "icon_bg"
 }
 
 interaction_debug_tgp = {
-	index = 15
+
+    index = 16
+	index = 15 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "interaction_debug_tgp"
 	color = { 1 0 1 1 }
 	icon = "icon_bg"
 }
 
 interaction_debug_pam = {
-	index = 16
+
+    index = 17
+	index = 16 #EK EDIT: DISPLACED BY ONE DUE TO MAGICK
 	desc = "interaction_debug_pam"
 	color = { 1 0 1 1 }
-	icon = "icon_bg"
-}
-
-interaction_category_magic = {
-	index = 17
-	desc =  "MAGIC_ACTIONS"
-	color = { 1 0 1 1 } # EK TODO: assign colour
 	icon = "icon_bg"
 }

@@ -20,7 +20,7 @@
  DI_pam_buildings: "Pam建筑"
  DI_tgp_great_project_buildings: "Tgp Great Project Buildings"
 
-# --- Extra keys not present in English (review/remove if obsolete) ---
+ # AUTO-GENERATED compatch building category labels
  DI_ek_duchy_buildings: "Ek Duchy Buildings"
  DI_ek_green_pact_buildings: "Ek Green Pact Buildings"
  DI_ek_regular_buildings: "Ek Regular Buildings"

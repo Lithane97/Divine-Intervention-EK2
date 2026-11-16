@@ -7,7 +7,6 @@
  DI_holding_type_tribal_holding: "$local_holding_type_capitalized_tribal_holding$"
  DI_holding_type_academy_holding: "$local_holding_type_capitalized_academy_holding$"
  DI_holding_type_herder_holding: "$local_holding_type_capitalized_herder_holding$"
- DI_holding_type_hist_holding: "$local_holding_type_capitalized_hist_holding$"
  DI_holding_type_nomad_holding: "$local_holding_type_capitalized_nomad_holding$"
  DI_holding_type_temple_citadel_holding: "$local_holding_type_capitalized_temple_citadel_holding$"
 
@@ -18,6 +17,5 @@
  DI_holding_filter_tribal_holding_loc: "Check $DI_holding_type_tribal_holding$"
  DI_holding_filter_academy_holding_loc: "Check $DI_holding_type_academy_holding$"
  DI_holding_filter_herder_holding_loc: "Check $DI_holding_type_herder_holding$"
- DI_holding_filter_hist_holding_loc: "Check $DI_holding_type_hist_holding$"
  DI_holding_filter_nomad_holding_loc: "Check $DI_holding_type_nomad_holding$"
  DI_holding_filter_temple_citadel_holding_loc: "Check $DI_holding_type_temple_citadel_holding$"

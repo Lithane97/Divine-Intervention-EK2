@@ -2505,100 +2505,6 @@ DI_fe_rebuild_catalogue_effect = {
             add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
         }
     }
-    clear_global_variable_list = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines
-    if = {
-        limit = { OR = {
-            exists = doctrine:doctrine_cultural_identity_none_creating_faith
-            exists = doctrine:doctrine_cultural_identity_heritage_creating_faith
-            exists = doctrine:doctrine_cultural_identity_heritage_exclusive_creating_faith
-            exists = doctrine:doctrine_cultural_identity_culture_creating_faith
-            exists = doctrine:doctrine_cultural_identity_culture_exclusive_creating_faith
-        } }
-        if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_none_creating_faith }
-            doctrine:doctrine_cultural_identity_none_creating_faith = { save_scope_as = DI_fe_group_anchor }
-        }
-        else_if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_heritage_creating_faith }
-            doctrine:doctrine_cultural_identity_heritage_creating_faith = { save_scope_as = DI_fe_group_anchor }
-        }
-        else_if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_heritage_exclusive_creating_faith }
-            doctrine:doctrine_cultural_identity_heritage_exclusive_creating_faith = { save_scope_as = DI_fe_group_anchor }
-        }
-        else_if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_culture_creating_faith }
-            doctrine:doctrine_cultural_identity_culture_creating_faith = { save_scope_as = DI_fe_group_anchor }
-        }
-        else_if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_culture_exclusive_creating_faith }
-            doctrine:doctrine_cultural_identity_culture_exclusive_creating_faith = { save_scope_as = DI_fe_group_anchor }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_none_creating_faith }
-            doctrine:doctrine_cultural_identity_none_creating_faith = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_heritage_creating_faith }
-            doctrine:doctrine_cultural_identity_heritage_creating_faith = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_heritage_exclusive_creating_faith }
-            doctrine:doctrine_cultural_identity_heritage_exclusive_creating_faith = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_culture_creating_faith }
-            doctrine:doctrine_cultural_identity_culture_creating_faith = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_cultural_identity_culture_exclusive_creating_faith }
-            doctrine:doctrine_cultural_identity_culture_exclusive_creating_faith = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        every_doctrine = {
-            limit = {
-                doctrine_in_same_group = scope:DI_fe_group_anchor
-                NOT = { is_target_in_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = this } }
-            }
-            save_scope_as = DI_fe_matched_doctrine
-            add_to_global_variable_list = { name = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines target = scope:DI_fe_matched_doctrine }
-            add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-        }
-    }
     clear_global_variable_list = DI_fe_group_doctrine_cultural_identity_doctrines
     if = {
         limit = { OR = {
@@ -4288,7 +4194,6 @@ DI_fe_rebuild_catalogue_effect = {
             exists = doctrine:doctrine_pantheon_good_daedra
             exists = doctrine:doctrine_pantheon_bad_daedra
             exists = doctrine:doctrine_pantheon_tribunal
-            exists = doctrine:doctrine_pantheon_nerevar
             exists = doctrine:doctrine_pantheon_ten_ancestors
             exists = doctrine:doctrine_pantheon_old_gods
             exists = doctrine:doctrine_pantheon_druadach
@@ -4419,10 +4324,6 @@ DI_fe_rebuild_catalogue_effect = {
         else_if = {
             limit = { exists = doctrine:doctrine_pantheon_tribunal }
             doctrine:doctrine_pantheon_tribunal = { save_scope_as = DI_fe_group_anchor }
-        }
-        else_if = {
-            limit = { exists = doctrine:doctrine_pantheon_nerevar }
-            doctrine:doctrine_pantheon_nerevar = { save_scope_as = DI_fe_group_anchor }
         }
         else_if = {
             limit = { exists = doctrine:doctrine_pantheon_ten_ancestors }
@@ -4846,17 +4747,6 @@ DI_fe_rebuild_catalogue_effect = {
         if = {
             limit = { exists = doctrine:doctrine_pantheon_tribunal }
             doctrine:doctrine_pantheon_tribunal = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_main_pantheon_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_pantheon_nerevar }
-            doctrine:doctrine_pantheon_nerevar = {
                 if = {
                     limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
                     save_scope_as = DI_fe_matched_doctrine
@@ -5745,7 +5635,6 @@ DI_fe_rebuild_catalogue_effect = {
             exists = doctrine:doctrine_sp_around_us
             exists = doctrine:doctrine_sp_aedra
             exists = doctrine:doctrine_sp_atmoran_totems
-            exists = doctrine:doctrine_sp_nerevar
             exists = doctrine:doctrine_sp_missing_god
             exists = doctrine:doctrine_sp_good_daedra
             exists = doctrine:doctrine_sp_magna_ge
@@ -5801,10 +5690,6 @@ DI_fe_rebuild_catalogue_effect = {
         else_if = {
             limit = { exists = doctrine:doctrine_sp_atmoran_totems }
             doctrine:doctrine_sp_atmoran_totems = { save_scope_as = DI_fe_group_anchor }
-        }
-        else_if = {
-            limit = { exists = doctrine:doctrine_sp_nerevar }
-            doctrine:doctrine_sp_nerevar = { save_scope_as = DI_fe_group_anchor }
         }
         else_if = {
             limit = { exists = doctrine:doctrine_sp_missing_god }
@@ -5983,17 +5868,6 @@ DI_fe_rebuild_catalogue_effect = {
         if = {
             limit = { exists = doctrine:doctrine_sp_atmoran_totems }
             doctrine:doctrine_sp_atmoran_totems = {
-                if = {
-                    limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
-                    save_scope_as = DI_fe_matched_doctrine
-                    add_to_global_variable_list = { name = DI_fe_group_doctrine_secondary_pantheon_doctrines target = scope:DI_fe_matched_doctrine }
-                    add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
-                }
-            }
-        }
-        if = {
-            limit = { exists = doctrine:doctrine_sp_nerevar }
-            doctrine:doctrine_sp_nerevar = {
                 if = {
                     limit = { doctrine_in_same_group = scope:DI_fe_group_anchor }
                     save_scope_as = DI_fe_matched_doctrine
@@ -6645,7 +6519,7 @@ DI_fe_rebuild_catalogue_effect = {
             add_to_global_variable_list = { name = DI_fe_covered_doctrines target = scope:DI_fe_matched_doctrine }
         }
     }
-    set_global_variable = { name = DI_fe_catalogue_version value = flag:DI_fe_catalogue_v2_6bb310c9f013281e }
+    set_global_variable = { name = DI_fe_catalogue_version value = flag:DI_fe_catalogue_v2_bc5fa2a9f659e8f4 }
 }
 
 DI_fe_ensure_catalogue_effect = {
@@ -6653,7 +6527,7 @@ DI_fe_ensure_catalogue_effect = {
         limit = {
             OR = {
                 NOT = { has_global_variable = DI_fe_catalogue_version }
-                NOT = { global_var:DI_fe_catalogue_version = flag:DI_fe_catalogue_v2_6bb310c9f013281e }
+                NOT = { global_var:DI_fe_catalogue_version = flag:DI_fe_catalogue_v2_bc5fa2a9f659e8f4 }
             }
         }
         DI_fe_rebuild_catalogue_effect = yes

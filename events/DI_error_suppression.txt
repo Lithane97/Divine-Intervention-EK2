@@ -151,7 +151,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = hall_of_colossus }
         DI_fix_variable_error = { X = hall_of_heroes }
         DI_fix_variable_error = { X = halls_of_highmane }
-        DI_fix_variable_error = { X = hatching_pools }
         DI_fix_variable_error = { X = haven_docks }
         DI_fix_variable_error = { X = herder_camp }
         DI_fix_variable_error = { X = herne_palace }
@@ -180,7 +179,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = imperial_city_harbor }
         DI_fix_variable_error = { X = imperial_palace }
         DI_fix_variable_error = { X = indoril_tomb }
-        DI_fix_variable_error = { X = invocation_school }
         DI_fix_variable_error = { X = ire_sanctum }
         DI_fix_variable_error = { X = iron_lion_cangzhou }
         DI_fix_variable_error = { X = ironwood_forest }
@@ -223,7 +221,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = merchant_lord_harbor }
         DI_fix_variable_error = { X = military_academy }
         DI_fix_variable_error = { X = military_camps }
-        DI_fix_variable_error = { X = minding_grove }
         DI_fix_variable_error = { X = mobar_obsidian_mines }
         DI_fix_variable_error = { X = monastic_schools }
         DI_fix_variable_error = { X = mont_st_michel }
@@ -310,7 +307,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = solitude_arch }
         DI_fix_variable_error = { X = somapura_university }
         DI_fix_variable_error = { X = soulrest_port }
-        DI_fix_variable_error = { X = speaker_hut }
         DI_fix_variable_error = { X = special_greenhouse }
         DI_fix_variable_error = { X = spice_plantation }
         DI_fix_variable_error = { X = st_bravillius }
@@ -730,11 +726,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = hall_of_heroes_04 }
         DI_fix_variable_error = { X = hall_of_heroes_05 }
         DI_fix_variable_error = { X = halls_of_highmane_01 }
-        DI_fix_variable_error = { X = hatching_pools_01 }
-        DI_fix_variable_error = { X = hatching_pools_02 }
-        DI_fix_variable_error = { X = hatching_pools_03 }
-        DI_fix_variable_error = { X = hatching_pools_04 }
-        DI_fix_variable_error = { X = hatching_pools_05 }
         DI_fix_variable_error = { X = haven_docks_01 }
         DI_fix_variable_error = { X = herder_camp_01 }
         DI_fix_variable_error = { X = herne_palace_01 }
@@ -769,10 +760,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = hillside_grazing_07 }
         DI_fix_variable_error = { X = hillside_grazing_08 }
         DI_fix_variable_error = { X = hist_01 }
-        DI_fix_variable_error = { X = hist_02 }
-        DI_fix_variable_error = { X = hist_03 }
-        DI_fix_variable_error = { X = hist_04 }
-        DI_fix_variable_error = { X = hist_05 }
         DI_fix_variable_error = { X = hlaalu_tomb_01 }
         DI_fix_variable_error = { X = hollow_faced_01 }
         DI_fix_variable_error = { X = hollow_faced_02 }
@@ -822,11 +809,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = imperial_palace_02 }
         DI_fix_variable_error = { X = imperial_palace_03 }
         DI_fix_variable_error = { X = indoril_tomb_01 }
-        DI_fix_variable_error = { X = invocation_school_01 }
-        DI_fix_variable_error = { X = invocation_school_02 }
-        DI_fix_variable_error = { X = invocation_school_03 }
-        DI_fix_variable_error = { X = invocation_school_04 }
-        DI_fix_variable_error = { X = invocation_school_05 }
         DI_fix_variable_error = { X = ire_sanctum_01 }
         DI_fix_variable_error = { X = ire_sanctum_02 }
         DI_fix_variable_error = { X = iron_lion_cangzhou_01 }
@@ -930,11 +912,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = military_camps_06 }
         DI_fix_variable_error = { X = military_camps_07 }
         DI_fix_variable_error = { X = military_camps_08 }
-        DI_fix_variable_error = { X = minding_grove_01 }
-        DI_fix_variable_error = { X = minding_grove_02 }
-        DI_fix_variable_error = { X = minding_grove_03 }
-        DI_fix_variable_error = { X = minding_grove_04 }
-        DI_fix_variable_error = { X = minding_grove_05 }
         DI_fix_variable_error = { X = mobar_obsidian_mines_01 }
         DI_fix_variable_error = { X = mobar_obsidian_mines_02 }
         DI_fix_variable_error = { X = mobar_obsidian_mines_03 }
@@ -1199,11 +1176,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = soulrest_port_01 }
         DI_fix_variable_error = { X = soulrest_port_02 }
         DI_fix_variable_error = { X = soulrest_port_03 }
-        DI_fix_variable_error = { X = speaker_hut_01 }
-        DI_fix_variable_error = { X = speaker_hut_02 }
-        DI_fix_variable_error = { X = speaker_hut_03 }
-        DI_fix_variable_error = { X = speaker_hut_04 }
-        DI_fix_variable_error = { X = speaker_hut_05 }
         DI_fix_variable_error = { X = special_greenhouse_01 }
         DI_fix_variable_error = { X = spice_plantation_01 }
         DI_fix_variable_error = { X = spice_plantation_02 }
@@ -1545,10 +1517,30 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = DI_dip_pinned_wars }
         DI_fix_variable_error = { X = DI_dip_primary_wars }
         DI_fix_variable_error = { X = DI_diplomacy_value }
+        DI_fix_variable_error = { X = DI_dm_building_level }
+        DI_fix_variable_error = { X = DI_dm_candidate_count }
+        DI_fix_variable_error = { X = DI_dm_candidates }
+        DI_fix_variable_error = { X = DI_dm_changed_count }
+        DI_fix_variable_error = { X = DI_dm_filter_all }
+        DI_fix_variable_error = { X = DI_dm_filter_choice }
+        DI_fix_variable_error = { X = DI_dm_filter_choices }
+        DI_fix_variable_error = { X = DI_dm_filter_schema }
+        DI_fix_variable_error = { X = DI_dm_filter_type_camp }
+        DI_fix_variable_error = { X = DI_dm_filter_type_east_asian_estate }
+        DI_fix_variable_error = { X = DI_dm_filter_type_ecclesiastical_domicile }
+        DI_fix_variable_error = { X = DI_dm_filter_type_estate }
+        DI_fix_variable_error = { X = DI_dm_filter_type_japanese_manor }
+        DI_fix_variable_error = { X = DI_dm_filter_type_yurt }
+        DI_fix_variable_error = { X = DI_dm_retained }
+        DI_fix_variable_error = { X = DI_dm_selected }
+        DI_fix_variable_error = { X = DI_dm_selected_count }
+        DI_fix_variable_error = { X = DI_dm_shown }
+        DI_fix_variable_error = { X = DI_dm_shown_count }
+        DI_fix_variable_error = { X = DI_dm_sources }
         DI_fix_variable_error = { X = DI_doctrine_to_replace }
         DI_fix_variable_error = { X = DI_fame_traits }
         DI_fix_variable_error = { X = DI_fe_add_tenet_mode }
-        DI_fix_variable_error = { X = DI_fe_catalogue_v2_6bb310c9f013281e }
+        DI_fix_variable_error = { X = DI_fe_catalogue_v2_bc5fa2a9f659e8f4 }
         DI_fix_variable_error = { X = DI_fe_catalogue_version }
         DI_fix_variable_error = { X = DI_fe_character }
         DI_fix_variable_error = { X = DI_fe_conversion_rite }
@@ -1569,7 +1561,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = DI_fe_group_doctrine_clerical_succession_doctrines }
         DI_fix_variable_error = { X = DI_fe_group_doctrine_consanguinity_doctrines }
         DI_fix_variable_error = { X = DI_fe_group_doctrine_coronation_doctrines }
-        DI_fix_variable_error = { X = DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines }
         DI_fix_variable_error = { X = DI_fe_group_doctrine_cultural_identity_doctrines }
         DI_fix_variable_error = { X = DI_fe_group_doctrine_deviancy_doctrines }
         DI_fix_variable_error = { X = DI_fe_group_doctrine_divorce_doctrines }
@@ -1647,7 +1638,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = DI_holding_filter_church_holding }
         DI_fix_variable_error = { X = DI_holding_filter_city_holding }
         DI_fix_variable_error = { X = DI_holding_filter_herder_holding }
-        DI_fix_variable_error = { X = DI_holding_filter_hist_holding }
         DI_fix_variable_error = { X = DI_holding_filter_nomad_holding }
         DI_fix_variable_error = { X = DI_holding_filter_temple_citadel_holding }
         DI_fix_variable_error = { X = DI_holding_filter_tribal_holding }
@@ -1673,6 +1663,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = DI_pinned_count }
         DI_fix_variable_error = { X = DI_pinned_titles }
         DI_fix_variable_error = { X = DI_pinned_traits }
+        DI_fix_variable_error = { X = DI_pins_live_snapshot }
         DI_fix_variable_error = { X = DI_potential_friend }
         DI_fix_variable_error = { X = DI_potential_lover }
         DI_fix_variable_error = { X = DI_potential_rival }
@@ -1682,7 +1673,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = DI_province_filter_choices }
         DI_fix_variable_error = { X = DI_province_filter_empty }
         DI_fix_variable_error = { X = DI_province_filter_hide }
-        DI_fix_variable_error = { X = DI_province_filters_1989c52a4877_loaded }
+        DI_fix_variable_error = { X = DI_province_filters_52a90d262577_loaded }
         DI_fix_variable_error = { X = DI_provinces_hide }
         DI_fix_variable_error = { X = DI_prowess_value }
         DI_fix_variable_error = { X = DI_quality_common }
@@ -1766,6 +1757,7 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = DI_tm_filter_control }
         DI_fix_variable_error = { X = DI_tm_filter_development }
         DI_fix_variable_error = { X = DI_tm_filter_domain }
+        DI_fix_variable_error = { X = DI_tm_province_seen_titles }
         DI_fix_variable_error = { X = DI_tm_source_counties }
         DI_fix_variable_error = { X = DI_tracked_traits }
         DI_fix_variable_error = { X = DI_tradition_picker_combat }
@@ -1881,7 +1873,6 @@ DI_error_suppression.1 = {
         DI_fix_variable_error = { X = heritage }
         DI_fix_variable_error = { X = hide_ui_main_tabs }
         DI_fix_variable_error = { X = high_acceptance }
-        DI_fix_variable_error = { X = hist_holding }
         DI_fix_variable_error = { X = hostile }
         DI_fix_variable_error = { X = illustrious }
         DI_fix_variable_error = { X = language }

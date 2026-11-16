@@ -133,26 +133,6 @@ DI_set_holding_type_sgui = {
         }
         else_if = {
             limit = {
-                scope:holding_type = flag:hist_holding
-            }
-
-            every_in_list = {
-                variable = DI_action_provinces
-                save_scope_as = province
-
-                scope:province = {
-                    if = {
-                        limit = {
-                            province_has_no_holding_trigger = yes
-                        }
-                        begin_create_holding = hist_holding
-                    }
-                    set_holding_type = hist_holding
-                }
-            }
-        }
-        else_if = {
-            limit = {
                 scope:holding_type = flag:nomad_holding
             }
 
@@ -200,7 +180,7 @@ DI_load_province_dropdown = {
     is_valid = {
         OR = {
             NOT = { has_global_variable_list = DI_province_filter_choices }
-            NOT = { has_global_variable = DI_province_filters_1989c52a4877_loaded }
+            NOT = { has_global_variable = DI_province_filters_52a90d262577_loaded }
         }
     }
 
@@ -208,7 +188,7 @@ DI_load_province_dropdown = {
         save_scope_as = player
 
         clear_global_variable_list = DI_province_filter_choices
-        set_global_variable = DI_province_filters_1989c52a4877_loaded
+        set_global_variable = DI_province_filters_52a90d262577_loaded
 
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_province_filter_all }
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_province_filter_hide }
@@ -219,7 +199,6 @@ DI_load_province_dropdown = {
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_holding_filter_tribal_holding }
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_holding_filter_academy_holding }
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_holding_filter_herder_holding }
-        add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_holding_filter_hist_holding }
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_holding_filter_nomad_holding }
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_holding_filter_temple_citadel_holding }
         add_to_global_variable_list = { name = DI_province_filter_choices target = flag:DI_province_filter_empty }
@@ -543,38 +522,6 @@ DI_apply_province_filter_choice = {
                 scope:province = {
                     if = {
                         limit = { has_holding_type = herder_holding }
-                        scope:player = {
-                            add_to_variable_list = {
-                                name = DI_action_provinces
-                                target = scope:province
-                            }
-                            if = {
-                                limit = { has_variable = DI_provinces_hide }
-                                add_to_variable_list = {
-                                    name = DI_shown_provinces
-                                    target = scope:province
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        else_if = {
-            limit = { scope:filter_choice = flag:DI_holding_filter_hist_holding }
-            clear_variable_list = DI_action_provinces
-            if = {
-                limit = { has_variable = DI_provinces_hide }
-                clear_variable_list = DI_shown_provinces
-            }
-
-            every_in_list = {
-                variable = DI_selected_titles_provinces
-                save_scope_as = province
-
-                scope:province = {
-                    if = {
-                        limit = { has_holding_type = hist_holding }
                         scope:player = {
                             add_to_variable_list = {
                                 name = DI_action_provinces

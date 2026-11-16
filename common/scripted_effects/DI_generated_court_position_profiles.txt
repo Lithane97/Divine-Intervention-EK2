@@ -2431,20 +2431,20 @@ DI_apply_court_position_validity_effect = {
                 limit = {
                     NOT = {
                         OR = {
-                            faith = faith:adamantia
-                            faith = faith:aedric
-                            faith = faith:chantry_auriel
-                            faith = faith:malada
-                            faith = faith:trinimac_cult
+                            faith = faith:adamantia_faith
+                            faith = faith:aedric_faith
+                            faith = faith:falmer_faith
+                            faith = faith:malada_faith
+                            faith = faith:trinimac_faith
                         }
                     }
                 }
                 random_list = {
-                    1 = { set_character_faith = faith:adamantia }
-                    1 = { set_character_faith = faith:aedric }
-                    1 = { set_character_faith = faith:chantry_auriel }
-                    1 = { set_character_faith = faith:malada }
-                    1 = { set_character_faith = faith:trinimac_cult }
+                    1 = { set_character_faith = faith:adamantia_faith }
+                    1 = { set_character_faith = faith:aedric_faith }
+                    1 = { set_character_faith = faith:falmer_faith }
+                    1 = { set_character_faith = faith:malada_faith }
+                    1 = { set_character_faith = faith:trinimac_faith }
                 }
             }
         }

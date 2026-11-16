@@ -11667,432 +11667,6 @@ DI_tm_destroy_building_graht_manors_sgui = {
     }
 }
 
-DI_tm_building_hist_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-            var:DI_title_manager_building_level = 5
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        NOT = { has_building_or_higher = hist_01 }
-                    }
-                    set_holding_type = hist_holding
-                }
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = hist_01 }
-                    }
-                    add_building = hist_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = hist_02 }
-                    }
-                    add_building = hist_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = hist_03 }
-                    }
-                    add_building = hist_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = hist_04 }
-                    }
-                    add_building = hist_04
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 5 }
-                        NOT = { has_building = hist_05 }
-                    }
-                    add_building = hist_05
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_hist_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = hist_05 } remove_building = hist_05 }
-                else_if = { limit = { has_building = hist_04 } remove_building = hist_04 }
-                else_if = { limit = { has_building = hist_03 } remove_building = hist_03 }
-                else_if = { limit = { has_building = hist_02 } remove_building = hist_02 }
-                else_if = { limit = { has_building = hist_01 } remove_building = hist_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_minding_grove_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-            var:DI_title_manager_building_level = 5
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = minding_grove_01 }
-                    }
-                    add_building = minding_grove_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = minding_grove_02 }
-                    }
-                    add_building = minding_grove_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = minding_grove_03 }
-                    }
-                    add_building = minding_grove_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = minding_grove_04 }
-                    }
-                    add_building = minding_grove_04
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 5 }
-                        NOT = { has_building = minding_grove_05 }
-                    }
-                    add_building = minding_grove_05
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_minding_grove_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = minding_grove_05 } remove_building = minding_grove_05 }
-                else_if = { limit = { has_building = minding_grove_04 } remove_building = minding_grove_04 }
-                else_if = { limit = { has_building = minding_grove_03 } remove_building = minding_grove_03 }
-                else_if = { limit = { has_building = minding_grove_02 } remove_building = minding_grove_02 }
-                else_if = { limit = { has_building = minding_grove_01 } remove_building = minding_grove_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_hatching_pools_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-            var:DI_title_manager_building_level = 5
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = hatching_pools_01 }
-                    }
-                    add_building = hatching_pools_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = hatching_pools_02 }
-                    }
-                    add_building = hatching_pools_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = hatching_pools_03 }
-                    }
-                    add_building = hatching_pools_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = hatching_pools_04 }
-                    }
-                    add_building = hatching_pools_04
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 5 }
-                        NOT = { has_building = hatching_pools_05 }
-                    }
-                    add_building = hatching_pools_05
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_hatching_pools_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = hatching_pools_05 } remove_building = hatching_pools_05 }
-                else_if = { limit = { has_building = hatching_pools_04 } remove_building = hatching_pools_04 }
-                else_if = { limit = { has_building = hatching_pools_03 } remove_building = hatching_pools_03 }
-                else_if = { limit = { has_building = hatching_pools_02 } remove_building = hatching_pools_02 }
-                else_if = { limit = { has_building = hatching_pools_01 } remove_building = hatching_pools_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_speaker_hut_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-            var:DI_title_manager_building_level = 5
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = speaker_hut_01 }
-                    }
-                    add_building = speaker_hut_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = speaker_hut_02 }
-                    }
-                    add_building = speaker_hut_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = speaker_hut_03 }
-                    }
-                    add_building = speaker_hut_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = speaker_hut_04 }
-                    }
-                    add_building = speaker_hut_04
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 5 }
-                        NOT = { has_building = speaker_hut_05 }
-                    }
-                    add_building = speaker_hut_05
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_speaker_hut_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = speaker_hut_05 } remove_building = speaker_hut_05 }
-                else_if = { limit = { has_building = speaker_hut_04 } remove_building = speaker_hut_04 }
-                else_if = { limit = { has_building = speaker_hut_03 } remove_building = speaker_hut_03 }
-                else_if = { limit = { has_building = speaker_hut_02 } remove_building = speaker_hut_02 }
-                else_if = { limit = { has_building = speaker_hut_01 } remove_building = speaker_hut_01 }
-            }
-        }
-    }
-}
-
-DI_tm_building_invocation_school_sgui = {
-    scope = character # Player Character
-
-    is_valid = {
-        OR = {
-            NOT = { has_variable = DI_title_manager_building_level }
-            var:DI_title_manager_building_level = 1
-            var:DI_title_manager_building_level = 2
-            var:DI_title_manager_building_level = 3
-            var:DI_title_manager_building_level = 4
-            var:DI_title_manager_building_level = 5
-        }
-    }
-
-    effect = {
-        save_scope_as = player
-
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = {
-                    limit = {
-                        OR = {
-                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
-                            scope:player = { var:DI_title_manager_building_level = 1 }
-                        }
-                        NOT = { has_building = invocation_school_01 }
-                    }
-                    add_building = invocation_school_01
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 2 }
-                        NOT = { has_building = invocation_school_02 }
-                    }
-                    add_building = invocation_school_02
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 3 }
-                        NOT = { has_building = invocation_school_03 }
-                    }
-                    add_building = invocation_school_03
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 4 }
-                        NOT = { has_building = invocation_school_04 }
-                    }
-                    add_building = invocation_school_04
-                }
-                else_if = {
-                    limit = {
-                        scope:player = { var:DI_title_manager_building_level = 5 }
-                        NOT = { has_building = invocation_school_05 }
-                    }
-                    add_building = invocation_school_05
-                }
-            }
-        }
-    }
-}
-
-DI_tm_destroy_building_invocation_school_sgui = {
-    scope = character # Player Character
-
-    effect = {
-        every_in_list = {
-            variable = DI_action_provinces
-            save_scope_as = province
-
-            scope:province = {
-                if = { limit = { has_building = invocation_school_05 } remove_building = invocation_school_05 }
-                else_if = { limit = { has_building = invocation_school_04 } remove_building = invocation_school_04 }
-                else_if = { limit = { has_building = invocation_school_03 } remove_building = invocation_school_03 }
-                else_if = { limit = { has_building = invocation_school_02 } remove_building = invocation_school_02 }
-                else_if = { limit = { has_building = invocation_school_01 } remove_building = invocation_school_01 }
-            }
-        }
-    }
-}
-
 DI_tm_building_orphanage_sgui = {
     scope = character # Player Character
 
@@ -12740,6 +12314,54 @@ DI_tm_destroy_building_great_wyrd_tree_sgui = {
 
             scope:province = {
                 if = { limit = { has_building = great_wyrd_tree_01 } remove_building = great_wyrd_tree_01 }
+            }
+        }
+    }
+}
+
+DI_tm_building_hist_sgui = {
+    scope = character # Player Character
+
+    is_valid = {
+        OR = {
+            NOT = { has_variable = DI_title_manager_building_level }
+            var:DI_title_manager_building_level = 1
+        }
+    }
+
+    effect = {
+        save_scope_as = player
+
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = {
+                    limit = {
+                        OR = {
+                            NOT = { scope:player = { has_variable = DI_title_manager_building_level } }
+                            scope:player = { var:DI_title_manager_building_level = 1 }
+                        }
+                        NOT = { has_building = hist_01 }
+                    }
+                    add_building = hist_01
+                }
+            }
+        }
+    }
+}
+
+DI_tm_destroy_building_hist_sgui = {
+    scope = character # Player Character
+
+    effect = {
+        every_in_list = {
+            variable = DI_action_provinces
+            save_scope_as = province
+
+            scope:province = {
+                if = { limit = { has_building = hist_01 } remove_building = hist_01 }
             }
         }
     }
@@ -24742,10 +24364,6 @@ DI_remove_buildings_sgui = {
                 if = { limit = { has_building_or_higher = city_03 } add_building = city_01 }
                 if = { limit = { has_building_or_higher = city_04 } add_building = city_01 }
                 if = { limit = { has_building_or_higher = city } add_building = city_01 }
-                if = { limit = { has_building_or_higher = hist_02 } add_building = hist_01 }
-                if = { limit = { has_building_or_higher = hist_03 } add_building = hist_01 }
-                if = { limit = { has_building_or_higher = hist_04 } add_building = hist_01 }
-                if = { limit = { has_building_or_higher = hist_05 } add_building = hist_01 }
                 if = { limit = { has_building_or_higher = temple_02 } add_building = temple_01 }
                 if = { limit = { has_building_or_higher = temple_03 } add_building = temple_01 }
                 if = { limit = { has_building_or_higher = temple_04 } add_building = temple_01 }
@@ -24953,11 +24571,6 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = hall_of_heroes_02 } remove_building = hall_of_heroes_02 }
                 else_if = { limit = { has_building = hall_of_heroes_01 } remove_building = hall_of_heroes_01 }
                 if = { limit = { has_building = halls_of_highmane_01 } remove_building = halls_of_highmane_01 }
-                if = { limit = { has_building = hatching_pools_05 } remove_building = hatching_pools_05 }
-                else_if = { limit = { has_building = hatching_pools_04 } remove_building = hatching_pools_04 }
-                else_if = { limit = { has_building = hatching_pools_03 } remove_building = hatching_pools_03 }
-                else_if = { limit = { has_building = hatching_pools_02 } remove_building = hatching_pools_02 }
-                else_if = { limit = { has_building = hatching_pools_01 } remove_building = hatching_pools_01 }
                 if = { limit = { has_building = haven_docks_01 } remove_building = haven_docks_01 }
                 if = { limit = { has_building = herne_palace_01 } remove_building = herne_palace_01 }
                 if = { limit = { has_building = hfirorg_salt_mines_04 } remove_building = hfirorg_salt_mines_04 }
@@ -24969,6 +24582,7 @@ DI_remove_buildings_sgui = {
                 DI_remove_building_type_effect = { BUILDING = hill_farms }
                 DI_remove_building_type_effect = { BUILDING = hill_forts }
                 DI_remove_building_type_effect = { BUILDING = hillside_grazing }
+                if = { limit = { has_building = hist_01 } remove_building = hist_01 }
                 if = { limit = { has_building = hlaalu_tomb_01 } remove_building = hlaalu_tomb_01 }
                 if = { limit = { has_building = hollow_faced_02 } remove_building = hollow_faced_02 }
                 else_if = { limit = { has_building = hollow_faced_01 } remove_building = hollow_faced_01 }
@@ -24997,11 +24611,6 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = imperial_palace_02 } remove_building = imperial_palace_02 }
                 else_if = { limit = { has_building = imperial_palace_01 } remove_building = imperial_palace_01 }
                 if = { limit = { has_building = indoril_tomb_01 } remove_building = indoril_tomb_01 }
-                if = { limit = { has_building = invocation_school_05 } remove_building = invocation_school_05 }
-                else_if = { limit = { has_building = invocation_school_04 } remove_building = invocation_school_04 }
-                else_if = { limit = { has_building = invocation_school_03 } remove_building = invocation_school_03 }
-                else_if = { limit = { has_building = invocation_school_02 } remove_building = invocation_school_02 }
-                else_if = { limit = { has_building = invocation_school_01 } remove_building = invocation_school_01 }
                 if = { limit = { has_building = ire_sanctum_02 } remove_building = ire_sanctum_02 }
                 else_if = { limit = { has_building = ire_sanctum_01 } remove_building = ire_sanctum_01 }
                 if = { limit = { has_building = iron_lion_cangzhou_01 } remove_building = iron_lion_cangzhou_01 }
@@ -25077,11 +24686,6 @@ DI_remove_buildings_sgui = {
                 else_if = { limit = { has_building = military_academy_02 } remove_building = military_academy_02 }
                 else_if = { limit = { has_building = military_academy_01 } remove_building = military_academy_01 }
                 DI_remove_building_type_effect = { BUILDING = military_camps }
-                if = { limit = { has_building = minding_grove_05 } remove_building = minding_grove_05 }
-                else_if = { limit = { has_building = minding_grove_04 } remove_building = minding_grove_04 }
-                else_if = { limit = { has_building = minding_grove_03 } remove_building = minding_grove_03 }
-                else_if = { limit = { has_building = minding_grove_02 } remove_building = minding_grove_02 }
-                else_if = { limit = { has_building = minding_grove_01 } remove_building = minding_grove_01 }
                 if = { limit = { has_building = mobar_obsidian_mines_04 } remove_building = mobar_obsidian_mines_04 }
                 else_if = { limit = { has_building = mobar_obsidian_mines_03 } remove_building = mobar_obsidian_mines_03 }
                 else_if = { limit = { has_building = mobar_obsidian_mines_02 } remove_building = mobar_obsidian_mines_02 }
@@ -25219,11 +24823,6 @@ DI_remove_buildings_sgui = {
                 if = { limit = { has_building = soulrest_port_03 } remove_building = soulrest_port_03 }
                 else_if = { limit = { has_building = soulrest_port_02 } remove_building = soulrest_port_02 }
                 else_if = { limit = { has_building = soulrest_port_01 } remove_building = soulrest_port_01 }
-                if = { limit = { has_building = speaker_hut_05 } remove_building = speaker_hut_05 }
-                else_if = { limit = { has_building = speaker_hut_04 } remove_building = speaker_hut_04 }
-                else_if = { limit = { has_building = speaker_hut_03 } remove_building = speaker_hut_03 }
-                else_if = { limit = { has_building = speaker_hut_02 } remove_building = speaker_hut_02 }
-                else_if = { limit = { has_building = speaker_hut_01 } remove_building = speaker_hut_01 }
                 if = { limit = { has_building = special_greenhouse_01 } remove_building = special_greenhouse_01 }
                 DI_remove_building_type_effect = { BUILDING = spice_plantation }
                 if = { limit = { has_building = st_bravillius_01 } remove_building = st_bravillius_01 }
@@ -26720,13 +26319,6 @@ DI_max_building_upgrades_sgui = {
                 }
                 if = {
                     limit = {
-                        has_building_or_higher = hatching_pools_01
-                        NOT = { has_building = hatching_pools_05 }
-                    }
-                    add_building = hatching_pools_05
-                }
-                if = {
-                    limit = {
                         has_building_or_higher = haven_docks_01
                         NOT = { has_building = haven_docks_01 }
                     }
@@ -26804,9 +26396,9 @@ DI_max_building_upgrades_sgui = {
                 if = {
                     limit = {
                         has_building_or_higher = hist_01
-                        NOT = { has_building = hist_05 }
+                        NOT = { has_building = hist_01 }
                     }
-                    add_building = hist_05
+                    add_building = hist_01
                 }
                 if = {
                     limit = {
@@ -27010,13 +26602,6 @@ DI_max_building_upgrades_sgui = {
                     }
                     DI_clear_special_building_effect = yes
                     add_special_building = indoril_tomb_01
-                }
-                if = {
-                    limit = {
-                        has_building_or_higher = invocation_school_01
-                        NOT = { has_building = invocation_school_05 }
-                    }
-                    add_building = invocation_school_05
                 }
                 if = {
                     limit = {
@@ -27456,13 +27041,6 @@ DI_max_building_upgrades_sgui = {
                         NOT = { has_building = military_camps_08 }
                     }
                     add_building = military_camps_08
-                }
-                if = {
-                    limit = {
-                        has_building_or_higher = minding_grove_01
-                        NOT = { has_building = minding_grove_05 }
-                    }
-                    add_building = minding_grove_05
                 }
                 if = {
                     limit = {
@@ -28340,13 +27918,6 @@ DI_max_building_upgrades_sgui = {
                         NOT = { has_building = soulrest_port_03 }
                     }
                     add_building = soulrest_port_03
-                }
-                if = {
-                    limit = {
-                        has_building_or_higher = speaker_hut_01
-                        NOT = { has_building = speaker_hut_05 }
-                    }
-                    add_building = speaker_hut_05
                 }
                 if = {
                     limit = {

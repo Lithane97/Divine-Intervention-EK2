@@ -17,8 +17,9 @@ DI_huscarl_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -62,8 +63,9 @@ DI_landsknecht_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -107,8 +109,9 @@ DI_longbowmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -152,8 +155,9 @@ DI_goedendag_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -197,8 +201,9 @@ DI_gendarme_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -242,8 +247,9 @@ DI_chasseur_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -287,8 +293,9 @@ DI_picchieri_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -332,8 +339,9 @@ DI_praetorian_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -377,8 +385,9 @@ DI_caballero_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -422,8 +431,9 @@ DI_monaspa_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -467,8 +477,9 @@ DI_cataphract_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -512,8 +523,9 @@ DI_hobelar_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -557,8 +569,9 @@ DI_schiltron_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -602,8 +615,9 @@ DI_metsanvartija_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -647,8 +661,9 @@ DI_horse_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -692,8 +707,9 @@ DI_ayyar_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -737,8 +753,9 @@ DI_mubarizun_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -782,8 +799,9 @@ DI_mulaththamun_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -827,8 +845,9 @@ DI_archers_of_the_nile_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -872,8 +891,9 @@ DI_paiks_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -917,8 +937,9 @@ DI_druzhina_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -962,8 +983,9 @@ DI_hussar_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1007,8 +1029,9 @@ DI_horn_warrior_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1052,8 +1075,9 @@ DI_bush_hunter_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1097,8 +1121,9 @@ DI_shomer_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1142,8 +1167,9 @@ DI_garudas_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1187,8 +1213,9 @@ DI_khandayat_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1232,8 +1259,9 @@ DI_mountaineer_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1277,8 +1305,9 @@ DI_sahel_horsemen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1322,8 +1351,9 @@ DI_guinea_warrior_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1367,8 +1397,9 @@ DI_sarawit_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1412,8 +1443,9 @@ DI_abudrar_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1457,8 +1489,9 @@ DI_zbrojnosh_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1502,8 +1535,9 @@ DI_palace_guards_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1547,8 +1581,9 @@ DI_shenbigong_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1592,8 +1627,9 @@ DI_guanch_vaulter_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1637,8 +1673,9 @@ DI_teulu_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1682,8 +1719,9 @@ DI_asawira_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1727,8 +1765,9 @@ DI_tarkhan_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1772,8 +1811,9 @@ DI_zupin_warrior_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1817,8 +1857,9 @@ DI_tawashi_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1862,8 +1903,9 @@ DI_order_serjeants_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1907,8 +1949,9 @@ DI_order_knights_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1952,8 +1995,9 @@ DI_light_footmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -1997,8 +2041,9 @@ DI_bowmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2042,8 +2087,9 @@ DI_light_horsemen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2087,8 +2133,9 @@ DI_pikemen_unit_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2132,8 +2179,9 @@ DI_armored_footmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2177,8 +2225,9 @@ DI_onager_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2222,8 +2271,9 @@ DI_armored_horsemen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2267,8 +2317,9 @@ DI_mangonel_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2312,8 +2363,9 @@ DI_crossbowmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2357,8 +2409,9 @@ DI_trebuchet_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2402,8 +2455,9 @@ DI_bombard_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2447,8 +2501,9 @@ DI_handgunners_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2492,8 +2547,9 @@ DI_house_guard_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2537,8 +2593,9 @@ DI_pikemen_militia_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2582,8 +2639,9 @@ DI_camel_rider_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2627,8 +2685,9 @@ DI_war_elephant_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2672,8 +2731,9 @@ DI_accolade_maa_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2717,8 +2777,9 @@ DI_accolade_maa_skirmishers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2762,8 +2823,9 @@ DI_accolade_maa_pikes_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2807,8 +2869,9 @@ DI_accolade_maa_outriders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2852,8 +2915,9 @@ DI_accolade_maa_vanguards_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2897,8 +2961,9 @@ DI_accolade_maa_lancers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2942,8 +3007,9 @@ DI_accolade_maa_crossbowers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -2987,8 +3053,9 @@ DI_accolade_maa_cameliers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3032,8 +3099,9 @@ DI_accolade_maa_elephantiers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3077,8 +3145,9 @@ DI_accolade_maa_horse_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3122,8 +3191,9 @@ DI_accolade_maa_handgunners_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3167,8 +3237,9 @@ DI_vigmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3212,8 +3283,9 @@ DI_bondi_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3257,8 +3329,9 @@ DI_varangian_veterans_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3302,8 +3375,9 @@ DI_jomsviking_pirates_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3347,8 +3421,9 @@ DI_ayrudzi_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3392,8 +3467,9 @@ DI_conrois_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3437,8 +3513,9 @@ DI_akritai_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3482,8 +3559,9 @@ DI_ballistrai_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3527,8 +3605,9 @@ DI_skoutatoi_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3572,8 +3651,9 @@ DI_varangian_guards_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3617,8 +3697,9 @@ DI_handpicked_faithful_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3662,8 +3743,9 @@ DI_maa_bandits_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3707,8 +3789,9 @@ DI_maa_poachers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3752,8 +3835,9 @@ DI_maa_marauders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3797,8 +3881,9 @@ DI_maa_thieves_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3842,8 +3927,9 @@ DI_nomadic_riders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3887,8 +3973,9 @@ DI_torch_bearers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3932,8 +4019,9 @@ DI_kheshig_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -3977,8 +4065,9 @@ DI_steppe_raiders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4022,8 +4111,9 @@ DI_heavy_horse_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4067,8 +4157,9 @@ DI_nomad_lancers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4112,8 +4203,9 @@ DI_mangudai_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4157,8 +4249,9 @@ DI_cataphract_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4202,8 +4295,9 @@ DI_maturkan_warriors_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4247,8 +4341,9 @@ DI_emishi_horse_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4292,8 +4387,9 @@ DI_japanese_horse_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4337,8 +4433,9 @@ DI_warrior_monks_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4382,8 +4479,9 @@ DI_fire_lancers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4427,8 +4525,9 @@ DI_gakgung_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4472,8 +4571,9 @@ DI_ballista_elephant_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4517,8 +4617,9 @@ DI_pesilat_warriors_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4562,8 +4663,9 @@ DI_samurai_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4607,8 +4709,9 @@ DI_zhanmadao_infantry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4652,8 +4755,9 @@ DI_black_armor_cavalry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4697,8 +4801,9 @@ DI_tiefutu_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4742,8 +4847,9 @@ DI_burenjia_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4787,8 +4893,9 @@ DI_rocket_carts_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4832,8 +4939,9 @@ DI_ballista_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4877,8 +4985,9 @@ DI_cloud_ladder_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4922,8 +5031,9 @@ DI_siege_tower_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -4967,8 +5077,9 @@ DI_cannon_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5012,8 +5123,9 @@ DI_accolade_maa_mages_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5057,8 +5169,9 @@ DI_akaviri_dragon_hunters_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5102,8 +5215,9 @@ DI_summerset_justiciars_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5147,8 +5261,9 @@ DI_direnni_sorcerers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5192,8 +5307,9 @@ DI_welkynar_knights_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5237,8 +5353,9 @@ DI_winged_avengers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5282,8 +5399,9 @@ DI_shellback_phalanx_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5327,8 +5445,9 @@ DI_saxhleel_reel_ka_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5372,8 +5491,9 @@ DI_ayleid_sorcerers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5417,8 +5537,9 @@ DI_bosmer_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5462,8 +5583,9 @@ DI_breton_pikemen_companies_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5507,8 +5629,9 @@ DI_breton_hedge_knights_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5552,8 +5675,9 @@ DI_breton_highlanders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5597,8 +5721,9 @@ DI_light_grazing_horde_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5642,8 +5767,9 @@ DI_armored_legionaires_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5687,8 +5813,9 @@ DI_equestrian_brigade_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5732,8 +5859,9 @@ DI_nibenese_battlemages_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5777,8 +5905,9 @@ DI_ut_nibenu_bowmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5822,8 +5951,9 @@ DI_dunmer_oathmen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5867,8 +5997,9 @@ DI_ashlander_champions_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5912,8 +6043,9 @@ DI_nixhound_riders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -5957,8 +6089,9 @@ DI_kwoom_riders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6002,8 +6135,9 @@ DI_dreamer_prophets_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6047,8 +6181,9 @@ DI_dwemer_centurion_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6092,8 +6227,9 @@ DI_dwemer_sphere_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6137,8 +6273,9 @@ DI_dwemer_arbalesters_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6182,8 +6319,9 @@ DI_knight_paladins_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6227,8 +6365,9 @@ DI_nightprowlers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6272,8 +6411,9 @@ DI_chaurus_riders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6317,8 +6457,9 @@ DI_imga_frenzied_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6362,8 +6503,9 @@ DI_soul_trappers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6407,8 +6549,9 @@ DI_walk_worm_cavalry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6452,8 +6595,9 @@ DI_witch_knight_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6497,8 +6641,9 @@ DI_deathlands_slayers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6542,8 +6687,9 @@ DI_headhunters_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6587,8 +6733,9 @@ DI_witchblades_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6632,8 +6779,9 @@ DI_jungle_peltasts_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6677,8 +6825,9 @@ DI_skaal_hunter_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6722,8 +6871,9 @@ DI_orc_marauders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6767,8 +6917,9 @@ DI_orc_berserkers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6812,8 +6963,9 @@ DI_orc_wood_skirmishers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6857,8 +7009,9 @@ DI_orc_champions_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6902,8 +7055,9 @@ DI_yokudan_way_of_the_sword_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6947,8 +7101,9 @@ DI_abecean_pirates_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -6992,8 +7147,9 @@ DI_porcelain_knights_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7037,8 +7193,9 @@ DI_alikr_mages_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7082,8 +7239,9 @@ DI_yokudan_guard_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7127,8 +7285,9 @@ DI_ice_shamans_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7172,8 +7331,9 @@ DI_bristleback_riders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7217,8 +7377,9 @@ DI_durzog_riders_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7262,8 +7423,9 @@ DI_herd_mammoth_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7307,8 +7469,9 @@ DI_war_mages_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7352,8 +7515,9 @@ DI_daedra_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7397,8 +7561,9 @@ DI_maa_undead_soldiers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7442,8 +7607,9 @@ DI_maa_undead_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7487,8 +7653,9 @@ DI_maa_bone_colossus_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7532,8 +7699,9 @@ DI_razak_army_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7577,8 +7745,9 @@ DI_dovah_vahlok_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7622,8 +7791,9 @@ DI_dragons_maa_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7667,8 +7837,9 @@ DI_undead_dragon_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7712,8 +7883,9 @@ DI_undead_earth_bone_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7757,8 +7929,9 @@ DI_dust_adepts_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7802,8 +7975,9 @@ DI_bone_walker_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7847,8 +8021,9 @@ DI_alkosh_pride_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7892,8 +8067,9 @@ DI_cultists_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7937,8 +8113,9 @@ DI_reavers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -7982,8 +8159,9 @@ DI_war_mammoth_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8027,8 +8205,9 @@ DI_giant_heavy_infantry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8072,8 +8251,9 @@ DI_giant_pikemen_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8117,8 +8297,9 @@ DI_giant_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8162,8 +8343,9 @@ DI_giant_shamans_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8207,8 +8389,9 @@ DI_khajiit_war_mages_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8252,8 +8435,9 @@ DI_khajiit_skirmishers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8297,8 +8481,9 @@ DI_khajiit_archers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8342,8 +8527,9 @@ DI_khajiit_light_cavalry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8387,8 +8573,9 @@ DI_khajiit_pike_infantry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8432,8 +8619,9 @@ DI_khajiit_heavy_infantry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8477,8 +8665,9 @@ DI_khajiit_heavy_cavalry_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8522,8 +8711,9 @@ DI_falmer_stalkers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8567,8 +8757,9 @@ DI_falmer_gloomlurkers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {
@@ -8612,8 +8803,9 @@ DI_falmer_battleragers_effect = {
 			limit = {
 				scope:DI_story = { has_variable = DI_pinned_char_var }
 			}
-			every_living_character = {
-				limit = { has_character_flag = pinned_for_edit }
+			every_in_list = {
+				variable = pinned_characters
+				limit = { is_alive = yes }
 				save_scope_as = target
 
 				spawn_army = {

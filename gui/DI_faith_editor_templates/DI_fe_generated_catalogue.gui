@@ -43,11 +43,6 @@ template DI_fe_generated_catalogue {
                 blockoverride "DI_fe_group_rows" { datamodel = "[GetGlobalList('DI_fe_group_special_tolerance_doctrines')]" }
             }
             DI_fe_doctrine_group = {
-                datacontext = "[GetDoctrineGroupType('doctrine_cultural_identity_creating_faith')]"
-                blockoverride "DI_fe_group_icons" { datamodel = "[GetGlobalList('DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines')]" }
-                blockoverride "DI_fe_group_rows" { datamodel = "[GetGlobalList('DI_fe_group_doctrine_cultural_identity_creating_faith_doctrines')]" }
-            }
-            DI_fe_doctrine_group = {
                 datacontext = "[GetDoctrineGroupType('doctrine_cultural_identity')]"
                 blockoverride "DI_fe_group_icons" { datamodel = "[GetGlobalList('DI_fe_group_doctrine_cultural_identity_doctrines')]" }
                 blockoverride "DI_fe_group_rows" { datamodel = "[GetGlobalList('DI_fe_group_doctrine_cultural_identity_doctrines')]" }
